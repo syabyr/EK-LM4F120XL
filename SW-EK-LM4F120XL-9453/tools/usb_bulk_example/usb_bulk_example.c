@@ -1,454 +1,358 @@
-//*****************************************************************************
-//
-// usb_bulk_example.c - A very simple command line application that attempts
-//      to open the Stellaris Generic Bulk USB device and exchange data
-//      with it.
-//
-// Copyright (c) 2008-2012 Texas Instruments Incorporated.  All rights reserved.
-// Software License Agreement
-// 
-// Texas Instruments (TI) is supplying this software for use solely and
-// exclusively on TI's microcontroller products. The software is owned by
-// TI and/or its suppliers, and is protected under applicable copyright
-// laws. You may not combine this software with "viral" open-source
-// software in order to form a larger program.
-// 
-// THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
-// NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT
-// NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL NOT, UNDER ANY
-// CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
-// DAMAGES, FOR ANY REASON WHATSOEVER.
-// 
-// This is part of revision 9453 of the Stellaris Firmware Development Package.
-//
-//*****************************************************************************
+/*
+* Test suite program based of libusb-0.1-compat testlibusb
+* Copyright (c) 2013 Nathan Hjelm <hjelmn@mac.ccom>
+*
+* This library is free software; you can redistribute it and/or
+* modify it under the terms of the GNU Lesser General Public
+* License as published by the Free Software Foundation; either
+* version 2.1 of the License, or (at your option) any later version.
+*
+* This library is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* Lesser General Public License for more details.
+*
+* You should have received a copy of the GNU Lesser General Public
+* License along with this library; if not, write to the Free Software
+* Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+*/
 
-//****************************************************************************
-//
-// If the device is successfully opened, the user is prompted for a string
-// which is then sent to the device. The device toggles the case of any
-// alphabet characters in the the data and sends it back. We receive this
-// and print out the result.
-//
-// Communication with the device is carried out via a simple DLL, lmusbdll(64),
-// which is responsible for opening and closing the device and for
-// sending and receiving blocks of data.  This structure allows the
-// application code to be kept independent of the underlying USB driver
-// in use.  In this implementation, Microsoft's WinUSB interface is used
-// but a switch to another stack, for example the open source libusb-win32
-// interface could be made merely be replacing the lmusbdll(64).dll with
-// another version writing to the different USB stack.
-//
-// One downside to using WinUSB is that it requires you to have the Windows
-// Device Driver Kit (DDK) installed to build applications which use the
-// interface. This is a very large download making it awkward for people
-// with slow internet connections. The use of lmusbdll(64).dll also offers
-// the advantage that applications using it can still be modified and
-// rebuilt even without the DDK installed on the development system.  To
-// update and rebuild lmusbdll itself, however, the DDK is still required.
-//
-//****************************************************************************
-#include <windows.h>
-#include <strsafe.h>
-#include <initguid.h>
-#include "lmusbdll.h"
-#include "luminary_guids.h"
+#include <stdio.h>
+#include <string.h>
+#include "libusb.h"
+#include <stdarg.h>
+int verbose = 0;
 
-//****************************************************************************
-//
-// Buffer size definitions.
-//
-//****************************************************************************
-#define MAX_STRING_LEN 256
-#define MAX_ENTRY_LEN 256
-#define USB_BUFFER_LEN 1216
-
-//****************************************************************************
-//
-// The build version number
-//
-//****************************************************************************
-#define BLDVER "9453"
-
-//****************************************************************************
-//
-// The number of bytes we read and write per transaction if in echo mode.
-//
-//****************************************************************************
-#define ECHO_PACKET_SIZE 64
-
-//****************************************************************************
-//
-// Buffer into which error messages are written.
-//
-//****************************************************************************
-TCHAR g_pcErrorString[MAX_STRING_LEN];
-
-//****************************************************************************
-//
-// The number of bytes transfered in the last measurement interval.
-//
-//****************************************************************************
-ULONG g_ulByteCount = 0;
-
-//****************************************************************************
-//
-// The total number of packets transfered.
-//
-//****************************************************************************
-ULONG g_ulPacketCount = 0;
-
-//****************************************************************************
-//
-// Return a string describing the supplied system error code.
-//
-// \param dwError is a Windows system error code.
-//
-// This function returns a pointer to a string describing the error code
-// passed in the dwError parameter. If no description string can be found
-// the string "Unknown" is returned.
-//
-// \return Returns a pointer to a string describing the error.
-//
-//****************************************************************************
-LPTSTR GetSystemErrorString(DWORD dwError)
+static void print_endpoint_comp(const struct libusb_ss_endpoint_companion_descriptor *ep_comp)
 {
-    DWORD dwRetcode;
-
-    //
-    // Ask Windows for the error message description.
-    //
-    dwRetcode = FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM, "%0", dwError, 0,
-                              g_pcErrorString, MAX_STRING_LEN, NULL);
-
-    if(dwRetcode == 0)
-    {
-        return((LPTSTR)L"Unknown");
-    }
-    else
-    {
-        //
-        // Remove the trailing "\n\r" if present.
-        //
-        if(dwRetcode >= 2)
-        {
-            if(g_pcErrorString[dwRetcode - 2] == '\r')
-            {
-                g_pcErrorString[dwRetcode - 2] = '\0';
-            }
-        }
-
-        return(g_pcErrorString);
-    }
+	printf("      USB 3.0 Endpoint Companion:\n");
+	printf("        bMaxBurst:        %d\n", ep_comp->bMaxBurst);
+	printf("        bmAttributes:     0x%02x\n", ep_comp->bmAttributes);
+	printf("        wBytesPerInterval: %d\n", ep_comp->wBytesPerInterval);
 }
 
-//****************************************************************************
-//
-// Print the throughput in terms of Kbps once per second.
-//
-//****************************************************************************
-void UpdateThroughput(void)
+static void print_endpoint(const struct libusb_endpoint_descriptor *endpoint)
 {
-    static ULONG ulStartTime = 0;
-    static ULONG ulLast = 0;
-    ULONG ulNow;
-    ULONG ulElapsed;
-    SYSTEMTIME sSysTime;
+	int i, ret;
 
-    //
-    // Get the current system time.
-    //
-    GetSystemTime(&sSysTime);
-    ulNow = (((((sSysTime.wHour * 60) +
-               sSysTime.wMinute) * 60) +
-              sSysTime.wSecond) * 1000) + sSysTime.wMilliseconds;
+	printf("      Endpoint:\n");
+	printf("        bEndpointAddress: %02xh\n", endpoint->bEndpointAddress);
+	printf("        bmAttributes:     %02xh\n", endpoint->bmAttributes);
+	printf("        wMaxPacketSize:   %d\n", endpoint->wMaxPacketSize);
+	printf("        bInterval:        %d\n", endpoint->bInterval);
+	printf("        bRefresh:         %d\n", endpoint->bRefresh);
+	printf("        bSynchAddress:    %d\n", endpoint->bSynchAddress);
 
-    //
-    // If this is the first call, set the start time.
-    //
-    if(ulStartTime == 0)
+	for (i = 0; i < endpoint->extra_length;) {
+		if (LIBUSB_DT_SS_ENDPOINT_COMPANION == endpoint->extra[i + 1]) {
+			struct libusb_ss_endpoint_companion_descriptor *ep_comp;
+
+			ret = libusb_get_ss_endpoint_companion_descriptor(NULL, endpoint, &ep_comp);
+			if (LIBUSB_SUCCESS != ret) {
+				continue;
+			}
+
+			print_endpoint_comp(ep_comp);
+
+			libusb_free_ss_endpoint_companion_descriptor(ep_comp);
+		}
+
+		i += endpoint->extra[i];
+	}
+}
+
+static void print_altsetting(const struct libusb_interface_descriptor *interface)
+{
+	int i;
+
+	printf("    Interface:\n");
+	printf("      bInterfaceNumber:   %d\n", interface->bInterfaceNumber);
+	printf("      bAlternateSetting:  %d\n", interface->bAlternateSetting);
+	printf("      bNumEndpoints:      %d\n", interface->bNumEndpoints);
+	printf("      bInterfaceClass:    %d\n", interface->bInterfaceClass);
+	printf("      bInterfaceSubClass: %d\n", interface->bInterfaceSubClass);
+	printf("      bInterfaceProtocol: %d\n", interface->bInterfaceProtocol);
+	printf("      iInterface:         %d\n", interface->iInterface);
+
+	for (i = 0; i < interface->bNumEndpoints; i++)
+		print_endpoint(&interface->endpoint[i]);
+}
+
+static void print_2_0_ext_cap(struct libusb_usb_2_0_extension_descriptor *usb_2_0_ext_cap)
+{
+	printf("    USB 2.0 Extension Capabilities:\n");
+	printf("      bDevCapabilityType: %d\n", usb_2_0_ext_cap->bDevCapabilityType);
+	printf("      bmAttributes:       0x%x\n", usb_2_0_ext_cap->bmAttributes);
+}
+
+static void print_ss_usb_cap(struct libusb_ss_usb_device_capability_descriptor *ss_usb_cap)
+{
+	printf("    USB 3.0 Capabilities:\n");
+	printf("      bDevCapabilityType: %d\n", ss_usb_cap->bDevCapabilityType);
+	printf("      bmAttributes:       0x%x\n", ss_usb_cap->bmAttributes);
+	printf("      wSpeedSupported:    0x%x\n", ss_usb_cap->wSpeedSupported);
+	printf("      bFunctionalitySupport: %d\n", ss_usb_cap->bFunctionalitySupport);
+	printf("      bU1devExitLat:      %d\n", ss_usb_cap->bU1DevExitLat);
+	printf("      bU2devExitLat:      %d\n", ss_usb_cap->bU2DevExitLat);
+}
+
+static void print_bos(libusb_device_handle *handle)
+{
+	struct libusb_bos_descriptor *bos;
+	int ret;
+
+	ret = libusb_get_bos_descriptor(handle, &bos);
+	if (0 > ret) {
+		return;
+	}
+
+	printf("  Binary Object Store (BOS):\n");
+	printf("    wTotalLength:       %d\n", bos->wTotalLength);
+	printf("    bNumDeviceCaps:     %d\n", bos->bNumDeviceCaps);
+
+	if(bos->dev_capability[0]->bDevCapabilityType == LIBUSB_BT_USB_2_0_EXTENSION) {
+
+		struct libusb_usb_2_0_extension_descriptor *usb_2_0_extension;
+	        ret =  libusb_get_usb_2_0_extension_descriptor(NULL, bos->dev_capability[0],&usb_2_0_extension);
+	        if (0 > ret) {
+		        return;
+	        }
+
+                print_2_0_ext_cap(usb_2_0_extension);
+                libusb_free_usb_2_0_extension_descriptor(usb_2_0_extension);
+        }
+
+	if(bos->dev_capability[0]->bDevCapabilityType == LIBUSB_BT_SS_USB_DEVICE_CAPABILITY) {
+
+	        struct libusb_ss_usb_device_capability_descriptor *dev_cap;
+		ret = libusb_get_ss_usb_device_capability_descriptor(NULL, bos->dev_capability[0],&dev_cap);
+	        if (0 > ret) {
+		        return;
+	        }
+
+	        print_ss_usb_cap(dev_cap);
+	        libusb_free_ss_usb_device_capability_descriptor(dev_cap);
+        }
+
+	libusb_free_bos_descriptor(bos);
+}
+
+static void print_interface(const struct libusb_interface *interface)
+{
+	int i;
+
+	for (i = 0; i < interface->num_altsetting; i++)
+		print_altsetting(&interface->altsetting[i]);
+}
+
+static void print_configuration(struct libusb_config_descriptor *config)
+{
+	int i;
+
+	printf("  Configuration:\n");
+	printf("    wTotalLength:         %d\n", config->wTotalLength);
+	printf("    bNumInterfaces:       %d\n", config->bNumInterfaces);
+	printf("    bConfigurationValue:  %d\n", config->bConfigurationValue);
+	printf("    iConfiguration:       %d\n", config->iConfiguration);
+	printf("    bmAttributes:         %02xh\n", config->bmAttributes);
+	printf("    MaxPower:             %d\n", config->MaxPower);
+
+	for (i = 0; i < config->bNumInterfaces; i++)
+		print_interface(&config->interface[i]);
+}
+
+static int print_device(libusb_device *dev, int level)
+{
+	struct libusb_device_descriptor desc;
+	libusb_device_handle *handle = NULL;
+	char description[256];
+	char string[256];
+	int ret, i;
+
+	ret = libusb_get_device_descriptor(dev, &desc);
+	if (ret < 0) {
+		fprintf(stderr, "failed to get device descriptor");
+		return -1;
+	}
+
+	ret = libusb_open(dev, &handle);
+	if (LIBUSB_SUCCESS == ret) {
+		if (desc.iManufacturer) {
+			ret = libusb_get_string_descriptor_ascii(handle, desc.iManufacturer, string, sizeof(string));
+			if (ret > 0)
+				snprintf(description, sizeof(description), "%s - ", string);
+			else
+				snprintf(description, sizeof(description), "%04X - ",
+				desc.idVendor);
+		}
+		else
+			snprintf(description, sizeof(description), "%04X - ",
+			desc.idVendor);
+
+		if (desc.iProduct) {
+			ret = libusb_get_string_descriptor_ascii(handle, desc.iProduct, string, sizeof(string));
+			if (ret > 0)
+				snprintf(description + strlen(description), sizeof(description) -
+				strlen(description), "%s", string);
+			else
+				snprintf(description + strlen(description), sizeof(description) -
+				strlen(description), "%04X", desc.idProduct);
+		}
+		else
+			snprintf(description + strlen(description), sizeof(description) -
+			strlen(description), "%04X", desc.idProduct);
+	}
+	else {
+		snprintf(description, sizeof(description), "%04X - %04X",
+			desc.idVendor, desc.idProduct);
+	}
+
+	printf("%.*sDev (bus %d, device %d): %s\n", level * 2, "                    ",
+		libusb_get_bus_number(dev), libusb_get_device_address(dev), description);
+
+	if (handle && verbose) {
+		if (desc.iSerialNumber) {
+			ret = libusb_get_string_descriptor_ascii(handle, desc.iSerialNumber, string, sizeof(string));
+			if (ret > 0)
+				printf("%.*s  - Serial Number: %s\n", level * 2,
+				"                    ", string);
+		}
+	}
+
+	if (verbose) {
+		for (i = 0; i < desc.bNumConfigurations; i++) {
+			struct libusb_config_descriptor *config;
+			ret = libusb_get_config_descriptor(dev, i, &config);
+			if (LIBUSB_SUCCESS != ret) {
+				printf("  Couldn't retrieve descriptors\n");
+				continue;
+			}
+
+			print_configuration(config);
+
+			libusb_free_config_descriptor(config);
+		}
+
+		if (handle && desc.bcdUSB >= 0x0201) {
+			print_bos(handle);
+		}
+	}
+
+	if (handle)
+		libusb_close(handle);
+
+	return 0;
+}
+
+static struct libusb_device_handle *devh = NULL;
+
+static int find_test_device(void)
+{
+	devh = libusb_open_device_with_vid_pid(NULL, 0x1cbe, 0x0003);
+	return devh ? 0 : -1;
+}
+
+char response[256];
+
+const static int reqIntLen=8;
+const static int reqBulkLen=64;
+const static int endpoint_Int_in=0x81; /* endpoint 0x81 address for IN */
+const static int endpoint_Int_out=0x01; /* endpoint 1 address for OUT */
+const static int endpoint_Bulk_in=0x82; /* endpoint 0x81 address for IN */
+const static int endpoint_Bulk_out=0x02; /* endpoint 1 address for OUT */
+const static int timeout=5000; /* timeout in ms */
+
+static void perr(char const *format, ...)
+{
+    va_list args;
+
+    va_start (args, format);
+    vfprintf(stderr, format, args);
+    va_end(args);
+}
+
+void test_bulk_transfer(libusb_device_handle *dev)
+
+{
+
+    int r,i;
+    char answer[reqBulkLen];
+    char question[reqBulkLen];
+    int size;
+    for (i=0;i<reqBulkLen; i++) question[i]=i;
+    r = libusb_bulk_transfer(dev, endpoint_Bulk_out, (unsigned char*)&question,reqBulkLen,&size, timeout);
+    if( r != LIBUSB_SUCCESS )
     {
-        ulStartTime = ulNow;
-        ulLast = ulNow;
+        perr("   send_mass_storage_command: %s\n", libusb_strerror((enum libusb_error)r));
         return;
     }
-
-    //
-    // How much time has elapsed since the last measurement?
-    //
-    ulElapsed = (ulNow > ulStartTime) ? (ulNow - ulStartTime) : (ulStartTime - ulNow);
-
-    //
-    // We dump a new measurement every second.
-    //
-    if(ulElapsed > 1000)
+    r = libusb_interrupt_transfer(dev, endpoint_Bulk_in, (unsigned char*)&answer, reqBulkLen,&size, timeout);
+    if( r != reqBulkLen )
     {
-
-        //printf("\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b");
-        printf("\r%6dKbps Packets: %10d ", ((g_ulByteCount * 8) / ulElapsed), g_ulPacketCount);
-        g_ulByteCount = 0;
-        ulStartTime = ulNow;
+        perr("   USB bulk read: %s\n", libusb_strerror((enum libusb_error)r));
     }
+    for (i=0;i<reqBulkLen;i++) printf("%i, %i, \n",question[i],answer[i]);
+    //   usb_set_altinterface(dev, 0);
+
+    libusb_release_interface(dev, 0);
+
 }
 
-//****************************************************************************
-//
-// The main application entry function.
-//
-// \param None.
-//
-// This function forms the main entry point of the example application. It
-// initializes the USB bulk device, prompts the user for an ASCII string,
-// sends this string to the device, reads the response from the device (which
-// will be the same string with the character order reversed if using the
-// sample device provided in StellarisWare) and displays the returned
-// string.
-//
-// \return Set the exit code to 0 of no errors cause the application to end
-// or a non-zero value otherwise.
-//
-//****************************************************************************
 int main(int argc, char *argv[])
 {
-    BOOL bResult;
-    BOOL bDriverInstalled;
-    BOOL bEcho;
-    char szBuffer[USB_BUFFER_LEN];
-    ULONG ulWritten;
-    ULONG ulRead;
-    ULONG ulLength;
-    DWORD dwError;
-    LMUSB_HANDLE hUSB;
+	libusb_device **devs;
+	ssize_t cnt;
+	int r, i;
 
-    //
-    // Are we operating in echo mode or not? The "-e" parameter tells the
-    // app to echo everything it receives back to the device unchanged.
-    //
-    bEcho = ((argc > 1) && (argv[1][1] == 'e')) ? TRUE : FALSE;
+	if (argc > 1 && !strcmp(argv[1], "-v"))
+		verbose = 1;
 
-    //
-    // Print a cheerful welcome.
-    //
-    printf("\nStellaris Bulk USB Device Example\n");
-    printf( "---------------------------------\n\n");
-    printf("Version %s\n\n", BLDVER);
-    if(!bEcho)
+	r = libusb_init(NULL);
+	if (r < 0)
+		return r;
+
+	if(0!=find_test_device())
+	{
+		printf("open device failed.\r\n");
+		return -1;
+	}
+
+	r = libusb_claim_interface(devh, 0);
+	if (r < 0) {
+		fprintf(stderr, "usb_claim_interface error %d %s\n", r, strerror(-r));
+		goto out;
+	}
+	int actsize;
+    /*
+	while(1)
+	{
+		r=libusb_bulk_transfer(devh,0x1,response,64,&actsize,1000);
+		r=libusb_bulk_transfer(devh,0x81,response,64,&actsize,1000);
+	}
+     */
+	
+	int size;
+	char answer[reqBulkLen+1];
+	char question[reqBulkLen+1]="helloworld1234567890helloworld1234567890helloworld1234567890abcd";
+	
+    r = libusb_bulk_transfer(devh, endpoint_Int_out, (unsigned char*)&question,reqBulkLen,&size, timeout);
+	if( r != LIBUSB_SUCCESS )
     {
-        printf("This is a partner application to the usb_dev_bulk example\n");
-        printf("shipped with StellarisWare software releases for USB-enabled\n");
-        printf("boards. Strings entered here are sent to the board which\n");
-        printf("inverts the case of the characters in the string and returns\n");
-        printf("them to the host.\n\n");
+        perr("   send_mass_storage_command: %s\n", libusb_strerror((enum libusb_error)r));
     }
-    else
+    r = libusb_bulk_transfer(devh, endpoint_Int_in, (unsigned char*)&answer,reqBulkLen,&size, timeout);
+	if( r != LIBUSB_SUCCESS )
     {
-        printf("If run with the \"-e\" command line switch, this application\n");
-        printf("echoes all data received on the bulk IN endpoint to the bulk\n");
-        printf("OUT endpoint.  This feature may be helpful during development\n");
-        printf("and debug of your own USB devices.  Note that this will not\n");
-        printf("do anything exciting if run with the usb_dev_bulk example\n");
-        printf("device attached since it expects the host to initiate transfers.\n\n");
+        perr("   send_mass_storage_command: %s\n", libusb_strerror((enum libusb_error)r));
     }
+    answer[reqBulkLen]=0;
+	printf("read:%s\r\n",&answer);
+	
 
-    //
-    // Find our USB device and prepare it for communication.
-    //
-    hUSB = InitializeDevice(BULK_VID, BULK_PID,
-                            (LPGUID)&(GUID_DEVINTERFACE_STELLARIS_BULK),
-                            &bDriverInstalled);
 
-    if(hUSB)
-    {
-        //
-        // Are we operating in echo mode or not? The "-e" parameter tells the
-        // app to echo everything it receives back to the device unchanged.
-        //
-        if(bEcho)
-        {
-            //
-            // Yes - we are in echo mode.
-            //
-            printf("Running in echo mode. Press Ctrl+C to exit.\n\n");
+out:
+	libusb_close(devh);
 
-            while(1)
-            {
-                //
-                // Read a block of data from the device.
-                //
-                dwError = ReadUSBPacket(hUSB, szBuffer, ECHO_PACKET_SIZE, &ulRead,
-                                        INFINITE, NULL);
-
-                if(dwError != ERROR_SUCCESS)
-                {
-                    //
-                    // We failed to read from the device.
-                    //
-                    printf("\n\nError %d (%S) reading from bulk IN pipe.\n", dwError,
-                           GetSystemErrorString(dwError));
-                    break;
-                }
-                else
-                {
-                    //
-                    // Update our byte and packet counters.
-                    //
-                    g_ulByteCount += ulRead;
-                    g_ulPacketCount++;
-
-                    //
-                    // Write the data back out to the device.
-                    //
-                    bResult = WriteUSBPacket(hUSB, szBuffer, ulRead, &ulWritten);
-                    if(!bResult)
-                    {
-                        //
-                        // We failed to write the data for some reason.
-                        //
-                        dwError = GetLastError();
-                        printf("\n\nError %d (%S) writing to bulk OUT pipe.\n", dwError,
-                               GetSystemErrorString(dwError));
-                        break;
-                    }
-
-                    //
-                    // Display the throughput.
-                    //
-                    UpdateThroughput();
-                }
-            }
-        }
-        else
-        {
-            //
-            // We are running in normal mode.  Keep sending and receiving
-            // strings until the user indicates that it is time to exit.
-            //
-            while(1)
-            {
-
-                //
-                // The device was found and successfully configured. Now get a string from
-                // the user...
-                //
-                do
-                {
-                    printf("\nEnter a string (EXIT to exit): ");
-                    fgets(szBuffer, MAX_ENTRY_LEN, stdin);
-                    printf("\n");
-
-                    //
-                    // How many characters were entered (including the trailing '\n')?
-                    //
-                    ulLength = (ULONG)strlen(szBuffer);
-
-                    if(ulLength <= 1)
-                    {
-                        //
-                        // The string is either nothing at all or a single '\n' so reprompt the user.
-                        //
-                        printf("\nPlease enter some text.\n");
-                        ulLength = 0;
-                    }
-                    else
-                    {
-                        //
-                        // Get rid of the trailing '\n' if there is one there.
-                        //
-                        if(szBuffer[ulLength - 1] == '\n')
-                        {
-                            szBuffer[ulLength - 1] = '\0';
-                            ulLength--;
-                        }
-                    }
-                }
-                while(ulLength == 0);
-
-                //
-                // Are we being asked to exit the application?
-                //
-                if(!(strcmp("EXIT", szBuffer)))
-                {
-                    //
-                    // Yes - drop out and exit.
-                    //
-                    printf("Exiting on user request.\n");
-                    break;
-                }
-
-                //
-                // Write the user's string to the device.
-                //
-                bResult = WriteUSBPacket(hUSB, szBuffer, ulLength, &ulWritten);
-                if(!bResult)
-                {
-                    //
-                    // We failed to write the data for some reason.
-                    //
-                    dwError = GetLastError();
-                    printf("Error %d (%S) writing to bulk OUT pipe.\n", dwError,
-                           GetSystemErrorString(dwError));
-                }
-                else
-                {
-                    //
-                    // We wrote data successfully so now read it back.
-                    //
-                    printf("Wrote %d bytes to the device. Expected %d\n",
-                           ulWritten, ulLength);
-
-                    //
-                    // We expect the same number of bytes as we just sent.
-                    //
-                    dwError = ReadUSBPacket(hUSB, szBuffer, ulWritten, &ulRead,
-                                            INFINITE, NULL);
-
-                    if(dwError != ERROR_SUCCESS)
-                    {
-                        //
-                        // We failed to read from the device.
-                        //
-                        printf("Error %d (%S) reading from bulk IN pipe.\n", dwError,
-                               GetSystemErrorString(dwError));
-                    }
-                    else
-                    {
-                        //
-                        // Add a string terminator to the returned data (this
-                        // should already be there but, just in case...)
-                        //
-                        szBuffer[ulRead] = '\0';
-
-                        printf("Read %d bytes from device. Expected %d\n",
-                               ulRead, ulWritten);
-                        printf("\nReturned string: \"%s\"\n", szBuffer);
-                    }
-                }
-            }
-        }
-    }
-    else
-    {
-        //
-        // An error was reported while trying to connect to the device.
-        //
-        dwError = GetLastError();
-
-        printf("\nUnable to initialize the Stellaris Bulk USB Device.\n");
-        printf("Error code is %d (%S)\n\n", dwError, GetSystemErrorString(dwError));
-        printf("Please make sure you have a Stellaris USB-enabled evaluation\n");
-        printf("or development kit running the usb_dev_bulk example\n");
-        printf("application connected to this system via the \"USB OTG\" or\n");
-        printf("\"USB DEVICE\" connectors. Once the device is connected, run\n");
-        printf("this application again.\n\n");
-
-        printf("\nPress \"Enter\" to exit: ");
-        fgets(szBuffer, MAX_STRING_LEN, stdin);
-        printf("\n");
-        return(2);
-    }
-
-    TerminateDevice(hUSB);
-
-    return(0);
+	libusb_exit(NULL);
+	return 0;
 }
