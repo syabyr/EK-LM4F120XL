@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the uart_print example.
+# Makefile - Rules for building the uart_echo example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -48,10 +48,10 @@ include ${ROOT}/makedefs
 IPATH=../../..
 
 #
-# The default rule, which causes the uart_print example to be built.
+# The default rule, which causes the printf example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/uart_print.axf
+all: ${COMPILER}/printf.axf
 
 #
 # The rule to clean out all the build products.
@@ -66,14 +66,14 @@ ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
 #
-# Rules for building the uart_print example.
+# Rules for building the printf example.
 #
-${COMPILER}/uart_print.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/uart_print.axf: ${COMPILER}/uart_print.o
-${COMPILER}/uart_print.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-${COMPILER}/uart_print.axf: uart_print.ld
-SCATTERgcc_uart_print=uart_print.ld
-ENTRY_uart_print=ResetISR
+${COMPILER}/printf.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/printf.axf: ${COMPILER}/printf.o
+${COMPILER}/printf.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+${COMPILER}/printf.axf: printf.ld
+SCATTERgcc_printf=printf.ld
+ENTRY_printf=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 
 #

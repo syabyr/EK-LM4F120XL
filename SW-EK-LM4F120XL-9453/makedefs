@@ -123,6 +123,7 @@ CFLAGS=-mthumb             \
        -Wall               \
        -pedantic           \
        -DPART_${PART}      \
+       -Dprintf=iprintf    \
        -c
 
 #
@@ -138,7 +139,7 @@ LD=${PREFIX}-ld
 #
 # The flags passed to the linker.
 #
-LDFLAGS=--gc-sections
+LDFLAGS=--gc-sections -u _printf_float
 
 #
 # Get the location of libgcc.a from the GCC front-end.
