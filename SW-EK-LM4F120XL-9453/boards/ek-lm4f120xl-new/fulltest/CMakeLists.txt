@@ -27,7 +27,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # Set build
 if (NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE DEBUG)
+    set(CMAKE_BUILD_TYPE Debug)
 endif ()
 message ( STATUS "BUILD_TYPE = ${CMAKE_BUILD_TYPE}.")
 

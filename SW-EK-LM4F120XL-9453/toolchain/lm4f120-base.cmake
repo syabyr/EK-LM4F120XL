@@ -61,7 +61,7 @@ set(CMAKE_ASM_FLAGS "${COMMON_DEFINITIONS} -x assembler-with-cpp -DLOOP_ADDR=0x8
 # Set default inclusions
 
 
-if (CMAKE_BUILD_TYPE STREQUAL "DEBUG")
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     # Debug Flags
     set(COMMON_DEBUG_FLAGS "-O0 -D DEBUG -g -gdwarf-2")
     set(CMAKE_C_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")
