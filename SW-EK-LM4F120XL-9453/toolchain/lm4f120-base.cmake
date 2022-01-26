@@ -41,6 +41,7 @@ message("Processor: ${DEVICE_U}")
 # Set compiler flags
 # Common arguments
 add_definitions("-DPART_${DEVICE}")
+add_definitions("-DPART_${DEVICE}=1")
 add_definitions("-DTARGET_IS_BLIZZARD_RA1")
 add_definitions("-Dgcc")
 set(COMMON_DEFINITIONS " -Wall -Wno-unused-parameter -mcpu=cortex-${CPU_TYPE} -mthumb  -ffunction-sections -fdata-sections  -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -pedantic ${OPTIONAL_DEBUG_SYMBOLS}")
@@ -63,13 +64,13 @@ set(CMAKE_ASM_FLAGS "${COMMON_DEFINITIONS} -x assembler-with-cpp -DLOOP_ADDR=0x8
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     # Debug Flags
-    set(COMMON_DEBUG_FLAGS "-O0 -D DEBUG -g -gdwarf-2")
+    set(COMMON_DEBUG_FLAGS "-O0 -D DEBUG -g3 -gdwarf-2")
     set(CMAKE_C_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")
     set(CMAKE_CXX_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")
     set(CMAKE_ASM_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")
 else ()
     # Release Flags
-    set(COMMON_RELEASE_FLAGS "${OPTFLAGS} -DNDEBUG=1 -DRELEASE=1")
+    set(COMMON_RELEASE_FLAGS "-Os ${OPTFLAGS} -DNDEBUG=1 -DRELEASE=1")
     set(CMAKE_C_FLAGS_RELEASE "${COMMON_RELEASE_FLAGS}")
     set(CMAKE_CXX_FLAGS_RELEASE "${COMMON_RELEASE_FLAGS}")
     set(CMAKE_ASM_FLAGS_RELEASE "${COMMON_RELEASE_FLAGS}")

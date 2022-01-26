@@ -256,6 +256,6 @@ main(void)
         //printf("\r\n");
         //printf("helloworld.\r\n");
         //printf("freq:%dHz\r\n\r\n",100);
-        ROM_SysCtlDelay(2000000);
+        ROM_SysCtlDelay(10000000);
     }
 }

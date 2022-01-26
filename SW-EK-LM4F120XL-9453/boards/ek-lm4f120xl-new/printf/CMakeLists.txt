@@ -14,7 +14,7 @@ if(NOT COMPILER_PREFIX)
     set(CMAKE_C_COMPILER arm-none-eabi-gcc)
     set(CMAKE_AR arm-none-eabi-ar)
 else ()
-    set(CMAKE_C_${COMPILER_PREFIX}/COMPILER arm-none-eabi-gcc)
+    set(CMAKE_C_COMPILER ${COMPILER_PREFIX}/arm-none-eabi-gcc)
     set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
 endif ()
 
