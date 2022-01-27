@@ -21,7 +21,7 @@
 // This is part of revision 9453 of the EK-LM4F120XL Firmware Package.
 //
 //*****************************************************************************
-
+#include <stdio.h>
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
@@ -113,7 +113,7 @@ unsigned long g_ulUARTRxErrors = 0;
 // Map all debug print calls to UARTprintf in debug builds.
 //
 //*****************************************************************************
-#define DEBUG_PRINT UARTprintf
+#define DEBUG_PRINT printf
 
 #else
 
@@ -152,7 +152,7 @@ static volatile tBoolean g_bUSBConfigured = false;
 void
 __error__(char *pcFilename, unsigned long ulLine)
 {
-    UARTprintf("Error at line %d of %s\n", ulLine, pcFilename);
+    printf("Error at line %d of %s\r\n", ulLine, pcFilename);
     while(1)
     {
     }
@@ -374,7 +374,7 @@ RxHandler(void *pvCBData, unsigned long ulEvent,
         case USB_EVENT_CONNECTED:
         {
             g_bUSBConfigured = true;
-            UARTprintf("Host connected.\n");
+            printf("Host connected.\r\n");
 
             //
             // Flush our buffers.
@@ -391,7 +391,7 @@ RxHandler(void *pvCBData, unsigned long ulEvent,
         case USB_EVENT_DISCONNECTED:
         {
             g_bUSBConfigured = false;
-            UARTprintf("Host disconnected.\n");
+            printf("Host disconnected.\r\n");
             break;
         }
 
@@ -483,8 +483,8 @@ main(void)
     // Open UART0 and show the application name on the UART.
     //
     UARTStdioInit(0);
-    UARTprintf("\033[2JStellaris USB bulk device example\n");
-    UARTprintf("---------------------------------\n\n");
+    printf("\033[2JStellaris USB bulk device example\r\n");
+    printf("---------------------------------\r\n");
 
     //
     // Not configured initially.
@@ -508,7 +508,7 @@ main(void)
     //
     // Tell the user what we are up to.
     //
-    UARTprintf("Configuring USB\n");
+    printf("Configuring USB\r\n");
 
     //
     // Initialize the transmit and receive buffers.
@@ -530,7 +530,7 @@ main(void)
     //
     // Wait for initial configuration to complete.
     //
-    UARTprintf("Waiting for host...\n");
+    printf("Waiting for host...\r\n");
 
     //
     // Clear our local byte counters.
@@ -607,7 +607,7 @@ main(void)
             //
             // Update the display of bytes transferred.
             //
-            UARTprintf("\rTx: %d  Rx: %d", ulTxCount, ulRxCount);
+            printf("\rTx: %d  Rx: %d", ulTxCount, ulRxCount);
         }
     }
 }

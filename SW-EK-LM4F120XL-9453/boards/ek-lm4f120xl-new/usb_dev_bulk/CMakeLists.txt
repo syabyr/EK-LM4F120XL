@@ -87,10 +87,10 @@ include_directories(${BASE_LOCATION})
 
 add_definitions(-DUART_BUFFERED)
 
-
 #aux_source_directory(./ SOURCE_FILES)
 set(SOURCE_FILES  startup_gcc.c
                   usb_dev_bulk.c
+                  ../drivers/retargetserial.c
                   ../../../utils/ustdlib.c
                   ../../../utils/uartstdio.c
                   usb_bulk_structs.c)
