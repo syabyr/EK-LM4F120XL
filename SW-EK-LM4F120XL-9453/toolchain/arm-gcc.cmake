@@ -16,6 +16,7 @@ set(CMAKE_SYSTEM_PROCESSOR arm)
 set(CMAKE_C_COMPILER ${COMPILER_PREFIX}arm-none-eabi-gcc)
 set(CMAKE_CXX_COMPILER ${COMPILER_PREFIX}arm-none-eabi-g++)
 set(CMAKE_ASM_COMPILER ${COMPILER_PREFIX}arm-none-eabi-g++)
+set(CMAKE_RANLIB  ${COMPILER_PREFIX}arm-none-eabi-ranlib)
 
 # Set other tools
 set(OBJSIZE ${COMPILER_PREFIX}arm-none-eabi-size)
