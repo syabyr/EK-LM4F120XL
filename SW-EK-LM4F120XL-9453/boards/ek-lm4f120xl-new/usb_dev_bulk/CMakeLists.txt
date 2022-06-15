@@ -8,7 +8,7 @@
 # Set minimum CMake version
 cmake_minimum_required(VERSION 2.8.4)
 
-set(COMPILER_PREFIX /Volumes/4T/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
+#set(COMPILER_PREFIX /Volumes/4T/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
 
 if(NOT COMPILER_PREFIX)
     set(CMAKE_C_COMPILER arm-none-eabi-gcc)
