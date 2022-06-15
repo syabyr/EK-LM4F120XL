@@ -5,12 +5,13 @@
 #include "driverlib/gpio.h"
 #include "driverlib/timer.h"
 #include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
 
 int main(void) {
     unsigned long ulPeriod, dutyCycle;
 
     // 40 MHz system clock
-    SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|
+    ROM_SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|
         SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
 
     ulPeriod = 100000;
