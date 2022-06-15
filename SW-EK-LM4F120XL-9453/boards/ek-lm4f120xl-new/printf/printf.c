@@ -146,6 +146,7 @@ caddr_t _sbrk(int incr)
 {
     return (caddr_t) 0;
 }
+/*
 int _close(int file) 
 { 
     return -1; 
@@ -166,7 +167,7 @@ int _read(int file, char *ptr, int len)
 { 
     return 0;
 }
-
+*/
 //*****************************************************************************
 //
 // This example demonstrates how to send a string of data to the UART.
