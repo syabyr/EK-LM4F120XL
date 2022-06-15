@@ -245,13 +245,13 @@ ${COMPILER}${SUFFIX}/%.axf:
 	          --entry ${ENTRY_${notdir ${@:.axf=}}}                       \
 	          ${LDFLAGSgcc_${notdir ${@:.axf=}}}                          \
 	          ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                  \
-	          '${LIBM}' '${LIBC}' '${LIBGCC}';                            \
+	          '${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}';              \
 	 fi;                                                                  \
 	${LD} -T $${ldname}                                                   \
 	      --entry ${ENTRY_${notdir ${@:.axf=}}}                           \
 	      ${LDFLAGSgcc_${notdir ${@:.axf=}}}                              \
 	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
-	      '${LIBM}' '${LIBC}' '${LIBGCC}'
+	      '${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}'
 	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
 endif
 
