@@ -157,6 +157,11 @@ LIBC=${shell ${CC} ${CFLAGS} -print-file-name=libc.a}
 LIBM=${shell ${CC} ${CFLAGS} -print-file-name=libm.a}
 
 #
+# Get the location of libnosys.a from the GCC front-end.
+#
+LIBNOSYS=${shell ${CC} ${CFLAGS} -print-file-name=libnosys.a}
+
+#
 # The command for extracting images from the linked executables.
 #
 OBJCOPY=${PREFIX}-objcopy
