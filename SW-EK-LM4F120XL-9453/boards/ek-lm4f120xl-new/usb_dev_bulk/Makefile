@@ -47,6 +47,7 @@ include ${ROOT}/makedefs
 #
 VPATH=
 VPATH+=../../../utils
+VPATH+=../drivers
 
 #
 # Where to find header files that do not live in the source directory.
@@ -79,6 +80,7 @@ ${COMPILER}/usb_dev_bulk.axf: ${COMPILER}/uartstdio.o
 ${COMPILER}/usb_dev_bulk.axf: ${COMPILER}/usb_bulk_structs.o
 ${COMPILER}/usb_dev_bulk.axf: ${COMPILER}/usb_dev_bulk.o
 ${COMPILER}/usb_dev_bulk.axf: ${COMPILER}/ustdlib.o
+${COMPILER}/usb_dev_bulk.axf: ${COMPILER}/retargetserial.o
 ${COMPILER}/usb_dev_bulk.axf: ${ROOT}/usblib/${COMPILER}-cm4f/libusb-cm4f.a
 ${COMPILER}/usb_dev_bulk.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 ${COMPILER}/usb_dev_bulk.axf: usb_dev_bulk.ld
