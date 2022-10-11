@@ -166,6 +166,8 @@ LIBNOSYS=${shell ${CC} ${CFLAGS} -print-file-name=libnosys.a}
 #
 OBJCOPY=${PREFIX}-objcopy
 
+OBJSIZE=${PREFIX}-size
+
 #
 # Tell the compiler to include debugging information if the DEBUG environment
 # variable is set.
@@ -178,6 +180,9 @@ endif
 # Add the tool specific CFLAGS.
 #
 CFLAGS+=${CFLAGSgcc}
+
+LDFLAGS+=${LDFLAGSgcc}
+
 
 #
 # Add the include file paths to AFLAGS and CFLAGS.
@@ -253,5 +258,6 @@ ${COMPILER}${SUFFIX}/%.axf:
 	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
 	      '${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}'
 	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+	@${OBJSIZE} ${@}
 endif
 
