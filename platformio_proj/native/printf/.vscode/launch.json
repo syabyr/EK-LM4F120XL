@@ -1,0 +1,47 @@
+// AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
+//
+// PIO Unified Debugger
+//
+// Documentation: https://docs.platformio.org/page/plus/debugging.html
+// Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/.pio/build/lplm4f120h5qr/firmware.elf",
+            "projectEnvName": "lplm4f120h5qr",
+            "toolchainBinDir": "/Users/mybays/.platformio/packages/toolchain-gccarmnoneeabi@1.60301.0/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "/Users/mybays/.platformio/platforms/titiva@src-0f343f38e14e3af1a50c532894e256ab/misc/svd/lm4f120h5qr.svd",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/.pio/build/lplm4f120h5qr/firmware.elf",
+            "projectEnvName": "lplm4f120h5qr",
+            "toolchainBinDir": "/Users/mybays/.platformio/packages/toolchain-gccarmnoneeabi@1.60301.0/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "/Users/mybays/.platformio/platforms/titiva@src-0f343f38e14e3af1a50c532894e256ab/misc/svd/lm4f120h5qr.svd"
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (without uploading)",
+            "executable": "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/.pio/build/lplm4f120h5qr/firmware.elf",
+            "projectEnvName": "lplm4f120h5qr",
+            "toolchainBinDir": "/Users/mybays/.platformio/packages/toolchain-gccarmnoneeabi@1.60301.0/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "/Users/mybays/.platformio/platforms/titiva@src-0f343f38e14e3af1a50c532894e256ab/misc/svd/lm4f120h5qr.svd",
+            "loadMode": "manual"
+        }
+    ]
+}

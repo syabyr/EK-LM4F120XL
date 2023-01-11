@@ -1,0 +1,58 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/include",
+                "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/src",
+                "/Users/mybays/.platformio/packages/framework-nativetiva",
+                "/Users/mybays/.platformio/packages/framework-nativetiva/inc",
+                "/Users/mybays/.platformio/packages/framework-nativetiva/driverlib",
+                "/Users/mybays/.platformio/packages/framework-nativetiva/variants/EK-TM4C123GXL",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/include",
+                    "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/native/printf/src",
+                    "/Users/mybays/.platformio/packages/framework-nativetiva",
+                    "/Users/mybays/.platformio/packages/framework-nativetiva/inc",
+                    "/Users/mybays/.platformio/packages/framework-nativetiva/driverlib",
+                    "/Users/mybays/.platformio/packages/framework-nativetiva/variants/EK-TM4C123GXL",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=80000000L",
+                "PLATFORMIO=60105",
+                "ENERGIA_ARCH_TIVAC",
+                "ENERGIA_EK_TM4C123GXL",
+                "PART_LM4F120H5QR",
+                "TARGET_IS_BLIZZARD_RA2",
+                "gcc",
+                "ARDUINO=10805",
+                "ENERGIA=10000",
+                "printf=iprintf",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/Users/mybays/.platformio/packages/toolchain-gccarmnoneeabi@1.60301.0/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                "-mabi=aapcs",
+                "-mfloat-abi=hard",
+                "-mfpu=fpv4-sp-d16",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

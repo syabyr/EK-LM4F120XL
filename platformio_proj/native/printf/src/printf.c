@@ -25,6 +25,7 @@
 
 #include <stdio.h>
 #include <sys/stat.h>
+#include <errno.h>
 
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
@@ -132,14 +133,47 @@ UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
         ROM_UARTCharPut(UART0_BASE, *pucBuffer++);
     }
 }
+#define MMIO32(addr)		(*(volatile uint32_t *)(addr))
+#define UART_DR(uart_base)		MMIO32((uart_base) + 0x00)
 
-
-#ifdef __GNUC__
-int _write(int fd, char *ptr, int len)
+#define UART_FR_TXFF			(1 << 5)
+#define UART_FR(uart_base)		MMIO32((uart_base) + 0x18)
+void uart_wait_send_ready(uint32_t uart)
 {
-    (void) fd; 
-  UARTSend((unsigned char *)ptr, len);
-  return len;
+	/* Wait until the Tx FIFO is no longer full */
+	while (UART_FR(uart) & UART_FR_TXFF);
+}
+
+
+
+void uart_send(uint32_t uart, uint16_t data)
+{
+	data &= 0xFF;
+	UART_DR(uart) = data;
+}
+
+void uart_send_blocking(uint32_t uart, uint16_t data)
+{
+	uart_wait_send_ready(uart);
+	uart_send(uart, data);
+}
+
+#define UART0				UART0_BASE
+#ifdef __GNUC__
+int _write(int file, char *ptr, int len)
+{
+    //(void) fd; 
+  //UARTSend((unsigned char *)ptr, len);
+  int i;
+
+	if (file == 1) {
+		for (i = 0; i < len; i++)
+			uart_send_blocking(UART0, ptr[i]);
+		return i;
+	}
+
+	errno = EIO;
+	return -1;
 }
 #endif
 
