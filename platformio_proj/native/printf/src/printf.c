@@ -176,7 +176,7 @@ int _write(int file, char *ptr, int len)
 	return -1;
 }
 #endif
-
+/*
 caddr_t _sbrk(int incr) 
 {
     return (caddr_t) 0;
@@ -202,7 +202,7 @@ int _read(int file, char *ptr, int len)
 { 
     return 0;
 }
-
+*/
 //*****************************************************************************
 //
 // This example demonstrates how to send a string of data to the UART.
@@ -272,11 +272,27 @@ main(void)
     UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
 
 
-    printf("helloworld.\r\n");
-    unsigned long freq=ROM_SysCtlClockGet();
+    printf("helloworld123.\r\n");
+    printf("Changing system clock to %iMHz\n\r",
+			       400 / 1.5);
+    //float test=124575567687655654.84454383838383838383;
+   // unsigned long freq=ROM_SysCtlClockGet();
+    while(1)
+    {
+        printf("helloworld.\r\n");
+        //printf("\r\n");
+        //printf("freq:%ldHz\r\n\r\n",freq);
+        //printf("freq:%dHz\r\n",freq);
+        //printf("float:%f\r\n",test);
+        //printf("\r\n");
+        //printf("helloworld.\r\n");
+        //printf("freq:%dHz\r\n\r\n",100);
+        ROM_SysCtlDelay(10000000);
+    }
+    //unsigned long freq=ROM_SysCtlClockGet();
     //printf("freq:%ldHz\r\n",freq);
     //printf("freq:%sHz\r\n","hello");
-    float test=124575567687655654.84454383838383838383;
+    
     //
     // Loop forever echoing data through the UART.
     //
@@ -287,8 +303,8 @@ main(void)
         //SysCtlDelay(2000000);
         //printf("\r\n");
         //printf("freq:%ldHz\r\n\r\n",freq);
-        printf("freq:%ldHz\r\n",freq);
-        printf("float:%f\r\n",test);
+        //printf("freq:%ldHz\r\n",freq);
+        //printf("float:%f\r\n",test);
         //printf("\r\n");
         //printf("helloworld.\r\n");
         //printf("freq:%dHz\r\n\r\n",100);
