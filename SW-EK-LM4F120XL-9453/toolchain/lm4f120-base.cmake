@@ -44,7 +44,7 @@ add_definitions("-DPART_${DEVICE}")
 add_definitions("-DPART_${DEVICE}=1")
 add_definitions("-DTARGET_IS_BLIZZARD_RA1")
 add_definitions("-Dgcc")
-set(COMMON_DEFINITIONS " -Wall -Wno-unused-parameter -mcpu=cortex-${CPU_TYPE} -mthumb  -ffunction-sections -fdata-sections  -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -pedantic ${OPTIONAL_DEBUG_SYMBOLS}")
+set(COMMON_DEFINITIONS " -Wall -Wno-unused-parameter -mcpu=cortex-${CPU_TYPE} -mthumb  -ffunction-sections -fdata-sections  -mfpu=fpv4-sp-d16 -mfloat-abi=hard -pedantic ${OPTIONAL_DEBUG_SYMBOLS}")
 set(DEPFLAGS "-MMD -MP")
 
 # Enable FLTO optimization if required
