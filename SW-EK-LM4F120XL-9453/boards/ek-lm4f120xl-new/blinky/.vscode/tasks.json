@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "make",
+            "command": "make clean;make VERBOSE=1 DEBUG=1",
             // "command": "cargo",
             "args": [
                 // "build",
