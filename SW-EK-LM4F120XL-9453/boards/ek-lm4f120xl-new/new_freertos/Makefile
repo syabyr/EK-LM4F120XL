@@ -99,6 +99,16 @@ ${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/GCC/t
 ${COMPILER}/lcdtest.axf: ${COMPILER}/src/main.o
 ${COMPILER}/lcdtest.axf: ${COMPILER}/src/msc_disk.o
 ${COMPILER}/lcdtest.axf: ${COMPILER}/src/usb_descriptors.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/src/freertos_hook.o
+
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
+${COMPILER}/lcdtest.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
 ${COMPILER}/lcdtest.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 #${COMPILER}/lcdtest.axf: ${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
@@ -106,7 +116,14 @@ SCATTERgcc_lcdtest=${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
 ENTRY_lcdtest=Reset_Handler
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM  -DCFG_TUSB_MCU=OPT_MCU_TM4C123
 
-CFLAGSgcc += -I${TINYUSB}/hw -I${TINYUSB}/src -I${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123/ -I./src
+CFLAGSgcc += -I${TINYUSB}/hw
+CFLAGSgcc += -I${TINYUSB}/src
+CFLAGSgcc += -I${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl
+CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123/
+CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
+CFLAGSgcc += -I./FreeRTOS-Kernel/include
+CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
+
 CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include
 
 LDFLAGSgcc =

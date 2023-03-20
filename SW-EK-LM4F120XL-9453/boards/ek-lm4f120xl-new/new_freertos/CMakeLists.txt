@@ -35,7 +35,7 @@ set(BASE_LOCATION ../../..)
 message ( STATUS "BASE_LOCATION = ${BASE_LOCATION}.")
 
 
-set(TINYUSB_LOCATION ../../tinyusb-lm4s)
+set(TINYUSB_LOCATION ../..//tinyusb-lm4s)
 
 
 set(BOARD EK-LM4F120X)
@@ -95,6 +95,9 @@ include_directories(${BASE_LOCATION})
 include_directories(${TINYUSB_LOCATION}/src)
 include_directories(${TINYUSB_LOCATION}/hw)
 include_directories(./src)
+include_directories(./src/FreeRTOSConfig)
+include_directories(${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/include)
+include_directories(${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F)
 include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Include/TM4C123/)
 include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include/)
 include_directories(${TINYUSB_LOCATION}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/)
@@ -104,6 +107,7 @@ add_definitions("-DTM4C123GH6PM")
 set(SOURCE_FILES  src/main.c
                   src/msc_disk.c
                   src/usb_descriptors.c
+                  src/freertos_hook.c
                   ${TINYUSB_LOCATION}/hw/bsp/tm4c123/family.c
                   ${TINYUSB_LOCATION}/hw/bsp/board.c
                   ${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c
@@ -125,7 +129,16 @@ set(SOURCE_FILES  src/main.c
                   ${TINYUSB_LOCATION}/src/class/video/video_device.c
                   ${TINYUSB_LOCATION}/src/class/vendor/vendor_device.c
                   ${TINYUSB_LOCATION}/src/portable/mentor/musb/dcd_musb.c
-                  ${TINYUSB_LOCATION}/src/portable/mentor/musb/hcd_musb.c)
+                  ${TINYUSB_LOCATION}/src/portable/mentor/musb/hcd_musb.c
+                  ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/list.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/queue.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/tasks.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/timers.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/croutine.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/event_groups.c
+                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/stream_buffer.c
+                  )
 
 
 
