@@ -28,7 +28,6 @@
 #include <string.h>
 
 #include "bsp/board.h"
-#include "tusb.h"
 
 
 #include "FreeRTOS.h"
@@ -37,11 +36,6 @@
 #include "task.h"
 #include "timers.h"
 
-// Increase stack size when debug log is enabled
-#define USBD_STACK_SIZE    (3*configMINIMAL_STACK_SIZE/2) * (CFG_TUSB_DEBUG ? 2 : 1)
-
-
-#define CDC_STACK_SZIE      configMINIMAL_STACK_SIZE
 
 //--------------------------------------------------------------------+
 // MACRO CONSTANT TYPEDEF PROTYPES
@@ -62,11 +56,8 @@ enum  {
 #if configSUPPORT_STATIC_ALLOCATION
 StaticTimer_t blinky_tmdef;
 StaticTimer_t blinky_tmdef2;
-StackType_t  usb_device_stack[USBD_STACK_SIZE];
-StaticTask_t usb_device_taskdef;
 
-StackType_t  cdc_stack[CDC_STACK_SZIE];
-StaticTask_t cdc_taskdef;
+
 #endif
 
 TimerHandle_t blinky_tm;
@@ -74,8 +65,7 @@ TimerHandle_t blinky_tm2;
 
 void led_blinky_cb(TimerHandle_t xTimer);
 void led2_blinky_cb(TimerHandle_t xTimer);
-void usb_device_task(void* param);
-void cdc_task(void* params);
+
 
 //--------------------------------------------------------------------+
 // Main
@@ -90,35 +80,22 @@ int main(void)
   blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), true, NULL, led_blinky_cb, &blinky_tmdef);
 
   blinky_tm2 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(BLINK_SUSPENDED), true, NULL, led2_blinky_cb, &blinky_tmdef2);
-  // Create a task for tinyusb device stack
-  xTaskCreateStatic(usb_device_task, "usbd", USBD_STACK_SIZE, NULL, configMAX_PRIORITIES-1, usb_device_stack, &usb_device_taskdef);
-
-  // Create CDC task
-  xTaskCreateStatic(cdc_task, "cdc", CDC_STACK_SZIE, NULL, configMAX_PRIORITIES-2, cdc_stack, &cdc_taskdef);
 #else
   blinky_tm = xTimerCreate(NULL, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), true, NULL, led_blinky_cb);
-  xTaskCreate( usb_device_task, "usbd", USBD_STACK_SIZE, NULL, configMAX_PRIORITIES-1, NULL);
-  xTaskCreate( cdc_task, "cdc", CDC_STACK_SZIE, NULL, configMAX_PRIORITIES-2, NULL);
 #endif
 
   xTimerStart(blinky_tm, 0);
   xTimerStart(blinky_tm2, 0);
 
 
-  // skip starting scheduler (and return) for ESP32-S2 or ESP32-S3
-#if !TU_CHECK_MCU(OPT_MCU_ESP32S2, OPT_MCU_ESP32S3)
+
   vTaskStartScheduler();
-#endif
+
 
   return 0;
 }
 
-#if TU_CHECK_MCU(OPT_MCU_ESP32S2, OPT_MCU_ESP32S3)
-void app_main(void)
-{
-  main();
-}
-#endif
+
 
 // USB Device Driver task
 // This top level thread process all usb events and invoke callbacks
@@ -129,16 +106,16 @@ void usb_device_task(void* param)
   // init device stack on configured roothub port
   // This should be called after scheduler/kernel is started.
   // Otherwise it could cause kernel issue since USB IRQ handler does use RTOS queue API.
-  tud_init(BOARD_TUD_RHPORT);
+  //tud_init(BOARD_TUD_RHPORT);
 
   // RTOS forever loop
   while (1)
   {
     // put this thread to waiting state until there is new events
-    tud_task();
+    //tud_task();
 
     // following code only run if tud_task() process at least 1 event
-    tud_cdc_write_flush();
+    //tud_cdc_write_flush();
   }
 }
 
@@ -173,65 +150,7 @@ void tud_resume_cb(void)
   xTimerChangePeriod(blinky_tm, pdMS_TO_TICKS(BLINK_MOUNTED), 0);
 }
 
-//--------------------------------------------------------------------+
-// USB CDC
-//--------------------------------------------------------------------+
-void cdc_task(void* params)
-{
-  (void) params;
 
-  // RTOS forever loop
-  while ( 1 )
-  {
-    // connected() check for DTR bit
-    // Most but not all terminal client set this when making connection
-    // if ( tud_cdc_connected() )
-    {
-      // There are data available
-      while ( tud_cdc_available() )
-      {
-        uint8_t buf[64];
-
-        // read and echo back
-        uint32_t count = tud_cdc_read(buf, sizeof(buf));
-        (void) count;
-
-        // Echo back
-        // Note: Skip echo by commenting out write() and write_flush()
-        // for throughput test e.g
-        //    $ dd if=/dev/zero of=/dev/ttyACM0 count=10000
-        tud_cdc_write(buf, count);
-      }
-
-      tud_cdc_write_flush();
-    }
-
-    // For ESP32-Sx this delay is essential to allow idle how to run and reset watchdog
-    vTaskDelay(1);
-  }
-}
-
-// Invoked when cdc when line state changed e.g connected/disconnected
-void tud_cdc_line_state_cb(uint8_t itf, bool dtr, bool rts)
-{
-  (void) itf;
-  (void) rts;
-
-  // TODO set some indicator
-  if ( dtr )
-  {
-    // Terminal connected
-  }else
-  {
-    // Terminal disconnected
-  }
-}
-
-// Invoked when CDC interface received data from host
-void tud_cdc_rx_cb(uint8_t itf)
-{
-  (void) itf;
-}
 
 //--------------------------------------------------------------------+
 // BLINKING TASK

@@ -43,24 +43,17 @@
  *----------------------------------------------------------*/
 
 // skip if included from IAR assembler
-#ifndef __IASMARM__
+
 
 // Include MCU header
 #include "bsp/board_mcu.h"
 
-#if CFG_TUSB_MCU == OPT_MCU_ESP32S2 || CFG_TUSB_MCU == OPT_MCU_ESP32S3
-  #error "ESP32-Sx should use IDF's FreeRTOSConfig.h"
-#endif
 
 // TODO fix later
-#if CFG_TUSB_MCU == OPT_MCU_MM32F327X
-  extern u32 SystemCoreClock;
-#else
+
   // FIXME cause redundant-decls warnings
   extern uint32_t SystemCoreClock;
-#endif
 
-#endif
 
 /* Cortex M23/M33 port configuration. */
 #define configENABLE_MPU								        0
