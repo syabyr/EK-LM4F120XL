@@ -29,65 +29,11 @@
 //--------------------------------------------------------------------+
 // newlib read()/write() retarget
 //--------------------------------------------------------------------+
-#ifdef __ICCARM__
-  #define sys_write   __write
-  #define sys_read    __read
-#elif defined(__MSP430__) || defined(__RX__)
-  #define sys_write   write
-  #define sys_read    read
-#else
+
   #define sys_write   _write
   #define sys_read    _read
-#endif
 
-#if defined(LOGGER_RTT)
-// Logging with RTT
 
-// If using SES IDE, use the Syscalls/SEGGER_RTT_Syscalls_SES.c instead
-#if !(defined __SES_ARM) && !(defined __SES_RISCV) && !(defined __CROSSWORKS_ARM)
-#include "SEGGER_RTT.h"
-
-TU_ATTR_USED int sys_write (int fhdl, const void *buf, size_t count)
-{
-  (void) fhdl;
-  SEGGER_RTT_Write(0, (const char*) buf, (int) count);
-  return count;
-}
-
-TU_ATTR_USED int sys_read (int fhdl, char *buf, size_t count)
-{
-  (void) fhdl;
-  int rd = (int) SEGGER_RTT_Read(0, buf, count);
-  return (rd > 0) ? rd : -1;
-}
-
-#endif
-
-#elif defined(LOGGER_SWO)
-// Logging with SWO for ARM Cortex
-
-#include "board_mcu.h"
-
- int sys_write (int fhdl, const void *buf, size_t count)
-{
-  (void) fhdl;
-  uint8_t const* buf8 = (uint8_t const*) buf;
-  for(size_t i=0; i<count; i++)
-  {
-    ITM_SendChar(buf8[i]);
-  }
-  return count;
-}
-
- int sys_read (int fhdl, char *buf, size_t count)
-{
-  (void) fhdl;
-  (void) buf;
-  (void) count;
-  return 0;
-}
-
-#else
 
 // Default logging with on-board UART
  int sys_write (int fhdl, const void *buf, size_t count)
@@ -102,8 +48,6 @@ TU_ATTR_USED int sys_read (int fhdl, char *buf, size_t count)
   int rd = board_uart_read((uint8_t*) buf, (int) count);
   return (rd > 0) ? rd : -1;
 }
-
-#endif
 
 int board_getchar(void)
 {

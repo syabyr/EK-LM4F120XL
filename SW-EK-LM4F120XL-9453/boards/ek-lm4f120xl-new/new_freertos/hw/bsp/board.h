@@ -38,7 +38,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "ansi_escape.h"
+//#include "ansi_escape.h"
 
 // Define the default baudrate
 #ifndef CFG_BOARD_UART_BAUDRATE

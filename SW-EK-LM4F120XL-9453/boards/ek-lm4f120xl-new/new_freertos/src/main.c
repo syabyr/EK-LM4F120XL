@@ -97,61 +97,6 @@ int main(void)
 
 
 
-// USB Device Driver task
-// This top level thread process all usb events and invoke callbacks
-void usb_device_task(void* param)
-{
-  (void) param;
-
-  // init device stack on configured roothub port
-  // This should be called after scheduler/kernel is started.
-  // Otherwise it could cause kernel issue since USB IRQ handler does use RTOS queue API.
-  //tud_init(BOARD_TUD_RHPORT);
-
-  // RTOS forever loop
-  while (1)
-  {
-    // put this thread to waiting state until there is new events
-    //tud_task();
-
-    // following code only run if tud_task() process at least 1 event
-    //tud_cdc_write_flush();
-  }
-}
-
-//--------------------------------------------------------------------+
-// Device callbacks
-//--------------------------------------------------------------------+
-
-// Invoked when device is mounted
-void tud_mount_cb(void)
-{
-  xTimerChangePeriod(blinky_tm, pdMS_TO_TICKS(BLINK_MOUNTED), 0);
-}
-
-// Invoked when device is unmounted
-void tud_umount_cb(void)
-{
-  xTimerChangePeriod(blinky_tm, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), 0);
-}
-
-// Invoked when usb bus is suspended
-// remote_wakeup_en : if host allow us  to perform remote wakeup
-// Within 7ms, device must draw an average of current less than 2.5 mA from bus
-void tud_suspend_cb(bool remote_wakeup_en)
-{
-  (void) remote_wakeup_en;
-  xTimerChangePeriod(blinky_tm, pdMS_TO_TICKS(BLINK_SUSPENDED), 0);
-}
-
-// Invoked when usb bus is resumed
-void tud_resume_cb(void)
-{
-  xTimerChangePeriod(blinky_tm, pdMS_TO_TICKS(BLINK_MOUNTED), 0);
-}
-
-
-
 //--------------------------------------------------------------------+
 // BLINKING TASK
 //--------------------------------------------------------------------+
