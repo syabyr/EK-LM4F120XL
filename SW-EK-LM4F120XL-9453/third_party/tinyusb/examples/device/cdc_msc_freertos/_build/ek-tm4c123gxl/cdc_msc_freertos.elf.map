@@ -1,0 +1,1584 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o) (_exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o (memcpy)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o (memmove)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o (strlen)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .text          0x0000000000000000       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x0000000000000000       0x7c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_cdc_rx_cb
+                0x0000000000000000        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._write   0x0000000000000000       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._read    0x0000000000000000        0x6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+ .debug_str     0x0000000000000000      0x1e0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+ .debug_str     0x0000000000000000      0x1db /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+ .debug_str     0x0000000000000000      0x1d7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+ .debug_str     0x0000000000000000      0x1da /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+ .debug_str     0x0000000000000000      0x1d7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+ .debug_str     0x0000000000000000      0x1d9 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+ .debug_str     0x0000000000000000      0x1dd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+ .debug_str     0x0000000000000000      0x1d7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+ .debug_str     0x0000000000000000      0x1dd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+ .debug_str     0x0000000000000000      0x1db /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+ .debug_str     0x0000000000000000      0x1dd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x0000000000000000       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0000000000000000        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .fini          0x0000000000000000        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+SRAM             0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                0x0000000020008000                _estack = 0x20008000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000001000                _Min_Stack_Size = 0x1000
+
+.text           0x0000000000000000     0x46e8
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.vectors)
+ .vectors       0x0000000000000000      0x26c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                0x0000000000000000                vectors
+ *(.text)
+ .text          0x000000000000026c       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+                0x000000000000026c                strlen
+ *(.text.*)
+ .text.update_free_block_list
+                0x000000000000027c       0x70 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.pipe_write_packet
+                0x00000000000002ec       0x3a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.pipe_read_packet
+                0x0000000000000326       0x3e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.pipe_read_write_packet_ff
+                0x0000000000000364       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.handle_xfer_in
+                0x00000000000003d0       0x9c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.getOscClk
+                0x000000000000046c       0x30 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.Default_Handler
+                0x000000000000049c        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x000000000000049e        0x2 
+ .text.prvIdleTask
+                0x00000000000004a0       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.led_blinky_cb
+                0x00000000000004c4       0x2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vListInitialise
+                0x00000000000004f0       0x16 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vListInsertEnd
+                0x0000000000000506       0x16 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vListInsert
+                0x000000000000051c       0x2e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x000000000000054a        0x2 
+ .text.vTaskSuspendAll
+                0x000000000000054c       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvResetNextTaskUnblockTime
+                0x000000000000055c       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTaskGetSchedulerState
+                0x0000000000000580       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvInsertTimerInActiveList
+                0x00000000000005a0       0x3c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvTaskExitError
+                0x00000000000005dc       0x4c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000000000628        0x8 
+ .text.SVC_Handler
+                0x0000000000000630       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvPortStartFirstTask
+                0x0000000000000654       0x28 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vPortEnterCritical
+                0x000000000000067c       0x48 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vPortExitCritical
+                0x00000000000006c4       0x38 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTaskCheckForTimeOut
+                0x00000000000006fc       0x54 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.PendSV_Handler
+                0x0000000000000750       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vPortEnableVFP
+                0x00000000000007b4       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.advance_index
+                0x00000000000007c8       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_count
+                0x00000000000007e0       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_remaining
+                0x0000000000000800       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_advance_write_pointer
+                0x0000000000000824       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_advance_read_pointer
+                0x0000000000000838       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_get_write_info
+                0x000000000000084c       0x60 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.get_driver
+                0x00000000000008ac       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.invoke_class_control
+                0x00000000000008ec       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.dcd_edpt_stall.constprop.0
+                0x00000000000008fc       0x80 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.usbd_edpt_stall.constprop.0
+                0x000000000000097c       0x34 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.fail_scsi_op.constprop.0.isra.0
+                0x00000000000009b0       0x4c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.uxListRemove.isra.0
+                0x00000000000009fc       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTaskIncrementTick
+                0x0000000000000a20      0x110 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTaskResumeAll
+                0x0000000000000b30       0xec /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.SysTick_Handler
+                0x0000000000000c1c       0x2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTaskRemoveFromEventList
+                0x0000000000000c48       0x88 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvUnlockQueue
+                0x0000000000000cd0       0x84 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x0000000000000d54       0x70 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vTaskPlaceOnEventList
+                0x0000000000000dc4       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xQueueSemaphoreTake.constprop.0.isra.0
+                0x0000000000000de4      0x2f0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xQueueGenericCreateStatic
+                0x00000000000010d4       0xc8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvCheckForValidListAndQueue
+                0x000000000000119c       0x7c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xQueueReceive
+                0x0000000000001218      0x170 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvCopyDataToQueue.constprop.0
+                0x0000000000001388       0xd0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xQueueGenericSend.constprop.0
+                0x0000000000001458      0x170 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.usbd_edpt_xfer.constprop.0
+                0x00000000000015c8      0x220 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.proc_write10_cmd.constprop.0.isra.0
+                0x00000000000017e8       0x60 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._status_stage_xact.isra.0
+                0x0000000000001848       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_control_status.isra.0
+                0x000000000000185c       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_get_read_info
+                0x0000000000001880       0x88 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xQueueCreateMutexStatic.constprop.0
+                0x0000000000001908       0x28 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.usbd_edpt_claim.constprop.0
+                0x0000000000001930       0x68 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._tu_fifo_read_n.constprop.0
+                0x0000000000001998       0xb2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000000001a4a        0x2 
+ .text.usbd_edpt_release.constprop.0.isra.0
+                0x0000000000001a4c       0x4c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_cdc_n_write_flush.constprop.0
+                0x0000000000001a98       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._prep_out_transaction.isra.0
+                0x0000000000001b04       0x3e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000000001b42        0x2 
+ .text.tu_fifo_config.part.0.constprop.0.isra.0
+                0x0000000000001b44       0x48 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_set_overwritable.isra.0
+                0x0000000000001b8c       0x3c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tu_fifo_clear.isra.0
+                0x0000000000001bc8       0x36 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000000001bfe        0x2 
+ .text.xQueueGenericSendFromISR.constprop.0
+                0x0000000000001c00      0x114 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTimerGenericCommand.constprop.0
+                0x0000000000001d14       0x48 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_umount_cb
+                0x0000000000001d5c       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_suspend_cb
+                0x0000000000001d6c       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_mount_cb
+                0x0000000000001d80       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvSwitchTimerLists
+                0x0000000000001d94       0x84 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.prvTimerTask
+                0x0000000000001e18      0x25c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.process_edpt_n.constprop.0
+                0x0000000000002074      0x154 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.USB0_Handler
+                0x00000000000021c8      0x3f4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._tu_fifo_write_n.part.0.constprop.0.isra.0
+                0x00000000000025bc      0x102 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x00000000000026be        0x2 
+ .text.cdcd_xfer_cb
+                0x00000000000026c0       0xe0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.cdc_task
+                0x00000000000027a0       0xa0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text._data_stage_xact.isra.0
+                0x0000000000002840       0x54 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.tud_control_xfer.isra.0
+                0x0000000000002894       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.cdcd_control_xfer_cb
+                0x00000000000028f8       0xa4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.mscd_control_xfer_cb
+                0x000000000000299c      0x114 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.configuration_reset
+                0x0000000000002ab0       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.usb_device_task
+                0x0000000000002b14      0x850 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.cdcd_init
+                0x0000000000003364       0x60 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.cdcd_reset
+                0x00000000000033c4       0x2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.mscd_init
+                0x00000000000033f0       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.mscd_reset
+                0x0000000000003400       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.xTaskCreateStatic.constprop.0
+                0x0000000000003410      0x1f0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.proc_read10_cmd.constprop.0
+                0x0000000000003600       0xc4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.mscd_xfer_cb
+                0x00000000000036c4      0x498 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.usbd_edpt_open.constprop.0
+                0x0000000000003b5c      0x1fc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.usbd_open_edpt_pair.constprop.0.isra.0
+                0x0000000000003d58       0x5a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000000003db2        0x2 
+ .text.cdcd_open
+                0x0000000000003db4       0x94 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.mscd_open
+                0x0000000000003e48       0x84 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .text.vTaskSwitchContext
+                0x0000000000003ecc       0xc8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                0x0000000000003ecc                vTaskSwitchContext
+ .text.startup.main
+                0x0000000000003f94      0x498 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                0x0000000000003f94                main
+ .text.Reset_Handler
+                0x000000000000442c       0xbc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                0x000000000000442c                Reset_Handler
+ .text.memset   0x00000000000044e8       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+                0x00000000000044e8                memset
+ .text.memcpy   0x00000000000044f8       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                0x00000000000044f8                memcpy
+ .text.memmove  0x0000000000004514       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+                0x0000000000004514                memmove
+ *(.init)
+ .init          0x0000000000004548        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000000004548                _init
+ *(.fini)
+ .fini          0x000000000000454c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000000454c                _fini
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.prvCheckForValidListAndQueue.str1.1
+                0x0000000000004550        0x5 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.mscd_xfer_cb.str1.1
+                0x0000000000004555       0x15 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.main.str1.1
+                0x000000000000456a       0x16 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x0000000000004580       0x34 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.CSWTCH.6
+                0x00000000000045b4       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.__compound_literal.0
+                0x0000000000004610        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000000004612        0x2 
+ .rodata._usbd_driver
+                0x0000000000004614       0x30 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.desc_device
+                0x0000000000004644       0x12 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.desc_fs_configuration
+                0x0000000000004656       0x62 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.ops.0  0x00000000000046b8       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .rodata.string_desc_arr
+                0x00000000000046d0       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                0x00000000000046e8                . = ALIGN (0x4)
+                0x00000000000046e8                __end_text = .
+
+.glue_7         0x00000000000046e8        0x0
+ .glue_7        0x00000000000046e8        0x0 linker stubs
+
+.glue_7t        0x00000000000046e8        0x0
+ .glue_7t       0x00000000000046e8        0x0 linker stubs
+
+.vfp11_veneer   0x00000000000046e8        0x0
+ .vfp11_veneer  0x00000000000046e8        0x0 linker stubs
+
+.v4_bx          0x00000000000046e8        0x0
+ .v4_bx         0x00000000000046e8        0x0 linker stubs
+
+.iplt           0x00000000000046e8        0x0
+ .iplt          0x00000000000046e8        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+
+.rel.dyn        0x00000000000046e8        0x0
+ .rel.iplt      0x00000000000046e8        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+
+.data           0x0000000020000000     0x2068 load address 0x00000000000046e8
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __start_data = .
+                0x00000000000046e8                __la_data = LOADADDR (.data)
+ *(.data)
+ *(.data.*)
+ .data.SystemCoreClock
+                0x0000000020000000        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .data._usbd_qdef
+                0x0000000020000004       0x58 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .data._usbd_rhport
+                0x000000002000005c        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .data.msc_disk
+                0x000000002000005d     0x2000 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x000000002000205d        0x3 
+ .data.uxCriticalNesting
+                0x0000000020002060        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .data.uxTopUsedPriority
+                0x0000000020002064        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                0x0000000020002068                . = ALIGN (0x4)
+                0x0000000020002068                __end_data = .
+
+.igot.plt       0x0000000020002068        0x0 load address 0x0000000000006750
+ .igot.plt      0x0000000020002068        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+
+.bss            0x0000000020002068     0x1434 load address 0x0000000000006750
+                0x0000000020002068                . = ALIGN (0x4)
+                0x0000000020002068                __start_bss = .
+                0x0000000020002068                __bss_start__ = __start_bss
+ *(.bss)
+ *(.bss.*)
+ .bss._app_driver
+                0x0000000020002068        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._app_driver_count
+                0x000000002000206c        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x000000002000206d        0x3 
+ .bss._cdcd_itf
+                0x0000000020002070      0x1d8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._ctrl_xfer
+                0x0000000020002248       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._dcd      0x000000002000225c       0x88 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._desc_str
+                0x00000000200022e4       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._mscd_buf
+                0x0000000020002324      0x200 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._mscd_itf
+                0x0000000020002524       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._ubsd_mutexdef
+                0x0000000020002564       0x50 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._usbd_ctrl_buf
+                0x00000000200025b4       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._usbd_dev
+                0x00000000200025f4       0x33 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000020002627        0x1 
+ .bss._usbd_mutex
+                0x0000000020002628        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._usbd_q   0x000000002000262c        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss._usbd_qdef_buf
+                0x0000000020002630       0xc0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.blinky_tm
+                0x00000000200026f0        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.blinky_tmdef
+                0x00000000200026f4       0x2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.cdc_stack
+                0x0000000020002720      0x200 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.cdc_taskdef
+                0x0000000020002920       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.led_state.0
+                0x000000002000297c        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x000000002000297d        0x3 
+ .bss.pxCurrentTCB
+                0x0000000020002980        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.pxCurrentTimerList
+                0x0000000020002984        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.pxDelayedTaskList
+                0x0000000020002988        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.pxOverflowDelayedTaskList
+                0x000000002000298c        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.pxOverflowTimerList
+                0x0000000020002990        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.pxReadyTasksLists
+                0x0000000020002994       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.ucMaxSysCallPriority
+                0x00000000200029f8        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.ucStaticTimerQueueStorage.1
+                0x00000000200029f9      0x180 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *fill*         0x0000000020002b79        0x3 
+ .bss.ulMaxPRIGROUPValue
+                0x0000000020002b7c        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.usb_device_stack
+                0x0000000020002b80      0x300 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.usb_device_taskdef
+                0x0000000020002e80       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.uxCurrentNumberOfTasks
+                0x0000000020002edc        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.uxIdleTaskStack.2
+                0x0000000020002ee0      0x200 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.uxSchedulerSuspended
+                0x00000000200030e0        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.uxTaskNumber
+                0x00000000200030e4        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.uxTimerTaskStack.0
+                0x00000000200030e8      0x200 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.uxTopReadyPriority
+                0x00000000200032e8        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xActiveTimerList1
+                0x00000000200032ec       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xActiveTimerList2
+                0x0000000020003300       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xDelayedTaskList1
+                0x0000000020003314       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xDelayedTaskList2
+                0x0000000020003328       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xIdleTaskTCB.3
+                0x000000002000333c       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xLastTime.2
+                0x0000000020003398        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xNextTaskUnblockTime
+                0x000000002000339c        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xNumOfOverflows
+                0x00000000200033a0        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xPendedTicks
+                0x00000000200033a4        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xPendingReadyList
+                0x00000000200033a8       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xQueueRegistry
+                0x00000000200033bc       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xSchedulerRunning
+                0x00000000200033cc        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xStaticTimerQueue.0
+                0x00000000200033d0       0x50 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xSuspendedTaskList
+                0x0000000020003420       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xTickCount
+                0x0000000020003434        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xTimerQueue
+                0x0000000020003438        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xTimerTaskTCB.1
+                0x000000002000343c       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .bss.xYieldPending
+                0x0000000020003498        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ *(.COMMON)
+                0x000000002000349c                __end_bss = .
+                0x000000002000349c                . = ALIGN (0x4)
+
+._user_heap_stack
+                0x000000002000349c     0x1004 load address 0x0000000000007b84
+                0x00000000200034a0                . = ALIGN (0x8)
+ *fill*         0x000000002000349c        0x4 
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x00000000200034a0                . = (. + _Min_Heap_Size)
+                0x00000000200044a0                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000200034a0     0x1000 
+                0x00000000200044a0                . = ALIGN (0x8)
+LOAD _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+LOAD _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/hcd_musb.o
+LOAD _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o
+LOAD _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o
+LOAD _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o
+LOAD _build/ek-tm4c123gxl/obj/hw/bsp/board.o
+LOAD _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o
+LOAD _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o
+LOAD _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o
+LOAD _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o
+LOAD _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o
+LOAD _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o
+LOAD _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o
+LOAD _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o
+LOAD _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+LOAD _build/ek-tm4c123gxl/obj/src/tusb.o
+LOAD _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o
+LOAD _build/ek-tm4c123gxl/obj/src/device/usbd.o
+LOAD _build/ek-tm4c123gxl/obj/src/device/usbd_control.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/audio/audio_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_rt_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/hid/hid_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/midi/midi_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/net/ecm_rndis_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/net/ncm_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/usbtmc/usbtmc_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/video/video_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/vendor/vendor_device.o
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(_build/ek-tm4c123gxl/cdc_msc_freertos.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x32 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000000000000050       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000084       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000000b8       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000000000ec       0x17 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                         0x4a (size before relaxing)
+
+.debug_info     0x0000000000000000    0x1a56c
+ .debug_info    0x0000000000000000     0x9ebe /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .debug_info    0x0000000000009ebe     0x2b49 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+                0x0000000000009ebe                dcd_musb.c.7921dea8
+ .debug_info    0x000000000000ca07      0xedb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+                0x000000000000ca07                system_TM4C123.c.9560e255
+ .debug_info    0x000000000000d8e2      0x2e8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+                0x000000000000d8e2                tm4c123_startup.c.4ec88adc
+ .debug_info    0x000000000000dbca     0x16f6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+                0x000000000000dbca                family.c.87f52632
+ .debug_info    0x000000000000f2c0      0x13a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+                0x000000000000f2c0                board.c.0f8aa6ad
+ .debug_info    0x000000000000f3fa      0x345 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+                0x000000000000f3fa                freertos_hook.c.c378871d
+ .debug_info    0x000000000000f73f      0x4cb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+                0x000000000000f73f                main.c.3ca53e89
+ .debug_info    0x000000000000fc0a      0x3e6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+                0x000000000000fc0a                msc_disk.c.99f35517
+ .debug_info    0x000000000000fff0      0x5c1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+                0x000000000000fff0                usb_descriptors.c.f71b6724
+ .debug_info    0x00000000000105b1      0x272 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+                0x00000000000105b1                list.c.350b211c
+ .debug_info    0x0000000000010823     0x12c3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+                0x0000000000010823                queue.c.d5f6ae8f
+ .debug_info    0x0000000000011ae6     0x182d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+                0x0000000000011ae6                tasks.c.486cb11a
+ .debug_info    0x0000000000013313      0xe19 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+                0x0000000000013313                timers.c.d4b80967
+ .debug_info    0x000000000001412c      0x34c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+                0x000000000001412c                port.c.7861be28
+ .debug_info    0x0000000000014478      0xdb2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+                0x0000000000014478                tusb.c.60258aba
+ .debug_info    0x000000000001522a      0xd69 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+                0x000000000001522a                tusb_fifo.c.d34fb2f8
+ .debug_info    0x0000000000015f93     0x1ba3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+                0x0000000000015f93                usbd.c.7825cdec
+ .debug_info    0x0000000000017b36      0x54a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+                0x0000000000017b36                usbd_control.c.bd761ae3
+ .debug_info    0x0000000000018080      0xf5b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+                0x0000000000018080                cdc_device.c.9f6a3a4b
+ .debug_info    0x0000000000018fdb     0x1591 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+                0x0000000000018fdb                msc_device.c.b8c17e11
+
+.debug_abbrev   0x0000000000000000     0x275a
+ .debug_abbrev  0x0000000000000000      0x356 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000356      0x327 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+ .debug_abbrev  0x000000000000067d      0x137 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+ .debug_abbrev  0x00000000000007b4      0x109 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+ .debug_abbrev  0x00000000000008bd      0x245 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+ .debug_abbrev  0x0000000000000b02       0x85 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+ .debug_abbrev  0x0000000000000b87       0xdd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+ .debug_abbrev  0x0000000000000c64      0x187 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+ .debug_abbrev  0x0000000000000deb      0x106 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+ .debug_abbrev  0x0000000000000ef1      0x10d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+ .debug_abbrev  0x0000000000000ffe       0xcc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+ .debug_abbrev  0x00000000000010ca      0x20b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+ .debug_abbrev  0x00000000000012d5      0x1fe /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+ .debug_abbrev  0x00000000000014d3      0x1e1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+ .debug_abbrev  0x00000000000016b4      0x14e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+ .debug_abbrev  0x0000000000001802      0x2a0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+ .debug_abbrev  0x0000000000001aa2      0x1d7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+ .debug_abbrev  0x0000000000001c79      0x301 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+ .debug_abbrev  0x0000000000001f7a      0x1ef /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+ .debug_abbrev  0x0000000000002169      0x2c8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+ .debug_abbrev  0x0000000000002431      0x329 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+
+.debug_loc      0x0000000000000000     0xaa4d
+ .debug_loc     0x0000000000000000     0xaa4d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x328
+ .debug_aranges
+                0x0000000000000000      0x328 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x1f08
+ .debug_ranges  0x0000000000000000     0x1f08 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x9bd6
+ .debug_line    0x0000000000000000     0x60e9 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .debug_line    0x00000000000060e9      0x50e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+ .debug_line    0x00000000000065f7      0x2b0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+ .debug_line    0x00000000000068a7      0x20d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+ .debug_line    0x0000000000006ab4      0x287 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+ .debug_line    0x0000000000006d3b      0x1b6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+ .debug_line    0x0000000000006ef1      0x29d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+ .debug_line    0x000000000000718e      0x391 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+ .debug_line    0x000000000000751f      0x1e5 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+ .debug_line    0x0000000000007704      0x2d8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+ .debug_line    0x00000000000079dc      0x275 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+ .debug_line    0x0000000000007c51      0x2ff /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+ .debug_line    0x0000000000007f50      0x302 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+ .debug_line    0x0000000000008252      0x31a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+ .debug_line    0x000000000000856c      0x29e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+ .debug_line    0x000000000000880a      0x3a3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+ .debug_line    0x0000000000008bad      0x317 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+ .debug_line    0x0000000000008ec4      0x3cb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+ .debug_line    0x000000000000928f      0x258 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+ .debug_line    0x00000000000094e7      0x41c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+ .debug_line    0x0000000000009903      0x2d3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+
+.debug_str      0x0000000000000000     0x7a0c
+ .debug_str     0x0000000000000000      0x3ba /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                        0x3d0 (size before relaxing)
+ .debug_str     0x00000000000003ba     0x191c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+                                       0x1b88 (size before relaxing)
+ .debug_str     0x0000000000001cd6      0x4ef /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+                                        0x8fa (size before relaxing)
+ .debug_str     0x00000000000021c5       0xeb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+                                        0x352 (size before relaxing)
+ .debug_str     0x00000000000022b0      0x1e0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+                                        0xec5 (size before relaxing)
+ .debug_str     0x0000000000002490       0x86 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+                                        0x2a5 (size before relaxing)
+ .debug_str     0x0000000000002516      0x2d9 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+                                        0x508 (size before relaxing)
+ .debug_str     0x00000000000027ef      0x26f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+                                        0x585 (size before relaxing)
+ .debug_str     0x0000000000002a5e      0x2ef /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+                                        0x554 (size before relaxing)
+ .debug_str     0x0000000000002d4d      0xd7b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+                                       0x1004 (size before relaxing)
+ .debug_str     0x0000000000003ac8      0x17f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+                                        0x3bf (size before relaxing)
+ .debug_str     0x0000000000003c47      0x77e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+                                        0xb53 (size before relaxing)
+ .debug_str     0x00000000000043c5      0xc7f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+                                       0x11e4 (size before relaxing)
+ .debug_str     0x0000000000005044      0x4f3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+                                        0xac0 (size before relaxing)
+ .debug_str     0x0000000000005537      0x256 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+                                        0x517 (size before relaxing)
+ .debug_str     0x000000000000578d      0x47b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+                                        0xc12 (size before relaxing)
+ .debug_str     0x0000000000005c08      0x41a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+                                        0x812 (size before relaxing)
+ .debug_str     0x0000000000006022      0x92e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+                                       0x145d (size before relaxing)
+ .debug_str     0x0000000000006950      0x1c1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+                                        0x5c9 (size before relaxing)
+ .debug_str     0x0000000000006b11      0x73e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+                                       0x14ed (size before relaxing)
+ .debug_str     0x000000000000724f      0x7bd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+                                       0x1566 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0xb68
+ .debug_frame   0x0000000000000000      0xaf8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+ .debug_frame   0x0000000000000af8       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000b18       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000b40       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC0SS0_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC0SS1_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC0SS2_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC0SS3_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS0_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS1_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS2_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS3_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+BusFault_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+CAN0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+CAN1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+CAN2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+COMP0_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+COMP1_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+COMP2_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+DebugMon_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+Default_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+FLASH_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+FPU_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOA_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOB_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOC_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOD_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOE_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOF_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOG_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOH_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOJ_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOK_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOL_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOM_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPION_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP4_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP5_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP6_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP7_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ4_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ5_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ6_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ7_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOR_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOS_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+HIB_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+HardFault_Handler                                 _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C3_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C4_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C5_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+MemManage_Handler                                 _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+NMI_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PMW0_FAULT_Handler                                _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PMW1_0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_FAULT_Handle                                 _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PendSV_Handler                                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+QEI0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+QEI1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+QEI2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+Reset_Handler                                     /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI3_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SVC_Handler                                       _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SYSCTL_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SysTick_Handler                                   _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SystemCoreClock                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+SystemCoreClockUpdate                             _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+SystemInit                                        _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER0A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER0B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER1A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER1B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER2A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER2B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER3A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER3B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER4A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER4B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER5A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER5B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART0_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART1_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART2_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART3_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART4_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART5_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART6_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART7_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UDMAERR_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UDMA_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+USB0_Handler                                      _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UsageFault_Handler                                _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WDT0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER0A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER0B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER1A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER1B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER2A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER2B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER3A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER3B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER4A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER4B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER5A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER5B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+__bss_end__                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__bss_start__                                     /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__call_exitprocs                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+__deregister_frame_info                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__dso_handle                                      /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__end_bss                                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+__end_data                                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+__init_array_end                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__init_array_start                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__la_data                                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+__libc_fini_array                                 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__libc_init_array                                 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__preinit_array_end                               /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__preinit_array_start                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__register_frame_info                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__sf_fake_stderr                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+__stack                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__start_bss                                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+__start_data                                      /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+_exit                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+_fini                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+_global_impure_ptr                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+_impure_ptr                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+_init                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+_mainCRTStartup                                   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_read                                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+_stack_init                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_start                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_usbd_qdef                                        _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+_write                                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+atexit                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+audio_device.c.b3f193e8                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMqEQyq.debug.temp.o
+blinky_tm                                         _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+blinky_tmdef                                      _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+board.c.0f8aa6ad                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWdhd4n.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+board_button_read                                 _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+board_getchar                                     _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+board_init                                        _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+board_led_write                                   _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+board_uart_read                                   _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+board_uart_write                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+cdc_device.c.9f6a3a4b                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccB8xaz0.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+cdc_stack                                         _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+cdc_task                                          _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+cdc_taskdef                                       _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+cdcd_control_xfer_cb                              _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_init                                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_open                                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_reset                                        _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_xfer_cb                                      _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_connect                                       _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_disconnect                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt0_status_complete                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+dcd_edpt_clear_stall                              _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_close                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_close_all                                _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_iso_activate                             _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_iso_alloc                                _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_open                                     _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_stall                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_xfer                                     _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_xfer_fifo                                _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_event_handler                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+dcd_init                                          _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_int_disable                                   _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_int_enable                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_int_handler                                   _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+dcd_musb.c.7921dea8                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccAeBAet.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+dcd_remote_wakeup                                 _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_set_address                                   _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_sof_enable                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+desc_device                                       _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o (symbol from plugin)
+desc_fs_configuration                             _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o (symbol from plugin)
+dfu_device.c.21204be7                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOd7x9M.debug.temp.o
+dfu_rt_device.c.a39e0277                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwEjLxN.debug.temp.o
+eTaskGetState                                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+ecm_rndis_device.c.ec5e44a4                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccu8AYiL.debug.temp.o
+exit                                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+family.c.87f52632                                 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7Ms7TU.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+freertos_hook.c.c378871d                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccm6Ebmu.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+hardware_init_hook                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+hcd_musb.c.3f512101                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cccWOa4M.debug.temp.o
+hid_device.c.2295122c                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccoGh9TJ.debug.temp.o
+led_blinky_cb                                     _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+list.c.350b211c                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJMbIwx.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+main                                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+main.c.3ca53e89                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJecjkE.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+memcpy                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+memmove                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+memset                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+midi_device.c.1e556e4d                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLpknEz.debug.temp.o
+msc_device.c.b8c17e11                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccwRIdTv.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+msc_disk                                          _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+msc_disk.c.99f35517                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0O79cN.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+mscd_control_xfer_cb                              _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+mscd_init                                         _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+mscd_open                                         _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+mscd_reset                                        _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+mscd_xfer_cb                                      _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+ncm_device.c.b1b1320a                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmRwGWC.debug.temp.o
+pcQueueGetName                                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+pcTaskGetName                                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+pcTimerGetName                                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+port.c.7861be28                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMq8DS.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+pvTaskIncrementMutexHeldCount                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+pvTimerGetTimerID                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+pxCurrentTCB                                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+pxPortInitialiseStack                             _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+queue.c.d5f6ae8f                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxHDRTY.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+rdwr10_validate_cmd                               _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+software_init_hook                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+string_desc_arr                                   _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o (symbol from plugin)
+strlen                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+system_TM4C123.c.9560e255                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsHfc8a.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+tasks.c.486cb11a                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJOmMny.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+timers.c.d4b80967                                 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjHyc4Z.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+tm4c123_startup.c.4ec88adc                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc3tMBG3.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+tu_desc_find                                      _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_desc_find2                                     _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_desc_find3                                     _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_desc_get_interface_total_len                   _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_bind_driver                               _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_edpt_claim                                     _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_edpt_release                                   _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_edpt_stream_init                               _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_read                               _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_read_xfer                          _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_write                              _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_write_xfer                         _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_write_zlp_if_needed                _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_validate                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_fifo_advance_read_pointer                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_advance_write_pointer                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_clear                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tu_fifo_config                                    _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_correct_read_pointer                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_count                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_empty                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tu_fifo_full                                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_get_read_info                             _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_get_write_info                            _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_overflowed                                _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_peek                                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tu_fifo_peek_n                                    _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_read                                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_read_n                                    _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_read_n_const_addr_full_words              _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_remaining                                 _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_set_overwritable                          _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tu_fifo_write                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_write_n                                   _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_write_n_const_addr_full_words             _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tud_cdc_line_coding_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_line_state_cb                             _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_available                               _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+tud_cdc_n_connected                               _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_get_line_coding                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_get_line_state                          _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_peek                                    _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_read                                    _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+tud_cdc_n_read_flush                              _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_set_wanted_char                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_write                                   _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+tud_cdc_n_write_available                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_write_clear                             _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_write_flush                             _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+tud_cdc_rx_cb                                     _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_rx_wanted_cb                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_send_break_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_tx_complete_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_connect                                       _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_connected                                     _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_control_status                                _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_control_xfer                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_bos_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_configuration_cb                   _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_device_cb                          _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_device_qualifier_cb                /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_other_speed_configuration_cb       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_string_cb                          _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_disconnect                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_init                                          _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+tud_inited                                        _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tud_mount_cb                                      _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_mounted                                       _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_msc_capacity_cb                               _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_get_maxlun_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_inquiry_cb                                _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_is_writable_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_read10_cb                                 _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_read10_complete_cb                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_request_sense_cb                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_scsi_cb                                   _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_scsi_complete_cb                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_set_sense                                 _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+tud_msc_start_stop_cb                             _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_test_unit_ready_cb                        _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_write10_cb                                _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_msc_write10_complete_cb                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+tud_remote_wakeup                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_resume_cb                                     _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_speed_get                                     _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_suspend_cb                                    _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_suspended                                     _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_task_event_ready                              _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_task_ext                                      _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+tud_umount_cb                                     _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_vendor_control_xfer_cb                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tusb.c.60258aba                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccUyzljs.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+tusb_fifo.c.d34fb2f8                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyXpCCl.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+tusb_init                                         _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tusb_inited                                       _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+ucQueueGetQueueType                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+ulTaskGenericNotifyTake                           _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+ulTaskGenericNotifyValueClear                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+usb_descriptors.c.f71b6724                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLEb618.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+usb_device_stack                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+usb_device_task                                   _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+usb_device_taskdef                                _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+usbd.c.7825cdec                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccY3I6Ad.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+usbd_app_driver_get_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control.c.bd761ae3                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccExlcAH.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+usbd_control_reset                                _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control_set_complete_callback                _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control_set_request                          _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control_xfer_cb                              _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_defer_func                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_busy                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+usbd_edpt_claim                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+usbd_edpt_clear_stall                             _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_close                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_iso_activate                            _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_iso_alloc                               _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_open                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+usbd_edpt_release                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+usbd_edpt_stall                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+usbd_edpt_stalled                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+usbd_edpt_xfer                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+usbd_edpt_xfer_fifo                               _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_int_set                                      _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_open_edpt_pair                               _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+usbd_sof_enable                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbtmc_device.c.45baf44e                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccy5OKTG.debug.temp.o
+uxListRemove                                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+uxQueueGetQueueNumber                             _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+uxQueueMessagesWaiting                            _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+uxQueueMessagesWaitingFromISR                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+uxQueueSpacesAvailable                            _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+uxTaskGetNumberOfTasks                            _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+uxTaskGetSystemState                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+uxTaskGetTaskNumber                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+uxTaskResetEventItemValue                         _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+uxTimerGetReloadMode                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+uxTimerGetTimerNumber                             _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+uxTopUsedPriority                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vApplicationGetIdleTaskMemory                     _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vApplicationGetTimerTaskMemory                    _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+vApplicationMallocFailedHook                      _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o (symbol from plugin)
+vApplicationStackOverflowHook                     _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vListInitialise                                   _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vListInitialiseItem                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vListInsert                                       _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vListInsertEnd                                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vPortEndScheduler                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vPortEnterCritical                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vPortExitCritical                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vPortSetupTimerInterrupt                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+vPortValidateInterruptPriority                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vQueueAddToRegistry                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+vQueueDelete                                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vQueueSetQueueNumber                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vQueueUnregisterQueue                             _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vQueueWaitForMessageRestricted                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+vTaskDelay                                        _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+vTaskEndScheduler                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskGenericNotifyGiveFromISR                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskGetInfo                                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskInternalSetTimeOutState                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vTaskMissedYield                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vTaskPlaceOnEventList                             _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vTaskPlaceOnEventListRestricted                   _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vTaskPlaceOnUnorderedEventList                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskPriorityDisinheritAfterTimeout               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vTaskRemoveFromUnorderedEventList                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskResume                                       _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskSetTaskNumber                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskSetTimeOutState                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskStartScheduler                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+vTaskSuspend                                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+vTaskSuspendAll                                   _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+vTaskSwitchContext                                /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+vTimerSetReloadMode                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+vTimerSetTimerID                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+vTimerSetTimerNumber                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+vectors                                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_msc_freertos.elf.wuZ0AE.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+vendor_device.c.a5e713f1                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNTMgb.debug.temp.o
+video_device.c.728a5ac6                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchKbMdc.debug.temp.o
+xPortStartScheduler                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xQueueCreateCountingSemaphoreStatic               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueCreateMutexStatic                           _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+xQueueGenericCreateStatic                         _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xQueueGenericReset                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueGenericSend                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xQueueGenericSendFromISR                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xQueueGiveFromISR                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueGiveMutexRecursive                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueIsQueueEmptyFromISR                         _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueIsQueueFullFromISR                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueuePeek                                        _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueuePeekFromISR                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueReceive                                     _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xQueueReceiveFromISR                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueRegistry                                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xQueueSemaphoreTake                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+xQueueTakeMutexRecursive                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskCatchUpTicks                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskCheckForTimeOut                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskCreateStatic                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+xTaskDelayUntil                                   _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskGenericNotify                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskGenericNotifyFromISR                         _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskGenericNotifyStateClear                      _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskGenericNotifyWait                            _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskGetCurrentTaskHandle                         _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskGetSchedulerState                            _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskGetTickCount                                 _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+xTaskGetTickCountFromISR                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTaskIncrementTick                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o (symbol from plugin)
+xTaskPriorityDisinherit                           _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskPriorityInherit                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskRemoveFromEventList                          _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskResumeAll                                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o (symbol from plugin)
+xTaskResumeFromISR                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTimerCreateStatic                                _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+xTimerCreateTimerTask                             _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o (symbol from plugin)
+xTimerGenericCommand                              _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o (symbol from plugin)
+xTimerGetExpiryTime                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xTimerGetPeriod                                   _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xTimerGetTimerDaemonTaskHandle                    _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)
+xTimerIsTimerActive                               _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o (symbol from plugin)

@@ -1,0 +1,143 @@
+
+
+cmake_minimum_required(VERSION 3.5)
+
+if(NOT COMPILER_PREFIX)
+    set(CMAKE_C_COMPILER arm-none-eabi-gcc)
+    set(CMAKE_AR arm-none-eabi-ar)
+else ()
+    set(CMAKE_C_${COMPILER_PREFIX}/COMPILER arm-none-eabi-gcc)
+    set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
+endif ()
+
+
+# Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
+#set(CMAKE_BUILD_TYPE DEBUG)
+
+
+# Set build
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif ()
+message ( STATUS "BUILD_TYPE = ${CMAKE_BUILD_TYPE}.")
+
+set(BASE_LOCATION ../../../)
+message ( STATUS "BASE_LOCATION = ${BASE_LOCATION}.")
+
+
+
+set(BOARD EK-LM4F120X)
+
+# Set device
+if (BOARD STREQUAL "EK-LM4F120X" )
+    set(DEVICE "LM4F120H5QR")
+    set(JLINK_TYPE "LM4F120H5QR")
+elseif (BOARD STREQUAL "EK-MSP432P401R")
+    set(DEVICE "MSP432P401R")
+    set(JLINK_TYPE "MSP432P401R")
+else ()
+    message("Unknown Board type:${BOARD}")
+    exit()
+endif ()
+
+message("jlinkdevice: ${JLINK_TYPE}")
+
+# Set the compiler (must be prior to project setup)
+include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
+
+##### Project Setup #####
+
+# Configure project and languages
+project(fulltest C CXX ASM)
+
+# Set device
+if (NOT DEVICE)
+    set(DEVICE LM4F120H5QR)
+endif ()
+
+set(CPU_TYPE "m4")
+
+
+
+
+##### Modules #####
+
+# Libraries can be added to the LIBS variable
+# or manually included here.
+
+# Add base libs (emlib, CMSIS, device files)
+include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
+
+#add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
+
+
+set(LINKER_SCRIPT "${BASE_LOCATION}..//hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld")
+
+# This is normally set in lm4f120-base.cmake, but libraries may modify it so set
+# it after libraries/subdirectories have been added
+#set(CMAKE_EXE_LINKER_FLAGS "${COMMON_DEFINITIONS} -T${LINKER_SCRIPT} -Wl,-Map=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}.map -Wl,--gc-sections -Wl,-v --entry Reset_Handler -u _printf_float")
+#set(CMAKE_EXE_LINKER_FLAGS "${COMMON_DEFINITIONS} -T${LINKER_SCRIPT} -Wl,-Map=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}.map -Wl,--gc-sections")
+set(CMAKE_EXE_LINKER_FLAGS "-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//CMSIS/5.7.0/CMSIS/Include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123 -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123 -Isrc -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld -specs=nosys.specs -specs=nano.specs")
+##### Header & Source Files #####
+
+include_directories(${BASE_LOCATION})
+
+include_directories(${BASE_LOCATION}/src)
+include_directories(${BASE_LOCATION}/hw)
+include_directories(./src)
+include_directories(${BASE_LOCATION}/hw/mcu/ti/tm4c123xx/Include/TM4C123/)
+include_directories(${BASE_LOCATION}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include/)
+include_directories(${BASE_LOCATION}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/)
+
+add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
+add_definitions("-DTM4C123GH6PM")
+#add_definitions("-DPART_LM4F120H5QR")
+#add_definitions("-uvectors -flto -mabi=aapcs -mfloat-abi=hard -Wno-error=strict-prototypes -Wno-error=cast-qual -ggdb  -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls")
+add_definitions("-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD")
+
+set(SOURCE_FILES  src/main.c
+                  src/msc_disk.c
+                  src/usb_descriptors.c
+                  ${BASE_LOCATION}/hw/bsp/tm4c123/family.c
+                  ${BASE_LOCATION}/hw/bsp/board.c
+                  ${BASE_LOCATION}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c
+                  ${BASE_LOCATION}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c
+                  ${BASE_LOCATION}/src/tusb.c
+                  ${BASE_LOCATION}/src/common/tusb_fifo.c
+                  ${BASE_LOCATION}/src/device/usbd.c
+                  ${BASE_LOCATION}/src/device/usbd_control.c
+                  ${BASE_LOCATION}/src/class/audio/audio_device.c
+                  ${BASE_LOCATION}/src/class/cdc/cdc_device.c
+                  ${BASE_LOCATION}/src/class/dfu/dfu_device.c
+                  ${BASE_LOCATION}/src/class/dfu/dfu_rt_device.c
+                  ${BASE_LOCATION}/src/class/hid/hid_device.c
+                  ${BASE_LOCATION}/src/class/midi/midi_device.c
+                  ${BASE_LOCATION}/src/class/msc/msc_device.c
+                  ${BASE_LOCATION}/src/class/net/ecm_rndis_device.c
+                  ${BASE_LOCATION}/src/class/net/ncm_device.c
+                  ${BASE_LOCATION}/src/class/usbtmc/usbtmc_device.c
+                  ${BASE_LOCATION}/src/class/video/video_device.c
+                  ${BASE_LOCATION}/src/class/vendor/vendor_device.c
+                  ${BASE_LOCATION}/src/portable/mentor/musb/dcd_musb.c
+                  ${BASE_LOCATION}/src/portable/mentor/musb/hcd_musb.c)
+
+
+
+# Generate executable and link
+add_executable(${PROJECT_NAME}
+	${SOURCE_FILES})
+
+
+
+# Add post build commands
+include(${BASE_LOCATION}/toolchain/post-build.cmake)
+
+# Add lm4flash commands
+include(${BASE_LOCATION}/toolchain/lm4flash.cmake)
+
+##### CMake debug prints #####
+if (CMAKE_VERBOSE_MAKEFILE)
+    print_debug_info()
+endif()

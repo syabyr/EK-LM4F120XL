@@ -32,28 +32,32 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
+PWD := $(shell pwd)/
 #
 # The base directory for StellarisWare.
 #
-ROOT=../../..
+ROOT := ${PWD}/../../../
 
-TINYUSB=../../tinyusb-lm4s
+TINYUSB=${ROOT}/third_party/tinyusb
 
 #
 # Include the common make definitions.
 #
 include ./makedefs
 
+
+PROJ=cdc_msc
+
 #
 # Where to find header files that do not live in the source directory.
 #
-IPATH=../../..
+IPATH=${ROOT}
 
 #
 # The default rule, which causes the lcdtest example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/lcdtest.axf
+all: ${COMPILER}/${PROJ}.axf
 
 #
 # The rule to clean out all the build products.
@@ -62,7 +66,7 @@ clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
 flash:
-	lm4flash ${COMPILER}/lcdtest.bin
+	lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
@@ -73,37 +77,37 @@ ${COMPILER}:
 # Rules for building the lcdtest example.
 #
 
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/tusb.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/common/tusb_fifo.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/device/usbd.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/device/usbd_control.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/audio/audio_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/cdc/cdc_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/dfu/dfu_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/dfu/dfu_rt_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/hid/hid_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/midi/midi_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/msc/msc_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/net/ecm_rndis_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/net/ncm_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/usbtmc/usbtmc_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/video/video_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/class/vendor/vendor_device.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/dcd_musb.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/hcd_musb.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/hw/bsp/tm4c123/family.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/hw/bsp/board.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/tusb.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/common/tusb_fifo.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/device/usbd.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/device/usbd_control.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/audio/audio_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/cdc/cdc_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/dfu/dfu_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/dfu/dfu_rt_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/hid/hid_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/midi/midi_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/msc/msc_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/net/ecm_rndis_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/net/ncm_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/usbtmc/usbtmc_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/video/video_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/vendor/vendor_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/dcd_musb.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/hcd_musb.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/bsp/tm4c123/family.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/bsp/board.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.o
 
-${COMPILER}/lcdtest.axf: ${COMPILER}/src/main.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/src/msc_disk.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/src/usb_descriptors.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/main.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/msc_disk.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 
-${COMPILER}/lcdtest.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-#${COMPILER}/lcdtest.axf: ${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
-SCATTERgcc_lcdtest=${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
-ENTRY_lcdtest=Reset_Handler
+${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+#${COMPILER}/${PROJ}.axf: ${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
+SCATTERgcc_${PROJ}=${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
+ENTRY_${PROJ}=Reset_Handler
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM  -DCFG_TUSB_MCU=OPT_MCU_TM4C123
 
 CFLAGSgcc += -I${TINYUSB}/hw -I${TINYUSB}/src -I${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123/ -I./src

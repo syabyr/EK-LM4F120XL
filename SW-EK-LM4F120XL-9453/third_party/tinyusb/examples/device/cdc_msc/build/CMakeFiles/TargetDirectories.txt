@@ -1,0 +1,4 @@
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc/build/CMakeFiles/fulltest.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc/build/CMakeFiles/flash.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc/build/CMakeFiles/edit_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc/build/CMakeFiles/rebuild_cache.dir

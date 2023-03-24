@@ -1,0 +1,381 @@
+CFLAGS  -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//CMSIS/5.7.0/CMSIS/Include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123 -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123 -Isrc -Isrc/FreeRTOSConfig -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual -MD 
+
+LDFLAGS -Wl,--undefined=vTaskSwitchContext -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//CMSIS/5.7.0/CMSIS/Include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123 -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123 -Isrc -Isrc/FreeRTOSConfig -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld -specs=nosys.specs -specs=nano.specs
+
+ASFLAGS -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//CMSIS/5.7.0/CMSIS/Include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123 -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123 -Isrc -Isrc/FreeRTOSConfig -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual -MD
+
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c:38:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c:38:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/hcd_musb.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/hcd_musb.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.c
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.c: In function 'Reset_Handler':
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.c:327:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+  327 |    uint8_t *pDest = (uint8_t*)&__start_data ;
+      |                     ^
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.c:328:19: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+  328 |    uint8_t *psrc =(uint8_t*)&__la_data ;
+      |                   ^
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c:2:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c:1:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/hw/bsp/board.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c:26:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c:26:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/freertos_hook.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/freertos_hook.c:29:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/freertos_hook.c:29:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/main.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/main.c:30:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/main.c:30:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/msc_disk.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/msc_disk.c:26:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.h:42,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/msc_disk.c:26:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/usb_descriptors.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/usb_descriptors.c:26:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/examples/device/cdc_msc_freertos/src/usb_descriptors.c:26:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/list.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/list.c:35:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/list.c:35:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/queue.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/queue.c:35:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/queue.c:35:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/tasks.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/tasks.c:37:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/tasks.c:37:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/tasks.c: In function 'prvInitialiseNewTask':
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/tasks.c:983:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+  983 |             memset( ( void * ) &( pxNewTCB->ulNotifiedValue[ 0 ] ), 0x00, sizeof( pxNewTCB->ulNotifiedValue ) );
+      |                     ^
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/tasks.c:984:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+  984 |             memset( ( void * ) &( pxNewTCB->ucNotifyState[ 0 ] ), 0x00, sizeof( pxNewTCB->ucNotifyState ) );
+      |                     ^
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/timers.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/timers.c:35:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/timers.c:35:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c:32:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c:32:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/tusb.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c:31:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.h:38,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c:31:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c:28:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c:28:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/device/usbd.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c:31:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c:31:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/device/usbd_control.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c:31:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c:31:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/audio/audio_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/audio/audio_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_pvt.h:29,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c:32:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_pvt.h:29,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c:32:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/dfu/dfu_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_rt_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/dfu/dfu_rt_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/hid/hid_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/hid/hid_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/midi/midi_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/midi/midi_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c:31:
+src/FreeRTOSConfig/FreeRTOSConfig.h:60:19: warning: redundant redeclaration of 'SystemCoreClock' [-Wredundant-decls]
+   60 |   extern uint32_t SystemCoreClock;
+      |                   ^~~~~~~~~~~~~~~
+In file included from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123GH6PM.h:168,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/TM4C123.h:98,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board_mcu.h:156,
+                 from src/FreeRTOSConfig/FreeRTOSConfig.h:49,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include/FreeRTOS.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal_freertos.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/osal/osal.h:57,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/dcd.h:31,
+                 from /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c:31:
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123/system_TM4C123.h:35:17: note: previous declaration of 'SystemCoreClock' was here
+   35 | extern uint32_t SystemCoreClock;     /*!< System Clock Frequency (Core Clock)  */
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/net/ecm_rndis_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/net/ecm_rndis_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/net/ncm_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/net/ncm_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/usbtmc/usbtmc_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/usbtmc/usbtmc_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/video/video_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/video/video_device.c
+arm-none-eabi-gcc -c -o _build/ek-tm4c123gxl/obj/src/class/vendor/vendor_device.o /Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/vendor/vendor_device.c
+@arm-none-eabi-gcc -o _build/ek-tm4c123gxl/cdc_msc_freertos.elf -Wl,--undefined=vTaskSwitchContext -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//CMSIS/5.7.0/CMSIS/Include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx//Include/TM4C123 -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123 -Isrc -Isrc/FreeRTOSConfig -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/include -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F -I/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual -MD -Wl,-Map=_build/ek-tm4c123gxl/cdc_msc_freertos.elf.map -Wl,-cref -Wl,-gc-sections -Wl,-T,/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld -specs=nosys.specs -specs=nano.specs _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/hcd_musb.o _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o _build/ek-tm4c123gxl/obj/hw/bsp/board.o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/freertos_hook.o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/main.o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/msc_disk.o _build/ek-tm4c123gxl/obj/examples/device/cdc_msc_freertos/src/usb_descriptors.o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/list.o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/queue.o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/tasks.o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/timers.o _build/ek-tm4c123gxl/obj/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o _build/ek-tm4c123gxl/obj/src/tusb.o _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o _build/ek-tm4c123gxl/obj/src/device/usbd.o _build/ek-tm4c123gxl/obj/src/device/usbd_control.o _build/ek-tm4c123gxl/obj/src/class/audio/audio_device.o _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_device.o _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_rt_device.o _build/ek-tm4c123gxl/obj/src/class/hid/hid_device.o _build/ek-tm4c123gxl/obj/src/class/midi/midi_device.o _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o _build/ek-tm4c123gxl/obj/src/class/net/ecm_rndis_device.o _build/ek-tm4c123gxl/obj/src/class/net/ncm_device.o _build/ek-tm4c123gxl/obj/src/class/usbtmc/usbtmc_device.o _build/ek-tm4c123gxl/obj/src/class/video/video_device.o _build/ek-tm4c123gxl/obj/src/class/vendor/vendor_device.o -Wl,--start-group -lgcc -lm -lnosys -lc -Wl,--end-group
+CREATE _build/ek-tm4c123gxl/cdc_msc_freertos.bin
+CREATE _build/ek-tm4c123gxl/cdc_msc_freertos.hex
+
+   text	   data	    bss	    dec	    hex	filename
+  18152	   8296	   9272	  35720	   8b88	_build/ek-tm4c123gxl/cdc_msc_freertos.elf
+

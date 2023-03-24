@@ -1,0 +1,1077 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+                              _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin) (_ctype_)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o) (_exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o (memcpy)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o (memmove)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o (strlen)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .text          0x0000000000000000       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x0000000000000000       0x7c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._write   0x0000000000000000       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._read    0x0000000000000000        0x6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+ .debug_str     0x0000000000000000      0x184 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+ .debug_str     0x0000000000000000      0x17f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+ .debug_str     0x0000000000000000      0x17b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+ .debug_str     0x0000000000000000      0x17e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+ .debug_str     0x0000000000000000      0x17b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+ .debug_str     0x0000000000000000      0x17d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+ .debug_str     0x0000000000000000      0x17b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+ .debug_str     0x0000000000000000      0x181 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+ .debug_str     0x0000000000000000      0x17b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+ .debug_str     0x0000000000000000      0x181 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o
+ .debug_str     0x0000000000000000      0x17f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+ .debug_str     0x0000000000000000      0x181 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x0000000000000000       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0000000000000000        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .fini          0x0000000000000000        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+SRAM             0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                0x0000000020008000                _estack = 0x20008000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000001000                _Min_Stack_Size = 0x1000
+
+.text           0x0000000000000000     0x26ac
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.vectors)
+ .vectors       0x0000000000000000      0x26c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                0x0000000000000000                vectors
+ *(.text)
+ .text          0x000000000000026c       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+                0x000000000000026c                strlen
+ *(.text.*)
+ .text.update_free_block_list
+                0x000000000000027c       0x70 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.pipe_write_packet
+                0x00000000000002ec       0x3a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.pipe_read_packet
+                0x0000000000000326       0x3e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.pipe_read_write_packet_ff
+                0x0000000000000364       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.handle_xfer_in
+                0x00000000000003d0       0x9c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.getOscClk
+                0x000000000000046c       0x30 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.Default_Handler
+                0x000000000000049c        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x000000000000049e        0x2 
+ .text.SysTick_Handler
+                0x00000000000004a0       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.advance_index
+                0x00000000000004b0       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_count
+                0x00000000000004c8       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_remaining
+                0x00000000000004e8       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_advance_write_pointer
+                0x000000000000050c       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_advance_read_pointer
+                0x0000000000000520       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_get_read_info
+                0x0000000000000534       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_get_write_info
+                0x00000000000005a0       0x60 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.get_driver
+                0x0000000000000600       0x38 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.invoke_class_control
+                0x0000000000000638       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.usbd_int_set
+                0x0000000000000648       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.usbd_edpt_claim.constprop.0
+                0x0000000000000668       0x48 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.dcd_edpt_stall.constprop.0
+                0x00000000000006b0       0x80 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.usbd_edpt_release.constprop.0.isra.0
+                0x0000000000000730       0x2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tu_fifo_write
+                0x000000000000075c       0x58 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.usbd_edpt_xfer.constprop.0
+                0x00000000000007b4      0x244 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._prep_out_transaction.isra.0
+                0x00000000000009f8       0x3e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._status_stage_xact.isra.0
+                0x0000000000000a36       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x0000000000000a4a        0x2 
+ .text.tud_control_status.isra.0
+                0x0000000000000a4c       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.process_edpt_n.constprop.0
+                0x0000000000000a70      0x13c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.USB0_Handler
+                0x0000000000000bac      0x37c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._tu_fifo_read_n.constprop.0
+                0x0000000000000f28       0x9c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tud_cdc_n_write_flush
+                0x0000000000000fc4       0x78 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._tu_fifo_write_n.part.0.constprop.0.isra.0
+                0x000000000000103c       0xe8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.cdcd_xfer_cb
+                0x0000000000001124      0x114 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.echo_serial_port
+                0x0000000000001238       0x78 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text._data_stage_xact.isra.0
+                0x00000000000012b0       0x54 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.tud_control_xfer.isra.0
+                0x0000000000001304       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.cdcd_control_xfer_cb
+                0x0000000000001368       0xcc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.configuration_reset
+                0x0000000000001434       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.cdcd_init
+                0x0000000000001498       0x80 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.cdcd_reset
+                0x0000000000001518       0x48 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.usbd_edpt_open.constprop.0
+                0x0000000000001560      0x1fc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.cdcd_open
+                0x000000000000175c       0xec /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .text.startup.main
+                0x0000000000001848      0xad0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                0x0000000000001848                main
+ .text.Reset_Handler
+                0x0000000000002318       0xb8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                0x0000000000002318                Reset_Handler
+ .text.memset   0x00000000000023d0       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+                0x00000000000023d0                memset
+ .text.memcpy   0x00000000000023e0       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                0x00000000000023e0                memcpy
+ .text.memmove  0x00000000000023fc       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+                0x00000000000023fc                memmove
+ *(.init)
+ .init          0x0000000000002430        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000000002430                _init
+ *(.fini)
+ .fini          0x0000000000002434        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000000002434                _fini
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.str1.1
+                0x0000000000002438       0x2a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x0000000000002462        0x2 
+ .rodata.CSWTCH.6
+                0x0000000000002464       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .rodata.__compound_literal.0
+                0x00000000000024c0        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x00000000000024c2        0x2 
+ .rodata._usbd_driver
+                0x00000000000024c4       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .rodata.desc_device
+                0x00000000000024dc       0x12 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .rodata.desc_fs_configuration
+                0x00000000000024ee       0x8d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x000000000000257b        0x1 
+ .rodata.ops.0  0x000000000000257c       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .rodata.string_desc_arr
+                0x0000000000002594       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .rodata._ctype_
+                0x00000000000025a8      0x101 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+                0x00000000000025a8                _ctype_
+                0x00000000000026ac                . = ALIGN (0x4)
+ *fill*         0x00000000000026a9        0x3 
+                0x00000000000026ac                __end_text = .
+
+.glue_7         0x00000000000026ac        0x0
+ .glue_7        0x00000000000026ac        0x0 linker stubs
+
+.glue_7t        0x00000000000026ac        0x0
+ .glue_7t       0x00000000000026ac        0x0 linker stubs
+
+.vfp11_veneer   0x00000000000026ac        0x0
+ .vfp11_veneer  0x00000000000026ac        0x0 linker stubs
+
+.v4_bx          0x00000000000026ac        0x0
+ .v4_bx         0x00000000000026ac        0x0 linker stubs
+
+.iplt           0x00000000000026ac        0x0
+ .iplt          0x00000000000026ac        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+
+.rel.dyn        0x00000000000026ac        0x0
+ .rel.iplt      0x00000000000026ac        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+
+.data           0x0000000020000000       0x18 load address 0x00000000000026ac
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __start_data = .
+                0x00000000000026ac                __la_data = LOADADDR (.data)
+ *(.data)
+ *(.data.*)
+ .data.SystemCoreClock
+                0x0000000020000000        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .data._usbd_qdef
+                0x0000000020000004       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .data._usbd_rhport
+                0x0000000020000014        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                0x0000000020000018                . = ALIGN (0x4)
+ *fill*         0x0000000020000015        0x3 
+                0x0000000020000018                __end_data = .
+
+.igot.plt       0x0000000020000018        0x0 load address 0x00000000000026c4
+ .igot.plt      0x0000000020000018        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+
+.bss            0x0000000020000018      0x470 load address 0x00000000000026c4
+                0x0000000020000018                . = ALIGN (0x4)
+                0x0000000020000018                __start_bss = .
+                0x0000000020000018                __bss_start__ = __start_bss
+ *(.bss)
+ *(.bss.*)
+ .bss._app_driver
+                0x0000000020000018        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._app_driver_count
+                0x000000002000001c        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x000000002000001d        0x3 
+ .bss._cdcd_itf
+                0x0000000020000020      0x250 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._ctrl_xfer
+                0x0000000020000270       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._dcd      0x0000000020000284       0x88 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._desc_str
+                0x000000002000030c       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._usbd_ctrl_buf
+                0x000000002000034c       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._usbd_dev
+                0x000000002000038c       0x33 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *fill*         0x00000000200003bf        0x1 
+ .bss._usbd_q   0x00000000200003c0        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss._usbd_qdef_buf
+                0x00000000200003c4       0xc0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .bss.system_ticks
+                0x0000000020000484        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ *(.COMMON)
+                0x0000000020000488                __end_bss = .
+                0x0000000020000488                . = ALIGN (0x4)
+
+._user_heap_stack
+                0x0000000020000488     0x1000 load address 0x0000000000002b34
+                0x0000000020000488                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x0000000020000488                . = (. + _Min_Heap_Size)
+                0x0000000020001488                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000488     0x1000 
+                0x0000000020001488                . = ALIGN (0x8)
+LOAD _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+LOAD _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/hcd_musb.o
+LOAD _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o
+LOAD _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o
+LOAD _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o
+LOAD _build/ek-tm4c123gxl/obj/hw/bsp/board.o
+LOAD _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o
+LOAD _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o
+LOAD _build/ek-tm4c123gxl/obj/src/tusb.o
+LOAD _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o
+LOAD _build/ek-tm4c123gxl/obj/src/device/usbd.o
+LOAD _build/ek-tm4c123gxl/obj/src/device/usbd_control.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/audio/audio_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/dfu/dfu_rt_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/hid/hid_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/midi/midi_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/msc/msc_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/net/ecm_rndis_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/net/ncm_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/usbtmc/usbtmc_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/video/video_device.o
+LOAD _build/ek-tm4c123gxl/obj/src/class/vendor/vendor_device.o
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(_build/ek-tm4c123gxl/cdc_dual_ports.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x32 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000000000000050       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x0000000000000082       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000000000b6       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000000ea       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x000000000000011e       0x17 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                         0x4a (size before relaxing)
+
+.debug_info     0x0000000000000000     0xf210
+ .debug_info    0x0000000000000000     0x5285 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .debug_info    0x0000000000005285     0x2b00 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+                0x0000000000005285                dcd_musb.c.d092fa25
+ .debug_info    0x0000000000007d85      0xedb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+                0x0000000000007d85                system_TM4C123.c.58fd4a95
+ .debug_info    0x0000000000008c60      0x2e8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+                0x0000000000008c60                tm4c123_startup.c.3b8305d9
+ .debug_info    0x0000000000008f48     0x1791 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+                0x0000000000008f48                family.c.e7ad2eaa
+ .debug_info    0x000000000000a6d9      0x13a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+                0x000000000000a6d9                board.c.cd02019e
+ .debug_info    0x000000000000a813      0x19d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+                0x000000000000a813                main.c.edf57651
+ .debug_info    0x000000000000a9b0      0x573 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+                0x000000000000a9b0                usb_descriptors.c.14395ad8
+ .debug_info    0x000000000000af23      0xb0b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+                0x000000000000af23                tusb.c.6355811b
+ .debug_info    0x000000000000ba2e      0xc32 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+                0x000000000000ba2e                tusb_fifo.c.29863a3a
+ .debug_info    0x000000000000c660     0x1969 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+                0x000000000000c660                usbd.c.b510e744
+ .debug_info    0x000000000000dfc9      0x54a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+                0x000000000000dfc9                usbd_control.c.2351069a
+ .debug_info    0x000000000000e513      0xcfd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+                0x000000000000e513                cdc_device.c.21940928
+
+.debug_abbrev   0x0000000000000000     0x18fc
+ .debug_abbrev  0x0000000000000000      0x350 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000350      0x31e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+ .debug_abbrev  0x000000000000066e      0x137 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+ .debug_abbrev  0x00000000000007a5      0x109 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+ .debug_abbrev  0x00000000000008ae      0x28f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+ .debug_abbrev  0x0000000000000b3d       0x85 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+ .debug_abbrev  0x0000000000000bc2       0xf6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+ .debug_abbrev  0x0000000000000cb8      0x10d /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+ .debug_abbrev  0x0000000000000dc5      0x246 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+ .debug_abbrev  0x000000000000100b      0x1bb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+ .debug_abbrev  0x00000000000011c6      0x2cc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+ .debug_abbrev  0x0000000000001492      0x1ef /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+ .debug_abbrev  0x0000000000001681      0x27b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+
+.debug_loc      0x0000000000000000     0x6a14
+ .debug_loc     0x0000000000000000     0x6a14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x180
+ .debug_aranges
+                0x0000000000000000      0x180 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x1300
+ .debug_ranges  0x0000000000000000     0x1300 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x4be1
+ .debug_line    0x0000000000000000     0x3421 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .debug_line    0x0000000000003421      0x324 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+ .debug_line    0x0000000000003745      0x229 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+ .debug_line    0x000000000000396e      0x1b3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+ .debug_line    0x0000000000003b21      0x214 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+ .debug_line    0x0000000000003d35      0x189 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+ .debug_line    0x0000000000003ebe      0x227 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+ .debug_line    0x00000000000040e5      0x1db /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+ .debug_line    0x00000000000042c0      0x1e4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+ .debug_line    0x00000000000044a4      0x14b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+ .debug_line    0x00000000000045ef      0x20c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+ .debug_line    0x00000000000047fb      0x1fe /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+ .debug_line    0x00000000000049f9      0x1e8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+
+.debug_str      0x0000000000000000     0x4a85
+ .debug_str     0x0000000000000000      0x351 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                        0x374 (size before relaxing)
+ .debug_str     0x0000000000000351     0x18ae /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+                                       0x1add (size before relaxing)
+ .debug_str     0x0000000000001bff      0x4c2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+                                        0x89e (size before relaxing)
+ .debug_str     0x00000000000020c1       0xbe /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+                                        0x2f6 (size before relaxing)
+ .debug_str     0x000000000000217f      0x209 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+                                        0xed5 (size before relaxing)
+ .debug_str     0x0000000000002388       0x59 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+                                        0x249 (size before relaxing)
+ .debug_str     0x00000000000023e1       0xa4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+                                        0x2a0 (size before relaxing)
+ .debug_str     0x0000000000002485      0xcba /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+                                        0xf14 (size before relaxing)
+ .debug_str     0x000000000000313f      0x3b3 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+                                        0x9da (size before relaxing)
+ .debug_str     0x00000000000034f2      0x3e0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+                                        0x6c5 (size before relaxing)
+ .debug_str     0x00000000000038d2      0x926 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+                                       0x1276 (size before relaxing)
+ .debug_str     0x00000000000041f8      0x194 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+                                        0x56d (size before relaxing)
+ .debug_str     0x000000000000438c      0x6f9 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+                                       0x12f0 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x580
+ .debug_frame   0x0000000000000000      0x510 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+ .debug_frame   0x0000000000000510       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000530       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000558       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC0SS0_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC0SS1_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC0SS2_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC0SS3_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS0_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS1_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS2_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+ADC1SS3_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+BusFault_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+CAN0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+CAN1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+CAN2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+COMP0_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+COMP1_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+COMP2_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+DebugMon_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+Default_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+FLASH_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+FPU_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOA_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOB_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOC_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOD_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOE_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOF_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOG_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOH_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOJ_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOK_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOL_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOM_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPION_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP4_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP5_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP6_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOP7_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ4_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ5_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ6_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOQ7_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOR_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+GPIOS_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+HIB_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+HardFault_Handler                                 _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C3_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C4_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+I2C5_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+MemManage_Handler                                 _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+NMI_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PMW0_FAULT_Handler                                _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PMW1_0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_0_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM0_3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_1_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_2_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_3_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PWM1_FAULT_Handle                                 _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+PendSV_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+QEI0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+QEI1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+QEI2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+Reset_Handler                                     /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI1_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI2_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SSI3_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SVC_Handler                                       _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SYSCTL_Handler                                    _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SysTick_Handler                                   _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+SystemCoreClock                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+SystemCoreClockUpdate                             _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+SystemInit                                        _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/system_TM4C123.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER0A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER0B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER1A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER1B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER2A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER2B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER3A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER3B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER4A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER4B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER5A_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+TIMER5B_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART0_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART1_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART2_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART3_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART4_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART5_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART6_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UART7_Handler                                     _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UDMAERR_Handler                                   _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UDMA_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+USB0_Handler                                      _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+UsageFault_Handler                                _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WDT0_Handler                                      _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER0A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER0B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER1A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER1B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER2A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER2B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER3A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER3B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER4A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER4B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER5A_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+WTIMER5B_Handler                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+__bss_end__                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__bss_start__                                     /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__call_exitprocs                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+__deregister_frame_info                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__dso_handle                                      /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__end_bss                                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+__end_data                                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+__init_array_end                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__init_array_start                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__la_data                                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+__libc_fini_array                                 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__libc_init_array                                 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__preinit_array_end                               /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__preinit_array_start                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+__register_frame_info                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__sf_fake_stderr                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+__stack                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__start_bss                                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+__start_data                                      /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+_ctype_                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-ctype_.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+_exit                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+_fini                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+_global_impure_ptr                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+_impure_ptr                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-impure.o)
+_init                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+_mainCRTStartup                                   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_read                                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+_stack_init                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_start                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_usbd_qdef                                        _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+_usbd_qdef_buf                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+_write                                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+atexit                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+audio_device.c.f5e0ef85                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxufB9C.debug.temp.o
+board.c.cd02019e                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXBuLhR.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+board_button_read                                 _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+board_getchar                                     _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+board_init                                        _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+board_led_write                                   _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+board_millis                                      _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+board_uart_read                                   _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+board_uart_write                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/board.o (symbol from plugin)
+cdc_device.c.21940928                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccgSvzu3.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+cdcd_control_xfer_cb                              _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_init                                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_open                                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_reset                                        _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+cdcd_xfer_cb                                      _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_connect                                       _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_disconnect                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt0_status_complete                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+dcd_edpt_clear_stall                              _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_close                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_close_all                                _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_iso_activate                             _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_iso_alloc                                _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_open                                     _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_stall                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_xfer                                     _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_edpt_xfer_fifo                                _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_event_handler                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+dcd_init                                          _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_int_disable                                   _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_int_enable                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_int_handler                                   _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+dcd_musb.c.d092fa25                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccVVP1Hb.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+dcd_remote_wakeup                                 _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_set_address                                   _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+dcd_sof_enable                                    _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+desc_device                                       _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o (symbol from plugin)
+desc_fs_configuration                             _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o (symbol from plugin)
+dfu_device.c.ece6292a                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceZ77gZ.debug.temp.o
+dfu_rt_device.c.2d9d92ca                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccsnKvRK.debug.temp.o
+ecm_rndis_device.c.e032964f                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cchI2kw8.debug.temp.o
+exit                                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-exit.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+family.c.e7ad2eaa                                 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccXNcMHI.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+hardware_init_hook                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+hcd_musb.c.0d7d931d                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccYxaf6y.debug.temp.o
+hid_device.c.78fdb6dd                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxW7d3O.debug.temp.o
+main                                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+main.c.edf57651                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmXcUZL.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+memcpy                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+memmove                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memmove.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+memset                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memset.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+midi_device.c.3d91ddd2                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccmtcEGR.debug.temp.o
+msc_device.c.eba8ac79                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cctr4CmE.debug.temp.o
+ncm_device.c.d956da17                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccvexrol.debug.temp.o
+software_init_hook                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+string_desc_arr                                   _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o (symbol from plugin)
+strlen                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-strlen.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+system_TM4C123.c.58fd4a95                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccH8E4GW.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+system_ticks                                      _build/ek-tm4c123gxl/obj/hw/bsp/tm4c123/family.o (symbol from plugin)
+tm4c123_startup.c.3b8305d9                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccrdssiT.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+tu_desc_find                                      _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_desc_find2                                     _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_desc_find3                                     _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_desc_get_interface_total_len                   _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_bind_driver                               _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_edpt_claim                                     _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_edpt_release                                   _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_edpt_stream_init                               _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_read                               _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_read_xfer                          _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_write                              _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_write_xfer                         _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_stream_write_zlp_if_needed                _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_edpt_validate                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_fifo_advance_read_pointer                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_advance_write_pointer                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_clear                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_fifo_config                                    _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_correct_read_pointer                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_count                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_empty                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_fifo_full                                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_get_read_info                             _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_get_write_info                            _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/portable/mentor/musb/dcd_musb.o (symbol from plugin)
+tu_fifo_overflowed                                _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_peek                                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tu_fifo_peek_n                                    _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_read                                      _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_fifo_read_n                                    _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_read_n_const_addr_full_words              _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tu_fifo_remaining                                 _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_set_overwritable                          _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tu_fifo_write                                     _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tu_fifo_write_n                                   _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tu_fifo_write_n_const_addr_full_words             _build/ek-tm4c123gxl/obj/src/common/tusb_fifo.o (symbol from plugin)
+tud_cdc_line_coding_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_line_state_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_available                               _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+tud_cdc_n_connected                               _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_get_line_coding                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_get_line_state                          _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_peek                                    _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_read                                    _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+tud_cdc_n_read_flush                              _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_set_wanted_char                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_write                                   _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+tud_cdc_n_write_available                         _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_write_clear                             _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_n_write_flush                             _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+tud_cdc_rx_cb                                     /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_rx_wanted_cb                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_send_break_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_cdc_tx_complete_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_connect                                       _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_connected                                     _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_control_status                                _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_control_xfer                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_bos_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_configuration_cb                   _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_device_cb                          _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_device_qualifier_cb                /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_other_speed_configuration_cb       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_descriptor_string_cb                          _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/usb_descriptors.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_disconnect                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_init                                          _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+tud_inited                                        _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tud_mount_cb                                      /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_mounted                                       _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_remote_wakeup                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_resume_cb                                     /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_speed_get                                     _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_suspend_cb                                    /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_suspended                                     _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+tud_task_event_ready                              _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_task_ext                                      _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/examples/device/cdc_dual_ports/src/main.o (symbol from plugin)
+tud_umount_cb                                     /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tud_vendor_control_xfer_cb                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+tusb.c.6355811b                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccMiKwkI.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+tusb_fifo.c.29863a3a                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc2c0g6b.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+tusb_init                                         _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+tusb_inited                                       _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usb_descriptors.c.14395ad8                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczwb6kN.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+usbd.c.b510e744                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccijzXO8.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+usbd_app_driver_get_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control.c.2351069a                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceSlOAX.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+usbd_control_reset                                _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control_set_complete_callback                _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control_set_request                          _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_control_xfer_cb                              _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_defer_func                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_busy                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_claim                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+usbd_edpt_clear_stall                             _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_close                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_iso_activate                            _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_iso_alloc                               _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_open                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+usbd_edpt_release                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+usbd_edpt_stall                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_stalled                                 _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_edpt_xfer                                    _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/device/usbd_control.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/tusb.o (symbol from plugin)
+usbd_edpt_xfer_fifo                               _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_int_set                                      _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbd_open_edpt_pair                               _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+                                                  _build/ek-tm4c123gxl/obj/src/class/cdc/cdc_device.o (symbol from plugin)
+usbd_sof_enable                                   _build/ek-tm4c123gxl/obj/src/device/usbd.o (symbol from plugin)
+usbtmc_device.c.08feda22                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccan14zX.debug.temp.o
+vectors                                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cdc_dual_ports.elf.c3s1CW.ltrans0.ltrans.o
+                                                  _build/ek-tm4c123gxl/obj/hw/mcu/ti/tm4c123xx//Source/GCC/tm4c123_startup.o (symbol from plugin)
+vendor_device.c.73180af5                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccyGwnoX.debug.temp.o
+video_device.c.dbf41ce0                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccWpWwQT.debug.temp.o

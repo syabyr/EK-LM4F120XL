@@ -1,0 +1,1166 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o) (_exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o (memcpy)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o (memmove)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o (strlen)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .text          0x0000000000000000       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x0000000000000000       0x7c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tud_umount_cb
+                0x0000000000000000        0xc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tud_suspend_cb
+                0x0000000000000000       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tud_resume_cb
+                0x0000000000000000       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tud_cdc_rx_cb
+                0x0000000000000000        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._write   0x0000000000000000       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._read    0x0000000000000000        0x6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+ .debug_str     0x0000000000000000      0x1eb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+ .debug_str     0x0000000000000000      0x1e7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+ .debug_str     0x0000000000000000      0x1ea /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+ .debug_str     0x0000000000000000      0x1e7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+ .debug_str     0x0000000000000000      0x1e9 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+ .debug_str     0x0000000000000000      0x1ed /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+ .debug_str     0x0000000000000000      0x1e7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+ .debug_str     0x0000000000000000      0x1ed /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o
+ .debug_str     0x0000000000000000      0x1eb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+ .debug_str     0x0000000000000000      0x1ed /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+ .debug_info    0x0000000000000000       0x25 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x1b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+ .debug_line    0x0000000000000000       0x1e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+ .debug_str     0x0000000000000000      0x1f0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+ .comment       0x0000000000000000       0x4a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x0000000000000000       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0000000000000000        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .fini          0x0000000000000000        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+SRAM             0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+                0x0000000020008000                _estack = 0x20008000
+                0x0000000000000000                _Min_Heap_Size = 0x0
+                0x0000000000001000                _Min_Stack_Size = 0x1000
+
+.text           0x0000000000000000     0x2c0c
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.vectors)
+ .vectors       0x0000000000000000      0x26c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                0x0000000000000000                vectors
+ *(.text)
+ .text          0x000000000000026c       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+                0x000000000000026c                strlen
+ *(.text.*)
+ .text.SysTick_Handler
+                0x000000000000027c       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.getOscClk
+                0x000000000000028c       0x30 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.Default_Handler
+                0x00000000000002bc        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.advance_index
+                0x00000000000002be       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_count
+                0x00000000000002d6       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_remaining
+                0x00000000000002f6       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_advance_write_pointer
+                0x000000000000031a       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_advance_read_pointer
+                0x000000000000032e       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_get_read_info
+                0x0000000000000342       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_get_write_info
+                0x00000000000003ae       0x60 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x000000000000040e        0x2 
+ .text.get_driver
+                0x0000000000000410       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.invoke_class_control
+                0x0000000000000450       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_int_set
+                0x0000000000000460       0x20 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.update_free_block_list
+                0x0000000000000480       0x70 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.pipe_write_packet
+                0x00000000000004f0       0x3a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.pipe_read_packet
+                0x000000000000052a       0x3e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.pipe_read_write_packet_ff
+                0x0000000000000568       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.handle_xfer_in
+                0x00000000000005d4       0x9c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.dcd_edpt_stall.constprop.0
+                0x0000000000000670       0x80 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_edpt_stall.constprop.0
+                0x00000000000006f0       0x34 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_edpt_claim.constprop.0
+                0x0000000000000724       0x48 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_edpt_release.constprop.0.isra.0
+                0x000000000000076c       0x2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.fail_scsi_op.constprop.0.isra.0
+                0x0000000000000798       0x4c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tu_fifo_write
+                0x00000000000007e4       0x58 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.dcd_event_handler
+                0x000000000000083c       0xec /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.process_edpt_n.constprop.0
+                0x0000000000000928      0x130 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_edpt_xfer.constprop.0
+                0x0000000000000a58      0x218 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.proc_write10_cmd.constprop.0.isra.0
+                0x0000000000000c70       0x3c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._prep_out_transaction.isra.0
+                0x0000000000000cac       0x3e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._status_stage_xact.isra.0
+                0x0000000000000cea       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x0000000000000cfe        0x2 
+ .text.tud_control_status.isra.0
+                0x0000000000000d00       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._data_stage_xact.isra.0
+                0x0000000000000d24       0x54 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tud_control_xfer.isra.0
+                0x0000000000000d78       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.cdcd_control_xfer_cb
+                0x0000000000000ddc       0xa8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.mscd_control_xfer_cb
+                0x0000000000000e84      0x114 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.configuration_reset
+                0x0000000000000f98       0x64 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.cdcd_init
+                0x0000000000000ffc       0x50 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.cdcd_reset
+                0x000000000000104c       0x24 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.mscd_init
+                0x0000000000001070       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.mscd_reset
+                0x0000000000001080       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.USB0_Handler
+                0x0000000000001090      0x294 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.proc_read10_cmd.constprop.0
+                0x0000000000001324       0xb8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.mscd_xfer_cb
+                0x00000000000013dc      0x480 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_edpt_open.constprop.0
+                0x000000000000185c      0x1fc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.usbd_open_edpt_pair.constprop.0.isra.0
+                0x0000000000001a58       0x5a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x0000000000001ab2        0x2 
+ .text.cdcd_open
+                0x0000000000001ab4       0x94 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.mscd_open
+                0x0000000000001b48       0x84 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._tu_fifo_read_n.constprop.0
+                0x0000000000001bcc       0x9c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.tud_cdc_n_write_flush.constprop.0
+                0x0000000000001c68       0x6c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text._tu_fifo_write_n.part.0.constprop.0.isra.0
+                0x0000000000001cd4       0xe8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.cdcd_xfer_cb
+                0x0000000000001dbc       0xe0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .text.startup.main
+                0x0000000000001e9c      0xad0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                0x0000000000001e9c                main
+ .text.Reset_Handler
+                0x000000000000296c       0xb8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                0x000000000000296c                Reset_Handler
+ .text.memset   0x0000000000002a24       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+                0x0000000000002a24                memset
+ .text.memcpy   0x0000000000002a34       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000002a34                memcpy
+ .text.memmove  0x0000000000002a50       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+                0x0000000000002a50                memmove
+ *(.init)
+ .init          0x0000000000002a84        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000000002a84                _init
+ *(.fini)
+ .fini          0x0000000000002a88        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000000002a88                _fini
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.mscd_xfer_cb.str1.1
+                0x0000000000002a8c       0x15 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .rodata.str1.1
+                0x0000000000002aa1       0x34 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x0000000000002ad5        0x3 
+ .rodata.CSWTCH.6
+                0x0000000000002ad8       0x5c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .rodata.__compound_literal.0
+                0x0000000000002b34        0x2 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x0000000000002b36        0x2 
+ .rodata._usbd_driver
+                0x0000000000002b38       0x30 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .rodata.desc_device
+                0x0000000000002b68       0x12 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .rodata.desc_fs_configuration
+                0x0000000000002b7a       0x62 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .rodata.ops.0  0x0000000000002bdc       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .rodata.string_desc_arr
+                0x0000000000002bf4       0x18 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                0x0000000000002c0c                . = ALIGN (0x4)
+                0x0000000000002c0c                __end_text = .
+
+.glue_7         0x0000000000002c0c        0x0
+ .glue_7        0x0000000000002c0c        0x0 linker stubs
+
+.glue_7t        0x0000000000002c0c        0x0
+ .glue_7t       0x0000000000002c0c        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000002c0c        0x0
+ .vfp11_veneer  0x0000000000002c0c        0x0 linker stubs
+
+.v4_bx          0x0000000000002c0c        0x0
+ .v4_bx         0x0000000000002c0c        0x0 linker stubs
+
+.iplt           0x0000000000002c0c        0x0
+ .iplt          0x0000000000002c0c        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+
+.rel.dyn        0x0000000000002c0c        0x0
+ .rel.iplt      0x0000000000002c0c        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+
+.data           0x0000000020000000     0x201c load address 0x0000000000002c0c
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                __start_data = .
+                0x0000000000002c0c                __la_data = LOADADDR (.data)
+ *(.data)
+ *(.data.*)
+ .data.SystemCoreClock
+                0x0000000020000000        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .data._usbd_qdef
+                0x0000000020000004       0x10 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .data._usbd_rhport
+                0x0000000020000014        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x0000000020000015        0x3 
+ .data.blink_interval_ms
+                0x0000000020000018        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .data.msc_disk
+                0x000000002000001c     0x2000 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                0x000000002000201c                . = ALIGN (0x4)
+                0x000000002000201c                __end_data = .
+
+.igot.plt       0x000000002000201c        0x0 load address 0x0000000000004c28
+ .igot.plt      0x000000002000201c        0x0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+
+.bss            0x000000002000201c      0x590 load address 0x0000000000004c28
+                0x000000002000201c                . = ALIGN (0x4)
+                0x000000002000201c                __start_bss = .
+                0x000000002000201c                __bss_start__ = __start_bss
+ *(.bss)
+ *(.bss.*)
+ .bss._app_driver
+                0x000000002000201c        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._app_driver_count
+                0x0000000020002020        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x0000000020002021        0x3 
+ .bss._cdcd_itf
+                0x0000000020002024      0x128 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._ctrl_xfer
+                0x000000002000214c       0x14 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._dcd      0x0000000020002160       0x88 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._desc_str
+                0x00000000200021e8       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._mscd_buf
+                0x0000000020002228      0x200 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._mscd_itf
+                0x0000000020002428       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._usbd_ctrl_buf
+                0x0000000020002468       0x40 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._usbd_dev
+                0x00000000200024a8       0x33 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x00000000200024db        0x1 
+ .bss._usbd_q   0x00000000200024dc        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss._usbd_qdef_buf
+                0x00000000200024e0       0xc0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss.ejected   0x00000000200025a0        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss.led_state.0
+                0x00000000200025a1        0x1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *fill*         0x00000000200025a2        0x2 
+ .bss.start_ms.1
+                0x00000000200025a4        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .bss.system_ticks
+                0x00000000200025a8        0x4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ *(.COMMON)
+                0x00000000200025ac                __end_bss = .
+                0x00000000200025ac                . = ALIGN (0x4)
+
+._user_heap_stack
+                0x00000000200025ac     0x1004 load address 0x00000000000051b8
+                0x00000000200025b0                . = ALIGN (0x8)
+ *fill*         0x00000000200025ac        0x4 
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x00000000200025b0                . = (. + _Min_Heap_Size)
+                0x00000000200035b0                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000200025b0     0x1000 
+                0x00000000200035b0                . = ALIGN (0x8)
+LOAD CMakeFiles/fulltest.dir/src/main.c.obj
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+LOAD /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+LOAD CMakeFiles/fulltest.dir/src/msc_disk.c.obj
+LOAD CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/audio/audio_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/dfu/dfu_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/dfu/dfu_rt_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/hid/hid_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/midi/midi_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/net/ecm_rndis_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/net/ncm_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/usbtmc/usbtmc_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/video/video_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/vendor/vendor_device.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj
+LOAD CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/hcd_musb.c.obj
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(fulltest elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x32 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000000000000050       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000084       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000000b8       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000000000ec       0x17 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                         0x4a (size before relaxing)
+
+.debug_info     0x0000000000000000    0x12091
+ .debug_info    0x0000000000000000     0x66c4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .debug_info    0x00000000000066c4      0x22f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+                0x00000000000066c4                main.c.bc92c2e0
+ .debug_info    0x00000000000068f3      0x414 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+                0x00000000000068f3                msc_disk.c.36c8dd6d
+ .debug_info    0x0000000000006d07      0x5bd /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+                0x0000000000006d07                usb_descriptors.c.f3795041
+ .debug_info    0x00000000000072c4     0x178a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+                0x00000000000072c4                family.c.f9a62c9d
+ .debug_info    0x0000000000008a4e      0x133 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+                0x0000000000008a4e                board.c.10054a24
+ .debug_info    0x0000000000008b81      0xedb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+                0x0000000000008b81                system_TM4C123.c.af91dc0f
+ .debug_info    0x0000000000009a5c      0x2e8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+                0x0000000000009a5c                tm4c123_startup.c.3d7e5390
+ .debug_info    0x0000000000009d44      0xb04 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+                0x0000000000009d44                tusb.c.bc99647c
+ .debug_info    0x000000000000a848      0xc2b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+                0x000000000000a848                tusb_fifo.c.6eafb14f
+ .debug_info    0x000000000000b473     0x1962 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+                0x000000000000b473                usbd.c.52d11a61
+ .debug_info    0x000000000000cdd5      0x543 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+                0x000000000000cdd5                usbd_control.c.91551862
+ .debug_info    0x000000000000d318      0xcf6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+                0x000000000000d318                cdc_device.c.a7ffac98
+ .debug_info    0x000000000000e00e     0x158a /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+                0x000000000000e00e                msc_device.c.e1983691
+ .debug_info    0x000000000000f598     0x2af9 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+                0x000000000000f598                dcd_musb.c.296721ab
+
+.debug_abbrev   0x0000000000000000     0x1d81
+ .debug_abbrev  0x0000000000000000      0x361 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000361      0x12c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+ .debug_abbrev  0x000000000000048d      0x106 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+ .debug_abbrev  0x0000000000000593      0x11c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+ .debug_abbrev  0x00000000000006af      0x28f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+ .debug_abbrev  0x000000000000093e       0x85 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+ .debug_abbrev  0x00000000000009c3      0x137 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+ .debug_abbrev  0x0000000000000afa      0x109 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+ .debug_abbrev  0x0000000000000c03      0x246 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+ .debug_abbrev  0x0000000000000e49      0x1bb /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+ .debug_abbrev  0x0000000000001004      0x2cc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+ .debug_abbrev  0x00000000000012d0      0x1ef /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+ .debug_abbrev  0x00000000000014bf      0x27b /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+ .debug_abbrev  0x000000000000173a      0x329 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+ .debug_abbrev  0x0000000000001a63      0x31e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+
+.debug_loc      0x0000000000000000     0x81e7
+ .debug_loc     0x0000000000000000     0x81e7 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+
+.debug_aranges  0x0000000000000000      0x1e8
+ .debug_aranges
+                0x0000000000000000      0x1e8 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+
+.debug_ranges   0x0000000000000000     0x1320
+ .debug_ranges  0x0000000000000000     0x1320 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+
+.debug_line     0x0000000000000000     0x685b
+ .debug_line    0x0000000000000000     0x40e5 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .debug_line    0x00000000000040e5      0x293 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+ .debug_line    0x0000000000004378      0x263 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+ .debug_line    0x00000000000045db      0x332 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+ .debug_line    0x000000000000490d      0x2db /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+ .debug_line    0x0000000000004be8      0x1b6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+ .debug_line    0x0000000000004d9e      0x2ef /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+ .debug_line    0x000000000000508d      0x22c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+ .debug_line    0x00000000000052b9      0x2f4 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+ .debug_line    0x00000000000055ad      0x201 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+ .debug_line    0x00000000000057ae      0x35e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+ .debug_line    0x0000000000005b0c      0x302 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+ .debug_line    0x0000000000005e0e      0x2b1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+ .debug_line    0x00000000000060bf      0x315 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+ .debug_line    0x00000000000063d4      0x487 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+
+.debug_str      0x0000000000000000     0x5913
+ .debug_str     0x0000000000000000      0x3b0 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                        0x3d3 (size before relaxing)
+ .debug_str     0x00000000000003b0      0x306 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+                                        0x3e5 (size before relaxing)
+ .debug_str     0x00000000000006b6      0x321 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+                                        0x575 (size before relaxing)
+ .debug_str     0x00000000000009d7      0xdd5 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+                                        0xfff (size before relaxing)
+ .debug_str     0x00000000000017ac      0xc1c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+                                        0xf35 (size before relaxing)
+ .debug_str     0x00000000000023c8       0x7f /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+                                        0x2a9 (size before relaxing)
+ .debug_str     0x0000000000002447       0xcc /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+                                        0x909 (size before relaxing)
+ .debug_str     0x0000000000002513       0xea /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+                                        0x361 (size before relaxing)
+ .debug_str     0x00000000000025fd      0x529 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+                                        0xa3a (size before relaxing)
+ .debug_str     0x0000000000002b26      0x43e /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+                                        0x725 (size before relaxing)
+ .debug_str     0x0000000000002f64      0xb2c /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+                                       0x12d6 (size before relaxing)
+ .debug_str     0x0000000000003a90      0x1c1 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+                                        0x5cd (size before relaxing)
+ .debug_str     0x0000000000003c51      0x726 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+                                       0x1350 (size before relaxing)
+ .debug_str     0x0000000000004377      0x7e6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+                                       0x1575 (size before relaxing)
+ .debug_str     0x0000000000004b5d      0xdb6 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+                                       0x1b3d (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x6c0
+ .debug_frame   0x0000000000000000      0x650 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+ .debug_frame   0x0000000000000650       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000670       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000698       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC0SS0_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC0SS1_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC0SS2_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC0SS3_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC1SS0_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC1SS1_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC1SS2_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+ADC1SS3_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+BusFault_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+CAN0_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+CAN1_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+CAN2_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+COMP0_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+COMP1_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+COMP2_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+DebugMon_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+Default_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+FLASH_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+FPU_Handler                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOA_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOB_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOC_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOD_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOE_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOF_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOG_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOH_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOJ_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOK_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOL_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOM_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPION_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP0_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP1_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP2_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP3_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP4_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP5_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP6_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOP7_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ0_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ1_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ2_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ3_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ4_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ5_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ6_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOQ7_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOR_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+GPIOS_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+HIB_Handler                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+HardFault_Handler                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+I2C0_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+I2C1_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+I2C2_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+I2C3_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+I2C4_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+I2C5_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+MemManage_Handler                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+NMI_Handler                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PMW0_FAULT_Handler                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PMW1_0_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM0_0_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM0_1_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM0_2_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM0_3_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM1_1_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM1_2_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM1_3_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PWM1_FAULT_Handle                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+PendSV_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+QEI0_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+QEI1_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+QEI2_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+Reset_Handler                                     /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SSI0_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SSI1_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SSI2_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SSI3_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SVC_Handler                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SYSCTL_Handler                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+SysTick_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+SystemCoreClock                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+SystemCoreClockUpdate                             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+SystemInit                                        CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER0A_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER0B_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER1A_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER1B_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER2A_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER2B_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER3A_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER3B_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER4A_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER4B_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER5A_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+TIMER5B_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART0_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART1_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART2_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART3_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART4_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART5_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART6_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UART7_Handler                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UDMAERR_Handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+UDMA_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+USB0_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+UsageFault_Handler                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WDT0_Handler                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER0A_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER0B_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER1A_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER1B_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER2A_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER2B_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER3A_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER3B_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER4A_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER4B_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER5A_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+WTIMER5B_Handler                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+__bss_end__                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__bss_start__                                     /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__call_exitprocs                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+__deregister_frame_info                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__dso_handle                                      /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__end_bss                                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+__end_data                                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+__init_array_end                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+__init_array_start                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+__la_data                                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+__libc_fini_array                                 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__libc_init_array                                 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__preinit_array_end                               /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+__preinit_array_start                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+__register_frame_info                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+__sf_fake_stderr                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+__stack                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+__start_bss                                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+__start_data                                      /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+_exit                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+_fini                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+_global_impure_ptr                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+_impure_ptr                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-impure.o)
+_init                                             /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-init.o)
+_mainCRTStartup                                   /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_read                                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c.obj (symbol from plugin)
+_stack_init                                       /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_start                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+_usbd_qdef                                        CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+_usbd_qdef_buf                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+_write                                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c.obj (symbol from plugin)
+atexit                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+audio_device.c.f3c4b310                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccSQiSI0.debug.temp.o
+board.c.10054a24                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccbtPRYc.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+board_button_read                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+board_getchar                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c.obj (symbol from plugin)
+board_init                                        CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+board_led_write                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+board_millis                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+board_uart_read                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c.obj (symbol from plugin)
+board_uart_write                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/board.c.obj (symbol from plugin)
+cdc_device.c.a7ffac98                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccqjQKVU.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+cdc_task                                          CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+cdcd_control_xfer_cb                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+cdcd_init                                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+cdcd_open                                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+cdcd_reset                                        CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+cdcd_xfer_cb                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_connect                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_disconnect                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt0_status_complete                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+dcd_edpt_clear_stall                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_close                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_close_all                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_iso_activate                             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_iso_alloc                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_open                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_stall                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_xfer                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_edpt_xfer_fifo                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_event_handler                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+dcd_init                                          CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_int_disable                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_int_enable                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_int_handler                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+dcd_musb.c.296721ab                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccLNjoKL.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+dcd_remote_wakeup                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_set_address                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+dcd_sof_enable                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+desc_device                                       CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj (symbol from plugin)
+desc_fs_configuration                             CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj (symbol from plugin)
+dfu_device.c.4a5f47ae                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cczjRTpH.debug.temp.o
+dfu_rt_device.c.52435b8e                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCDK11F.debug.temp.o
+ecm_rndis_device.c.c91519c0                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccxT64C0.debug.temp.o
+exit                                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-exit.o)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+family.c.f9a62c9d                                 /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc4dIlSP.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+hardware_init_hook                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+hcd_musb.c.7c867d46                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc7dmZDe.debug.temp.o
+hid_device.c.a8305519                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cciJjeyO.debug.temp.o
+led_blinking_task                                 CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+main                                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+main.c.bc92c2e0                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccOtsV39.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+memcpy                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memcpy-stub.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+memmove                                           /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memmove.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+memset                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-memset.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+midi_device.c.0c436c98                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccZ0hcUk.debug.temp.o
+msc_device.c.e1983691                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccODt2a7.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+msc_disk                                          CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+msc_disk.c.36c8dd6d                               /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJf6ywM.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+mscd_control_xfer_cb                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+mscd_init                                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+mscd_open                                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+mscd_reset                                        CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+mscd_xfer_cb                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+ncm_device.c.f0d9695a                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccp8leXr.debug.temp.o
+rdwr10_validate_cmd                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+software_init_hook                                /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+string_desc_arr                                   CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj (symbol from plugin)
+strlen                                            /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg_nano.a(lib_a-strlen.o)
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+system_TM4C123.c.af91dc0f                         /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceaL7nA.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+system_ticks                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/family.c.obj (symbol from plugin)
+tm4c123_startup.c.3d7e5390                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccHmhaOM.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+tu_desc_find                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_desc_find2                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_desc_find3                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_desc_get_interface_total_len                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_bind_driver                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_edpt_claim                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_edpt_release                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_edpt_stream_init                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_stream_read                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_stream_read_xfer                          CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_stream_write                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_stream_write_xfer                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_stream_write_zlp_if_needed                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_edpt_validate                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_fifo_advance_read_pointer                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+tu_fifo_advance_write_pointer                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+tu_fifo_clear                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_fifo_config                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_fifo_correct_read_pointer                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+tu_fifo_count                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_fifo_empty                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_fifo_full                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+tu_fifo_get_read_info                             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+tu_fifo_get_write_info                            CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/portable/mentor/musb/dcd_musb.c.obj (symbol from plugin)
+tu_fifo_overflowed                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+tu_fifo_peek                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tu_fifo_peek_n                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+tu_fifo_read                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_fifo_read_n                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_fifo_read_n_const_addr_full_words              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+tu_fifo_remaining                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_fifo_set_overwritable                          CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tu_fifo_write                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tu_fifo_write_n                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tu_fifo_write_n_const_addr_full_words             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/common/tusb_fifo.c.obj (symbol from plugin)
+tud_cdc_line_coding_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_line_state_cb                             CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_available                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+tud_cdc_n_connected                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_get_line_coding                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_get_line_state                          CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_peek                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_read                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+tud_cdc_n_read_flush                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_set_wanted_char                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_write                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+tud_cdc_n_write_available                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_write_clear                             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_n_write_flush                             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+tud_cdc_rx_cb                                     CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_rx_wanted_cb                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_send_break_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_cdc_tx_complete_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_connect                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_connected                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_control_status                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_control_xfer                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_descriptor_bos_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_descriptor_configuration_cb                   CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_descriptor_device_cb                          CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_descriptor_device_qualifier_cb                /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_descriptor_other_speed_configuration_cb       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_descriptor_string_cb                          CMakeFiles/fulltest.dir/src/usb_descriptors.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_disconnect                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_init                                          CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+tud_inited                                        CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tud_mount_cb                                      CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_mounted                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_msc_capacity_cb                               CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_get_maxlun_cb                             /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_inquiry_cb                                CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_is_writable_cb                            CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_read10_cb                                 CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_read10_complete_cb                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_request_sense_cb                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_scsi_cb                                   CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_scsi_complete_cb                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_set_sense                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+tud_msc_start_stop_cb                             CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_test_unit_ready_cb                        CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_write10_cb                                CMakeFiles/fulltest.dir/src/msc_disk.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_msc_write10_complete_cb                       /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+tud_remote_wakeup                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_resume_cb                                     CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_speed_get                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_suspend_cb                                    CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_suspended                                     CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+tud_task_event_ready                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_task_ext                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+tud_umount_cb                                     CMakeFiles/fulltest.dir/src/main.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tud_vendor_control_xfer_cb                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+tusb.c.bc99647c                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccR8PDIs.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+tusb_fifo.c.6eafb14f                              /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccjliUSa.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+tusb_init                                         CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+tusb_inited                                       CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usb_descriptors.c.f3795041                        /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cceMZQ1Z.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+usbd.c.52d11a61                                   /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cck08YXY.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+usbd_app_driver_get_cb                            /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_control.c.91551862                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc0Qrxa1.debug.temp.o
+                                                  /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+usbd_control_reset                                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_control_set_complete_callback                CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_control_set_request                          CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_control_xfer_cb                              CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_defer_func                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_edpt_busy                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+usbd_edpt_claim                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+usbd_edpt_clear_stall                             CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_edpt_close                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_edpt_iso_activate                            CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_edpt_iso_alloc                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_edpt_open                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+usbd_edpt_release                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+usbd_edpt_stall                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+usbd_edpt_stalled                                 CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+usbd_edpt_xfer                                    CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd_control.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/tusb.c.obj (symbol from plugin)
+usbd_edpt_xfer_fifo                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_int_set                                      CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbd_open_edpt_pair                               CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/msc/msc_device.c.obj (symbol from plugin)
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/class/cdc/cdc_device.c.obj (symbol from plugin)
+usbd_sof_enable                                   CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/src/device/usbd.c.obj (symbol from plugin)
+usbtmc_device.c.c2a659df                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccCe7FUt.debug.temp.o
+vectors                                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//fulltest.2SRRpV.ltrans0.ltrans.o
+                                                  CMakeFiles/fulltest.dir/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c.obj (symbol from plugin)
+vendor_device.c.aa7aaef1                          /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//ccJUbdnO.debug.temp.o
+video_device.c.a17252a7                           /var/folders/vb/jgxdfp997zncd3gd8bnywpm00000gn/T//cc31ZY0V.debug.temp.o

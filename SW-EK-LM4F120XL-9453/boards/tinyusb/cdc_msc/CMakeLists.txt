@@ -35,7 +35,7 @@ set(BASE_LOCATION ../../..)
 message ( STATUS "BASE_LOCATION = ${BASE_LOCATION}.")
 
 
-set(TINYUSB_LOCATION ../../tinyusb-lm4s)
+set(TINYUSB_LOCATION ../../../third_party/tinyusb)
 
 
 set(BOARD EK-LM4F120X)
