@@ -116,8 +116,9 @@ CFLAGS= -flto             \
 		-mthumb             \
 		-mabi=aapcs		 \
        ${CPU}              \
-       ${FPU}              \
-       -uvectors -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual -MD -c
+       ${FPU}			\
+	    -MD -c
+       
 
 #
 # The command for calling the library archiver.
@@ -132,7 +133,7 @@ LD=${PREFIX}-gcc
 #
 # The flags passed to the linker.
 #
-LDFLAGS= -u _printf_float -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=./gcc/build.map -Wl,-cref -Wl,-gc-sections  -specs=nosys.specs -specs=nano.specs
+LDFLAGS= -u _printf_float 
 
 #
 # Get the location of libgcc.a from the GCC front-end.
@@ -160,6 +161,8 @@ LIBNOSYS=${shell ${CC} ${CFLAGS} -print-file-name=libnosys.a}
 OBJCOPY=${PREFIX}-objcopy
 
 OBJSIZE=${PREFIX}-size
+
+OBJDUMP=${PREFIX}-objdump
 
 #
 # Tell the compiler to include debugging information if the DEBUG environment
@@ -252,6 +255,7 @@ ${COMPILER}${SUFFIX}/%.axf:
 	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
 	      '${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}'
 	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+	@${OBJDUMP} -D -h -S ${@} > ${@:.axf=.lst}
 	@${OBJSIZE} ${@}
 endif
 

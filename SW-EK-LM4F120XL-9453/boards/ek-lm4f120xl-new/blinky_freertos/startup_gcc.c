@@ -58,7 +58,7 @@ void SysTick_Handler  				(void) __attribute__ ((weak, alias("IntDefaultHandler"
 //
 //*****************************************************************************
 __attribute__ ((section(".isr_vector")))
-void (* const vectors[])(void) =
+void (* const g_pfnVectors[])(void) =
 {
     
     (void (*)(void))(0x20008000),           // The initial stack pointer

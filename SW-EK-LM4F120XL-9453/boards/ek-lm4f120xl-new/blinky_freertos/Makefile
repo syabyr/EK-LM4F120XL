@@ -91,6 +91,17 @@ ${COMPILER}/blinky.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
 
+CFLAGSgcc+=-uvectors -Wno-error=strict-prototypes -Wno-error=cast-qual
+CFLAGSgcc+=-fdata-sections -ffunction-sections -fsingle-precision-constant
+CFLAGSgcc+=-fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors
+CFLAGSgcc+=-Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow
+CFLAGSgcc+=-Werror-implicit-function-declaration -Wfloat-equal
+CFLAGSgcc+=-Wundef -Wshadow -Wwrite-strings -Wsign-compare
+CFLAGSgcc+=-Wmissing-format-attribute -Wunreachable-code
+CFLAGSgcc+=-Wcast-align -Wcast-function-type -Wcast-qual
+CFLAGSgcc+=-Wnull-dereference -Wuninitialized -Wunused
+CFLAGSgcc+=-Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual
+
 CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
 CFLAGSgcc += -I./FreeRTOS-Kernel/include
 CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
@@ -102,6 +113,21 @@ CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 ifeq (${DEBUG},1)
  CFLAGSgcc+= -g
 endif
+
+
+LDFLAGSgcc+=-flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+LDFLAGSgcc+=-ug_pfnVectors
+LDFLAGSgcc+=-Wno-error=strict-prototypes -Wno-error=cast-qual -fdata-sections
+LDFLAGSgcc+=-ffunction-sections -fsingle-precision-constant -fno-strict-aliasing
+LDFLAGSgcc+=-Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion
+LDFLAGSgcc+=-Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration
+LDFLAGSgcc+=-Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare
+LDFLAGSgcc+=-Wmissing-format-attribute -Wunreachable-code -Wcast-align
+LDFLAGSgcc+=-Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized
+LDFLAGSgcc+=-Wunused -Wredundant-decls -Os -MD -Wl,-Map=./gcc/build.map
+LDFLAGSgcc+=-Wl,-cref -Wl,-gc-sections  -specs=nosys.specs -specs=nano.specs
+
+
 #
 # Include the automatically generated dependency files.
 #
