@@ -65,16 +65,10 @@ clean:
 ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
-
-ENTRY_blinky=ResetISR
-
-${COMPILER}/blinky.axf: ${COMPILER}/startup_${COMPILER}.o
-SCATTERgcc_blinky=blinky.ld
-
-
-
 ${COMPILER}/blinky.axf: ${COMPILER}/blinky.o
-${COMPILER}/blinky.axf: ${COMPILER}/src/freertos_hook.o
+${COMPILER}/blinky.axf: ${COMPILER}/freertos_hook.o
+${COMPILER}/blinky.axf: ${COMPILER}/startup_${COMPILER}.o
+
 ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
 ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
 ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
@@ -84,9 +78,11 @@ ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
 ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
 ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
-
 ${COMPILER}/blinky.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
+ENTRY_blinky=ResetISR
+
+SCATTERgcc_blinky=blinky.ld
 
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
@@ -102,11 +98,8 @@ CFLAGSgcc+=-Wcast-align -Wcast-function-type -Wcast-qual
 CFLAGSgcc+=-Wnull-dereference -Wuninitialized -Wunused
 CFLAGSgcc+=-Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual
 
-CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
-CFLAGSgcc += -I./FreeRTOS-Kernel/include
-CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 
-CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
+CFLAGSgcc += -I./FreeRTOSConfig
 CFLAGSgcc += -I./FreeRTOS-Kernel/include
 CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 
