@@ -42,6 +42,9 @@ ROOT=../../..
 #
 include ./makedefs
 
+
+PROJ=blinky
+
 #
 # Where to find header files that do not live in the source directory.
 #
@@ -51,7 +54,7 @@ IPATH=../../..
 # The default rule, which causes the blinky example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/blinky.axf
+all: ${COMPILER}/${PROJ}.axf
 
 #
 # The rule to clean out all the build products.
@@ -59,30 +62,32 @@ all: ${COMPILER}/blinky.axf
 clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
+flash:
+	lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
 ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
-${COMPILER}/blinky.axf: ${COMPILER}/blinky.o
-${COMPILER}/blinky.axf: ${COMPILER}/freertos_hook.o
-${COMPILER}/blinky.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/freertos_hook.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
 
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
-${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
-${COMPILER}/blinky.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
-ENTRY_blinky=ResetISR
+ENTRY_${PROJ}=ResetISR
 
-SCATTERgcc_blinky=blinky.ld
+SCATTERgcc_${PROJ}=${PROJ}.ld
 
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
