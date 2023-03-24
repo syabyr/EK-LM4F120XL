@@ -44,7 +44,7 @@ ROOT := ${PWD}/../../../
 include ./makedefs
 
 
-PROJ=blinky
+PROJ=uart_print
 
 #
 # Where to find header files that do not live in the source directory.
