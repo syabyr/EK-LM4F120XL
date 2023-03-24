@@ -47,7 +47,7 @@
 
 // Include MCU header
 //#include "bsp/board_mcu.h"
-#include "TM4C123.h"
+#include "TM4C123GH6PM.h"
 
 // TODO fix later
 
@@ -140,15 +140,7 @@
   #define configASSERT( x )
 #endif
 
-#ifdef __RX__
-/* Renesas RX series */
-#define vSoftwareInterruptISR					        INT_Excep_ICU_SWINT
-#define vTickISR								              INT_Excep_CMT0_CMI0
-#define configPERIPHERAL_CLOCK_HZ				      (configCPU_CLOCK_HZ/2)
-#define configKERNEL_INTERRUPT_PRIORITY			  1
-#define configMAX_SYSCALL_INTERRUPT_PRIORITY	4
 
-#else
 
 /* FreeRTOS hooks to NVIC vectors */
 #define xPortPendSVHandler    PendSV_Handler
@@ -158,24 +150,11 @@
 //--------------------------------------------------------------------+
 // Interrupt nesting behavior configuration.
 //--------------------------------------------------------------------+
-#if defined(__NVIC_PRIO_BITS)
-  // For Cortex-M specific: __NVIC_PRIO_BITS is defined in core_cmx.h
-	#define configPRIO_BITS       __NVIC_PRIO_BITS
 
-#elif defined(__ECLIC_INTCTLBITS)
-  // RISC-V Bumblebee core from nuclei
-  #define configPRIO_BITS       __ECLIC_INTCTLBITS
+// For Cortex-M specific: __NVIC_PRIO_BITS is defined in core_cmx.h
+#define configPRIO_BITS       __NVIC_PRIO_BITS
 
-#elif defined(__IASMARM__)
-  // FIXME: IAR Assembler cannot include mcu header directly to get __NVIC_PRIO_BITS.
-  // Therefore we will hard coded it to minimum value of 2 to get pass ci build.
-  // IAR user must update this to correct value of the target MCU
-  #message "configPRIO_BITS is hard coded to 2 to pass IAR build only. User should update it per MCU"
-  #define configPRIO_BITS       2
 
-#else
-  #error "FreeRTOS configPRIO_BITS to be defined"
-#endif
 
 /* The lowest interrupt priority that can be used in a call to a "set priority" function. */
 #define configLIBRARY_LOWEST_INTERRUPT_PRIORITY			  ((1<<configPRIO_BITS) - 1)
@@ -194,6 +173,6 @@ to all Cortex-M ports, and do not rely on any particular library functions. */
 See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
 #define configMAX_SYSCALL_INTERRUPT_PRIORITY 	        ( configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )
 
-#endif
+
 
 #endif /* __FREERTOS_CONFIG__H */

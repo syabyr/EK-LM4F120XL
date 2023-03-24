@@ -1,33 +1,8 @@
-#include "TM4C123.h"
+#include "TM4C123GH6PM.h"
 #include "bsp/board.h"
 #include "board.h"
 
 
-//--------------------------------------------------------------------+
-// MACRO TYPEDEF CONSTANT ENUM
-//--------------------------------------------------------------------+
-
-static void board_uart_init (void)
-{
-  SYSCTL->RCGCUART |= (1 << 0);                // Enable the clock to UART0
-  SYSCTL->RCGCGPIO |= (1 << 0);                // Enable the clock to GPIOA
-
-  GPIOA->AFSEL |= (1 << 1) | (1 << 0);         // Enable the alternate function on pin PA0 & PA1
-  GPIOA->PCTL |= (1 << 0) | (1 << 4);          // Configure the GPIOPCTL register to select UART0 in PA0 and PA1
-  GPIOA->DEN |= (1 << 0) | (1 << 1);           // Enable the digital functionality in PA0 and PA1
-
-  // BAUDRATE = 115200, with SystemCoreClock = 50 Mhz refer manual for calculation
-  //  - BRDI = SystemCoreClock / (16* baud)
-  //  - BRDF = int(fraction*64 + 0.5)
-  UART0->CTL &= ~(1 << 0);                     // Disable UART0 by clearing UARTEN bit in the UARTCTL register
-  UART0->IBRD = 27;                            // Write the integer portion of the BRD to the UARTIRD register
-  UART0->FBRD = 8;                             // Write the fractional portion of the BRD to the UARTFBRD registerer
-
-  UART0->LCRH = (0x3 << 5);                    // 8-bit, no parity, 1 stop bit
-  UART0->CC = 0x0;                             // Configure the UART clock source as system clock
-
-  UART0->CTL = (1 << 0) | (1 << 8) | (1 << 9); // UART0 Enable, Transmit Enable, Receive Enable
-}
 
 static void initialize_board_led (GPIOA_Type *port, uint8_t PinMsk, uint8_t dirmsk)
 {
@@ -44,12 +19,7 @@ static void initialize_board_led (GPIOA_Type *port, uint8_t PinMsk, uint8_t dirm
   port->DIR = dirmsk;
 }
 
-static void board_switch_init (void)
-{
-  GPIOF->DIR &= ~(1 << BOARD_BTN);
-  GPIOF->PUR |= (1 << BOARD_BTN);
-  GPIOF->DEN |= (1 << BOARD_BTN);
-}
+
 
 static void WriteGPIOPin (GPIOA_Type *port, uint8_t PinMsk, bool state)
 {
@@ -70,22 +40,22 @@ static uint32_t ReadGPIOPin (GPIOA_Type *port, uint8_t pinMsk)
 
 void board_init (void)
 {
-  SystemCoreClockUpdate();
+  //SystemCoreClockUpdate();
 
 
   // 1ms tick timer
-  SysTick_Config(SystemCoreClock / 1000);
+  //SysTick_Config(SystemCoreClock / 1000);
 
     // If freeRTOS is used, IRQ priority is limit by max syscall ( smaller is higher )
     //NVIC_SetPriority(USB0_IRQn, configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY );
 
 
   /* Reset USB */
-  SYSCTL->SRCR2 |= (1u << 16);
+  //SYSCTL->SRCR2 |= (1u << 16);
 
   for ( volatile uint8_t i = 0; i < 20; i++ ) {}
 
-  SYSCTL->SRCR2 &= ~(1u << 16);
+  //SYSCTL->SRCR2 &= ~(1u << 16);
 
   /* Open the USB clock gate */
   SYSCTL->RCGCUSB |= (1 << 0);
@@ -109,14 +79,6 @@ void board_init (void)
 
   /* Configure GPIO for board LED */
   initialize_board_led(LED_PORT, leds, dirmsk);
-
-  /* Configure GPIO for board switch */
-  board_switch_init();
-
-  /* Initialize board UART */
-  board_uart_init();
-
-  //TU_LOG1_INT(SystemCoreClock);
 }
 
 void board_led_write (bool state)
@@ -154,18 +116,3 @@ int board_uart_read (uint8_t *buf, int len)
   (void) len;
   return 0;
 }
-
-/*
-#if CFG_TUSB_OS == OPT_OS_NONE
-volatile uint32_t system_ticks = 0;
-void SysTick_Handler (void)
-{
-  system_ticks++;
-}
-
-uint32_t board_millis (void)
-{
-  return system_ticks;
-}
-#endif
-*/

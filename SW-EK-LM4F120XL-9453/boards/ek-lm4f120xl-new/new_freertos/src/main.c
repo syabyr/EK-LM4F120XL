@@ -53,12 +53,9 @@ enum  {
 };
 
 // static timer & task
-#if configSUPPORT_STATIC_ALLOCATION
 StaticTimer_t blinky_tmdef;
 StaticTimer_t blinky_tmdef2;
 
-
-#endif
 
 TimerHandle_t blinky_tm;
 TimerHandle_t blinky_tm2;
@@ -75,14 +72,11 @@ int main(void)
 {
   board_init();
 
-#if configSUPPORT_STATIC_ALLOCATION
   // soft timer for blinky
   blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), true, NULL, led_blinky_cb, &blinky_tmdef);
 
   blinky_tm2 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(BLINK_SUSPENDED), true, NULL, led2_blinky_cb, &blinky_tmdef2);
-#else
-  blinky_tm = xTimerCreate(NULL, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), true, NULL, led_blinky_cb);
-#endif
+
 
   xTimerStart(blinky_tm, 0);
   xTimerStart(blinky_tm2, 0);

@@ -1,6 +1,6 @@
 #include <stdint.h> 
 #include <system_TM4C123.h>
-#include <TM4C123.h>
+#include <TM4C123GH6PM.h>
 
 #define SRAM_START 0x20000000
 #define SRAM_SIZE  (32*1024) 
@@ -349,11 +349,11 @@ void Reset_Handler(void)
     // case where main() uses floating-point and the function prologue saves
     // floating-point registers (which will fault if floating-point is not
     // enabled).
-    SCB->CPACR &= ~ (CPAC_CP10_M | CPAC_CP11_M);
-    SCB->CPACR |= (CPAC_CP10_FULL | CPAC_CP11_FULL);
+    //SCB->CPACR &= ~ (CPAC_CP10_M | CPAC_CP11_M);
+    //SCB->CPACR |= (CPAC_CP10_FULL | CPAC_CP11_FULL);
 
    //__libc_init_array();
-   SystemInit();
+   //SystemInit();
    main() ; 
      
 }
