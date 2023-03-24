@@ -24,6 +24,7 @@
 
 #include "inc/hw_nvic.h"
 #include "inc/hw_types.h"
+//#include <system_TM4C123.h>
 
 //*****************************************************************************
 //
@@ -37,13 +38,6 @@ static void IntDefaultHandler(void);
 
 //*****************************************************************************
 //
-// External declaration for the interrupt handler used by the application.
-//
-//*****************************************************************************
-extern void UARTIntHandler(void);
-
-//*****************************************************************************
-//
 // The entry point for the application.
 //
 //*****************************************************************************
@@ -54,9 +48,12 @@ extern int main(void);
 // Reserve space for the system stack.
 //
 //*****************************************************************************
-static unsigned long pulStack[64];
-
+void SVC_Handler 					(void) __attribute__ ((weak, alias("IntDefaultHandler")));
+void DebugMon_Handler 				(void) __attribute__ ((weak, alias("IntDefaultHandler")));
+void PendSV_Handler   				(void) __attribute__ ((weak, alias("IntDefaultHandler")));
+void SysTick_Handler  				(void) __attribute__ ((weak, alias("IntDefaultHandler")));
 //*****************************************************************************
+void USB0_Handler                   (void) __attribute__ ((weak, alias("IntDefaultHandler")));
 //
 // The vector table.  Note that the proper constructs must be placed on this to
 // ensure that it ends up at physical address 0x0000.0000.
@@ -65,8 +62,8 @@ static unsigned long pulStack[64];
 __attribute__ ((section(".isr_vector")))
 void (* const g_pfnVectors[])(void) =
 {
-    (void (*)(void))((unsigned long)pulStack + sizeof(pulStack)),
-                                            // The initial stack pointer
+    
+    (void (*)(void))(0x20008000),           // The initial stack pointer
     ResetISR,                               // The reset handler
     NmiSR,                                  // The NMI handler
     FaultISR,                               // The hard fault handler
@@ -77,17 +74,17 @@ void (* const g_pfnVectors[])(void) =
     0,                                      // Reserved
     0,                                      // Reserved
     0,                                      // Reserved
-    IntDefaultHandler,                      // SVCall handler
-    IntDefaultHandler,                      // Debug monitor handler
+    SVC_Handler,                      // SVCall handler
+    DebugMon_Handler,                      // Debug monitor handler
     0,                                      // Reserved
-    IntDefaultHandler,                      // The PendSV handler
-    IntDefaultHandler,                      // The SysTick handler
+    PendSV_Handler,                      // The PendSV handler
+    SysTick_Handler,                      // The SysTick handler
     IntDefaultHandler,                      // GPIO Port A
     IntDefaultHandler,                      // GPIO Port B
     IntDefaultHandler,                      // GPIO Port C
     IntDefaultHandler,                      // GPIO Port D
     IntDefaultHandler,                      // GPIO Port E
-    UARTIntHandler,                         // UART0 Rx and Tx
+    IntDefaultHandler,                      // UART0 Rx and Tx
     IntDefaultHandler,                      // UART1 Rx and Tx
     IntDefaultHandler,                      // SSI0 Rx and Tx
     IntDefaultHandler,                      // I2C0 Master and Slave
@@ -126,7 +123,7 @@ void (* const g_pfnVectors[])(void) =
     IntDefaultHandler,                      // CAN2
     IntDefaultHandler,                      // Ethernet
     IntDefaultHandler,                      // Hibernate
-    IntDefaultHandler,                      // USB0
+    USB0_Handler,                      // USB0
     IntDefaultHandler,                      // PWM Generator 3
     IntDefaultHandler,                      // uDMA Software Transfer
     IntDefaultHandler,                      // uDMA Error
@@ -283,10 +280,11 @@ ResetISR(void)
     // Note that this does not use DriverLib since it might not be included in
     // this project.
     //
+    /*
     HWREG(NVIC_CPAC) = ((HWREG(NVIC_CPAC) &
                          ~(NVIC_CPAC_CP10_M | NVIC_CPAC_CP11_M)) |
                         NVIC_CPAC_CP10_FULL | NVIC_CPAC_CP11_FULL);
-
+    */
     //
     // Call the application's entry point.
     //

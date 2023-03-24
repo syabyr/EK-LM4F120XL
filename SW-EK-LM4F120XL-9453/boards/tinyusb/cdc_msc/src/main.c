@@ -27,7 +27,15 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "bsp/board.h"
+#include "inc/lm4f120h5qr.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "driverlib/gpio.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/sysctl.h"
+
+#include "board.h"
 #include "tusb.h"
 
 //--------------------------------------------------------------------+
@@ -46,14 +54,43 @@ enum  {
 };
 
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
-
+uint32_t SystemCoreClock;
 void led_blinking_task(void);
 void cdc_task(void);
 
 /*------------- MAIN -------------*/
 int main(void)
 {
+  ROM_FPUEnable();
+  ROM_FPULazyStackingEnable();
+
+    //
+    // Set the clocking to run directly from the crystal.
+    //
+  ROM_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
+                       SYSCTL_XTAL_16MHZ);
+  ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+  ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
+
+  //
+    // Enable the GPIO peripheral used for USB, and configure the USB
+    // pins.
+    //
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+    ROM_GPIOPinTypeUSBAnalog(GPIO_PORTD_BASE, GPIO_PIN_4 | GPIO_PIN_5);
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_USB0);
+
+    //
+    // Turn on USB Phy clock.
+    //
+    ROM_SysCtlUSBPLLEnable();
+
+    SystemCoreClock = ROM_SysCtlClockGet();
+
   board_init();
+
+  //ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+  //ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
 
   // init device stack on configured roothub port
   tud_init(BOARD_TUD_RHPORT);
@@ -161,7 +198,15 @@ void led_blinking_task(void)
   // Blink every interval ms
   if ( board_millis() - start_ms < blink_interval_ms) return; // not enough time
   start_ms += blink_interval_ms;
-
-  board_led_write(led_state);
+  //board_led_write(led_state);
+  
+  if(led_state)
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
+    }else
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, 0x0);
+    }
+    
   led_state = 1 - led_state; // toggle
 }

@@ -95,23 +95,24 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/video/video_device.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/vendor/vendor_device.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/dcd_musb.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/hcd_musb.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/bsp/tm4c123/family.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/bsp/board.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.o
 
+
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/family.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/main.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/msc_disk.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-#${COMPILER}/${PROJ}.axf: ${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
-SCATTERgcc_${PROJ}=${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
-ENTRY_${PROJ}=Reset_Handler
+
+SCATTERgcc_${PROJ}=./blinky.ld
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_gcc.o
+
+
+ENTRY_${PROJ}=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM  -DCFG_TUSB_MCU=OPT_MCU_TM4C123
 
-CFLAGSgcc += -I${TINYUSB}/hw -I${TINYUSB}/src -I${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123/ -I./src
-CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include
+CFLAGSgcc += -I./src -I${TINYUSB}/src
+CFLAGSgcc += -I./inc
 
 LDFLAGSgcc =
 

@@ -23,7 +23,7 @@
  *
  */
 
-#include "bsp/board.h"
+#include "board.h"
 #include "tusb.h"
 
 #if CFG_TUD_MSC
