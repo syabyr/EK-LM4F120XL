@@ -1,5 +1,6 @@
-#include "inc/lm4f120h5qr.h"
 #include <stdio.h>
+
+#include "inc/lm4f120h5qr.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
 #include "driverlib/gpio.h"
@@ -14,17 +15,8 @@
 #include "timers.h"
 
 
-/* Blink pattern
- * - 250 ms  : device not mounted
- * - 1000 ms : device mounted
- * - 2500 ms : device is suspended
- */
-enum  {
-  BLINK_NOT_MOUNTED = 250,
-  BLINK_MOUNTED = 1000,
-  BLINK_SUSPENDED = 2500,
-};
-
+//1000ms
+#define SECOND 1000
 
 // static timer & task
 StaticTimer_t blinky_tmdef;
@@ -55,7 +47,7 @@ int main(void)
 
     SystemCoreClock = ROM_SysCtlClockGet();
 
-    blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), true, NULL, led_blinky_cb, &blinky_tmdef);
+    blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(SECOND), true, NULL, led_blinky_cb, &blinky_tmdef);
     xTimerStart(blinky_tm, 0);
     vTaskStartScheduler();
 
