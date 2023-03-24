@@ -75,14 +75,14 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/freertos_hook.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/list.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/queue.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/tasks.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/timers.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/croutine.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/event_groups.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PWD}/../FreeRTOS-Kernel/stream_buffer.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/list.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/queue.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/tasks.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/timers.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/croutine.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/event_groups.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/stream_buffer.o
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
@@ -106,8 +106,8 @@ CFLAGSgcc+=-Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual
 
 
 CFLAGSgcc += -I./
-CFLAGSgcc += -I${PWD}/../FreeRTOS-Kernel/include
-CFLAGSgcc += -I${PWD}/../FreeRTOS-Kernel/portable/GCC/ARM_CM4F
+CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/include
+CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 
 ifeq (${DEBUG},1)
  CFLAGSgcc+= -g
