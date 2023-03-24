@@ -65,17 +65,12 @@ clean:
 ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
-#
-# Rules for building the blinky example.
-#
 
-#${COMPILER}/blinky.axf: ${COMPILER}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.o
-#SCATTERgcc_blinky=./tm4c123.ld
-#ENTRY_blinky=Reset_Handler
+ENTRY_blinky=ResetISR
 
 ${COMPILER}/blinky.axf: ${COMPILER}/startup_${COMPILER}.o
 SCATTERgcc_blinky=blinky.ld
-ENTRY_blinky=ResetISR
+
 
 
 ${COMPILER}/blinky.axf: ${COMPILER}/blinky.o
@@ -90,11 +85,6 @@ ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
 ${COMPILER}/blinky.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
 
-${COMPILER}/blinky.axf: ${COMPILER}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.o
-
-
-
-
 ${COMPILER}/blinky.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
 
@@ -105,10 +95,6 @@ CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
 CFLAGSgcc += -I./FreeRTOS-Kernel/include
 CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 
-CFLAGSgcc += -I./hw
-CFLAGSgcc += -I./hw/bsp/tm4c123/boards/ek-tm4c123gxl
-CFLAGSgcc += -I./hw/mcu/ti/tm4c123xx/Include/TM4C123/
-CFLAGSgcc += -I./hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include
 CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
 CFLAGSgcc += -I./FreeRTOS-Kernel/include
 CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F

@@ -47,7 +47,6 @@ extern int main(void);
 // Reserve space for the system stack.
 //
 //*****************************************************************************
-static unsigned long pulStack[64];
 void SVC_Handler 					(void) __attribute__ ((weak, alias("IntDefaultHandler")));
 void DebugMon_Handler 				(void) __attribute__ ((weak, alias("IntDefaultHandler")));
 void PendSV_Handler   				(void) __attribute__ ((weak, alias("IntDefaultHandler")));
@@ -59,10 +58,10 @@ void SysTick_Handler  				(void) __attribute__ ((weak, alias("IntDefaultHandler"
 //
 //*****************************************************************************
 __attribute__ ((section(".isr_vector")))
-void (* const g_pfnVectors[])(void) =
+void (* const vectors[])(void) =
 {
-    (void (*)(void))((unsigned long)pulStack + sizeof(pulStack)),
-                                            // The initial stack pointer
+    
+    (void (*)(void))(0x20008000),           // The initial stack pointer
     ResetISR,                               // The reset handler
     NmiSR,                                  // The NMI handler
     FaultISR,                               // The hard fault handler

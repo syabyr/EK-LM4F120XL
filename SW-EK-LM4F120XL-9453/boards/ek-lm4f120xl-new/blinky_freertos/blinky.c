@@ -46,11 +46,14 @@ void led_blinky_cb(TimerHandle_t xTimer)
   led_state = 1 - led_state; // toggle
 }
 
+unsigned long SystemCoreClock;
 
 int main(void)
 {
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
+
+    SystemCoreClock = ROM_SysCtlClockGet();
 
     blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(BLINK_NOT_MOUNTED), true, NULL, led_blinky_cb, &blinky_tmdef);
     xTimerStart(blinky_tm, 0);
