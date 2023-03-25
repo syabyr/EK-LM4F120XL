@@ -95,39 +95,62 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/video/video_device.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/vendor/vendor_device.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/dcd_musb.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/hcd_musb.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/bsp/tm4c123/family.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/bsp/board.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.o
 
+
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/family.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/main.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/msc_disk.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/lib/FreeRTOS-Kernel/list.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/lib/FreeRTOS-Kernel/queue.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/lib/FreeRTOS-Kernel/tasks.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/lib/FreeRTOS-Kernel/timers.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/list.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/queue.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/tasks.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/timers.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/croutine.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/event_groups.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/stream_buffer.o
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-#${COMPILER}/${PROJ}.axf: ${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
-SCATTERgcc_${PROJ}=${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld
-ENTRY_${PROJ}=Reset_Handler
-CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM  -DCFG_TUSB_MCU=OPT_MCU_TM4C123
 
-CFLAGSgcc += -I${TINYUSB}/hw
+SCATTERgcc_${PROJ}=./blinky.ld
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_gcc.o
+
+
+ENTRY_${PROJ}=ResetISR
+
+CFLAGSgcc = -DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM  -DCFG_TUSB_MCU=OPT_MCU_TM4C123
+
+
+CFLAGSgcc += -ug_pfnVectors -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb
+CFLAGSgcc += -fdata-sections -ffunction-sections -fsingle-precision-constant
+CFLAGSgcc += -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors
+CFLAGSgcc += -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow
+CFLAGSgcc += -Werror-implicit-function-declaration -Wfloat-equal -Wundef
+CFLAGSgcc += -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute
+CFLAGSgcc += -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual
+CFLAGSgcc += -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls
+CFLAGSgcc += -Os -Wno-error=redundant-decls -Wno-error=cast-qual 
+
+
+
+CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/include
+CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 CFLAGSgcc += -I${TINYUSB}/src
-CFLAGSgcc += -I${TINYUSB}/hw/bsp/tm4c123/boards/ek-tm4c123gxl
-CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123/
-CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
-CFLAGSgcc += -I${TINYUSB}/lib/FreeRTOS-Kernel/include
-CFLAGSgcc += -I${TINYUSB}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
+CFLAGSgcc += -I./src -I./inc -I./
 
-CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include
-
-LDFLAGSgcc =
+LDFLAGSgcc =  -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+LDFLAGSgcc += -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -ug_pfnVectors -DTM4C123GH6PM
+LDFLAGSgcc += -Wno-error=strict-prototypes -Wno-error=cast-qual -ggdb -fdata-sections
+LDFLAGSgcc += -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing
+LDFLAGSgcc += -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes
+LDFLAGSgcc += -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal
+LDFLAGSgcc += -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute
+LDFLAGSgcc += -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual
+LDFLAGSgcc += -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls
+LDFLAGSgcc += -Os -MD -Wl,-Map=./gcc/${PROJ}.map -Wl,-cref -Wl,-gc-sections
+LDFLAGSgcc += -specs=nosys.specs -specs=nano.specs
 
 #
 # Include the automatically generated dependency files.

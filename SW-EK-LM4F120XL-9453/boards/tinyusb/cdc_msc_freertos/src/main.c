@@ -27,20 +27,17 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "bsp/board.h"
+#include "inc/lm4f120h5qr.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "driverlib/gpio.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/sysctl.h"
+#include "board.h"
 #include "tusb.h"
 
-#if TU_CHECK_MCU(OPT_MCU_ESP32S2, OPT_MCU_ESP32S3)
-  // ESP-IDF need "freertos/" prefix in include path.
-  // CFG_TUSB_OS_INC_PATH should be defined accordingly.
-  #include "freertos/FreeRTOS.h"
-  #include "freertos/semphr.h"
-  #include "freertos/queue.h"
-  #include "freertos/task.h"
-  #include "freertos/timers.h"
 
-  #define USBD_STACK_SIZE     4096
-#else
   #include "FreeRTOS.h"
   #include "semphr.h"
   #include "queue.h"
@@ -49,7 +46,7 @@
 
   // Increase stack size when debug log is enabled
   #define USBD_STACK_SIZE    (3*configMINIMAL_STACK_SIZE/2) * (CFG_TUSB_DEBUG ? 2 : 1)
-#endif
+
 
 #define CDC_STACK_SZIE      configMINIMAL_STACK_SIZE
 
@@ -88,9 +85,34 @@ void cdc_task(void* params);
 //--------------------------------------------------------------------+
 // Main
 //--------------------------------------------------------------------+
-
+unsigned long SystemCoreClock;
 int main(void)
 {
+ROM_FPUEnable();
+  ROM_FPULazyStackingEnable();
+
+    //
+    // Set the clocking to run directly from the crystal.
+    //
+  ROM_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
+                       SYSCTL_XTAL_16MHZ);
+  ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+  ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
+  SystemCoreClock = ROM_SysCtlClockGet();
+  //
+    // Enable the GPIO peripheral used for USB, and configure the USB
+    // pins.
+    //
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
+    ROM_GPIOPinTypeUSBAnalog(GPIO_PORTD_BASE, GPIO_PIN_4 | GPIO_PIN_5);
+    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_USB0);
+
+    //
+    // Turn on USB Phy clock.
+    //
+    ROM_SysCtlUSBPLLEnable();
+
+    SystemCoreClock = ROM_SysCtlClockGet();
   board_init();
 
 #if configSUPPORT_STATIC_ALLOCATION
@@ -110,20 +132,13 @@ int main(void)
 
   xTimerStart(blinky_tm, 0);
 
-  // skip starting scheduler (and return) for ESP32-S2 or ESP32-S3
-#if !TU_CHECK_MCU(OPT_MCU_ESP32S2, OPT_MCU_ESP32S3)
   vTaskStartScheduler();
-#endif
+
 
   return 0;
 }
 
-#if TU_CHECK_MCU(OPT_MCU_ESP32S2, OPT_MCU_ESP32S3)
-void app_main(void)
-{
-  main();
-}
-#endif
+
 
 // USB Device Driver task
 // This top level thread process all usb events and invoke callbacks
@@ -246,6 +261,16 @@ void led_blinky_cb(TimerHandle_t xTimer)
   (void) xTimer;
   static bool led_state = false;
 
-  board_led_write(led_state);
+
+  //board_led_write(led_state);
+  
+  if(led_state)
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
+    }else
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, 0x0);
+    }
+    
   led_state = 1 - led_state; // toggle
 }

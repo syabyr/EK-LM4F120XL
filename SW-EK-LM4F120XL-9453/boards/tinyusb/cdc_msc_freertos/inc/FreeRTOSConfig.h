@@ -43,24 +43,15 @@
  *----------------------------------------------------------*/
 
 // skip if included from IAR assembler
-#ifndef __IASMARM__
+
 
 // Include MCU header
-#include "bsp/board_mcu.h"
-
-#if CFG_TUSB_MCU == OPT_MCU_ESP32S2 || CFG_TUSB_MCU == OPT_MCU_ESP32S3
-  #error "ESP32-Sx should use IDF's FreeRTOSConfig.h"
-#endif
-
+#include "inc/lm4f120h5qr.h"
 // TODO fix later
-#if CFG_TUSB_MCU == OPT_MCU_MM32F327X
-  extern u32 SystemCoreClock;
-#else
+
   // FIXME cause redundant-decls warnings
   extern uint32_t SystemCoreClock;
-#endif
 
-#endif
 
 /* Cortex M23/M33 port configuration. */
 #define configENABLE_MPU								        0
@@ -121,7 +112,7 @@
 #define INCLUDE_vTaskDelayUntil                1
 #define INCLUDE_vTaskDelay                     1
 #define INCLUDE_xTaskGetSchedulerState         0
-#define INCLUDE_xTaskGetCurrentTaskHandle      0
+#define INCLUDE_xTaskGetCurrentTaskHandle      1
 #define INCLUDE_uxTaskGetStackHighWaterMark    0
 #define INCLUDE_xTaskGetIdleTaskHandle         0
 #define INCLUDE_xTimerGetTimerDaemonTaskHandle 0
@@ -147,15 +138,7 @@
   #define configASSERT( x )
 #endif
 
-#ifdef __RX__
-/* Renesas RX series */
-#define vSoftwareInterruptISR					        INT_Excep_ICU_SWINT
-#define vTickISR								              INT_Excep_CMT0_CMI0
-#define configPERIPHERAL_CLOCK_HZ				      (configCPU_CLOCK_HZ/2)
-#define configKERNEL_INTERRUPT_PRIORITY			  1
-#define configMAX_SYSCALL_INTERRUPT_PRIORITY	4
 
-#else
 
 /* FreeRTOS hooks to NVIC vectors */
 #define xPortPendSVHandler    PendSV_Handler
@@ -165,24 +148,12 @@
 //--------------------------------------------------------------------+
 // Interrupt nesting behavior configuration.
 //--------------------------------------------------------------------+
-#if defined(__NVIC_PRIO_BITS)
-  // For Cortex-M specific: __NVIC_PRIO_BITS is defined in core_cmx.h
-	#define configPRIO_BITS       __NVIC_PRIO_BITS
 
-#elif defined(__ECLIC_INTCTLBITS)
-  // RISC-V Bumblebee core from nuclei
-  #define configPRIO_BITS       __ECLIC_INTCTLBITS
+#define __NVIC_PRIO_BITS               3
+// For Cortex-M specific: __NVIC_PRIO_BITS is defined in core_cmx.h
+#define configPRIO_BITS       __NVIC_PRIO_BITS
 
-#elif defined(__IASMARM__)
-  // FIXME: IAR Assembler cannot include mcu header directly to get __NVIC_PRIO_BITS.
-  // Therefore we will hard coded it to minimum value of 2 to get pass ci build.
-  // IAR user must update this to correct value of the target MCU
-  #message "configPRIO_BITS is hard coded to 2 to pass IAR build only. User should update it per MCU"
-  #define configPRIO_BITS       2
 
-#else
-  #error "FreeRTOS configPRIO_BITS to be defined"
-#endif
 
 /* The lowest interrupt priority that can be used in a call to a "set priority" function. */
 #define configLIBRARY_LOWEST_INTERRUPT_PRIORITY			  ((1<<configPRIO_BITS) - 1)
@@ -201,6 +172,5 @@ to all Cortex-M ports, and do not rely on any particular library functions. */
 See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
 #define configMAX_SYSCALL_INTERRUPT_PRIORITY 	        ( configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )
 
-#endif
 
 #endif /* __FREERTOS_CONFIG__H */
