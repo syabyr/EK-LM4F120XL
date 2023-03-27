@@ -71,9 +71,9 @@ flash:
 ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/freertos_hook.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_${COMPILER}.o
 
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/list.o
@@ -93,7 +93,7 @@ SCATTERgcc_${PROJ}=${PROJ}.ld
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
 
-CFLAGSgcc+=-uvectors -Wno-error=strict-prototypes -Wno-error=cast-qual
+CFLAGSgcc+=-ug_pfnVectors -Wno-error=strict-prototypes -Wno-error=cast-qual
 CFLAGSgcc+=-fdata-sections -ffunction-sections -fsingle-precision-constant
 CFLAGSgcc+=-fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors
 CFLAGSgcc+=-Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow
@@ -105,7 +105,7 @@ CFLAGSgcc+=-Wnull-dereference -Wuninitialized -Wunused
 CFLAGSgcc+=-Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual
 
 
-CFLAGSgcc += -I./
+CFLAGSgcc += -I./inc
 CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/include
 CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 

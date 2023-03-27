@@ -109,12 +109,23 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_gcc.o
 
 
 ENTRY_${PROJ}=ResetISR
-CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM  -DCFG_TUSB_MCU=OPT_MCU_TM4C123
-
+CFLAGSgcc = -DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR -DTM4C123GH6PM
+CFLAGSgcc += -DCFG_TUSB_MCU=OPT_MCU_TM4C123
+CFLAGSgcc += 
 CFLAGSgcc += -I./src -I${TINYUSB}/src
 CFLAGSgcc += -I./inc
 
-LDFLAGSgcc =
+LDFLAGSgcc =  -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+LDFLAGSgcc += -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -ug_pfnVectors -DTM4C123GH6PM
+LDFLAGSgcc += -Wno-error=strict-prototypes -Wno-error=cast-qual -ggdb -fdata-sections
+LDFLAGSgcc += -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing
+LDFLAGSgcc += -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes
+LDFLAGSgcc += -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal
+LDFLAGSgcc += -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute
+LDFLAGSgcc += -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual
+LDFLAGSgcc += -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls
+LDFLAGSgcc += -Os -MD -Wl,-Map=./gcc/${PROJ}.map -Wl,-cref -Wl,-gc-sections
+LDFLAGSgcc += -specs=nosys.specs -specs=nano.specs
 
 #
 # Include the automatically generated dependency files.

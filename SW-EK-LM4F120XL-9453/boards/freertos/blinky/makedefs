@@ -116,9 +116,8 @@ CFLAGS= -flto             \
 		-mthumb             \
 		-mabi=aapcs		 \
        ${CPU}              \
-       ${FPU}			\
-	    -MD -c
-       
+       ${FPU}              \
+       -MD -c
 
 #
 # The command for calling the library archiver.
@@ -133,7 +132,7 @@ LD=${PREFIX}-gcc
 #
 # The flags passed to the linker.
 #
-LDFLAGS= -u _printf_float 
+LDFLAGS= -u _printf_float
 
 #
 # Get the location of libgcc.a from the GCC front-end.
