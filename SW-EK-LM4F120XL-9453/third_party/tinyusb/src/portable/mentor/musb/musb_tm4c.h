@@ -32,7 +32,7 @@
 #endif
 
 #if CFG_TUSB_MCU == OPT_MCU_TM4C123
-  #include "TM4C123.h"
+  #include "TM4C123GH6PM.h"
 //#elif CFG_TUSB_MCU == OPT_MCU_TM4C129
 #else
   #error "Unsupported MCUs"

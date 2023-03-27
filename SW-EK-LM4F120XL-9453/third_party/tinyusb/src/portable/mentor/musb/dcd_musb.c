@@ -23,8 +23,11 @@
  *
  * This file is part of the TinyUSB stack.
  */
+#include<inttypes.h>
 
 #include "tusb_option.h"
+
+extern uint32_t SystemCoreClock;
 
 #if CFG_TUD_ENABLED && \
   TU_CHECK_MCU(OPT_MCU_MSP432E4, OPT_MCU_TM4C123, OPT_MCU_TM4C129)
