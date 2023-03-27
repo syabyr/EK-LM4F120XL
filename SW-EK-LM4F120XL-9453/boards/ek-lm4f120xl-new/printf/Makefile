@@ -32,10 +32,15 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
+
+PROJ=printf
+
 #
 # The base directory for StellarisWare.
 #
 ROOT=../../..
+
+VPATH += ../drivers
 
 #
 # Include the common make definitions.
@@ -59,6 +64,8 @@ all: ${COMPILER}/printf.axf
 clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
+flash:
+	lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
@@ -70,12 +77,18 @@ ${COMPILER}:
 #
 ${COMPILER}/printf.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/printf.axf: ${COMPILER}/printf.o
+${COMPILER}/printf.axf: ${COMPILER}/retargetserial.o
 ${COMPILER}/printf.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 ${COMPILER}/printf.axf: printf.ld
 SCATTERgcc_printf=printf.ld
 ENTRY_printf=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
+#LDFLAGSgcc=--specs=nano.specs --specs=nosys.specs
+#CFLAGSgcc+=-Dgcc
 
+ifeq (${DEBUG},1)
+ CFLAGSgcc+= -g
+endif
 #
 # Include the automatically generated dependency files.
 #

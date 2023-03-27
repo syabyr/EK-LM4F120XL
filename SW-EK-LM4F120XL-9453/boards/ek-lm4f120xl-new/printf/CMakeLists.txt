@@ -86,6 +86,7 @@ include_directories(${BASE_LOCATION})
 
 #aux_source_directory(./ SOURCE_FILES)
 set(SOURCE_FILES  startup_gcc.c
+                    ../drivers/retargetserial.c
                   printf.c)
 
 
