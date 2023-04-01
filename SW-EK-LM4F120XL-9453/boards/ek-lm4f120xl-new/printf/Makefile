@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the uart_echo example.
+# Makefile - Rules for building the main example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -33,7 +33,7 @@ PART=LM4F120H5QR
 VARIANT=cm4f
 
 
-PROJ=printf
+PROJ=main
 
 #
 # The base directory for StellarisWare.
@@ -53,10 +53,10 @@ include ${ROOT}/makedefs
 IPATH=../../..
 
 #
-# The default rule, which causes the printf example to be built.
+# The default rule, which causes the main example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/printf.axf
+all: ${COMPILER}/${PROJ}.axf
 
 #
 # The rule to clean out all the build products.
@@ -65,7 +65,7 @@ clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
 flash:
-	lm4flash ${COMPILER}/${PROJ}.bin
+	@lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
@@ -73,18 +73,17 @@ ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
 #
-# Rules for building the printf example.
+# Rules for building the main example.
 #
-${COMPILER}/printf.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/printf.axf: ${COMPILER}/printf.o
-${COMPILER}/printf.axf: ${COMPILER}/retargetserial.o
-${COMPILER}/printf.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-${COMPILER}/printf.axf: printf.ld
-SCATTERgcc_printf=printf.ld
-ENTRY_printf=ResetISR
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${PROJ}.ld
+${COMPILER}/${PROJ}.axf: ${COMPILER}/retargetserial.o
+${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+SCATTERgcc_${PROJ}=${PROJ}.ld
+ENTRY_${PROJ}=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
-#LDFLAGSgcc=--specs=nano.specs --specs=nosys.specs
-#CFLAGSgcc+=-Dgcc
+CFLAGSgcc+=-Dgcc
 
 ifeq (${DEBUG},1)
  CFLAGSgcc+= -g

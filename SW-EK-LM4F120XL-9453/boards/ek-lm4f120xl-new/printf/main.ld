@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * uart_echo.ld - Linker configuration file for uart_echo.
+ * main.ld - Linker configuration file for main.
  *
  * Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
  * Software License Agreement

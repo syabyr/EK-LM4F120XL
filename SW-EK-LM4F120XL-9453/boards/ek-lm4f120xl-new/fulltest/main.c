@@ -13,24 +13,8 @@
 #include "driverlib/sysctl.h"
 #include "driverlib/uart.h"
 
-//*****************************************************************************
-//
-//! \addtogroup example_list
-//! <h1>UART Echo (uart_echo)</h1>
-//!
-//! This example application utilizes the UART to echo text.  The first UART
-//! (connected to the USB debug virtual serial port on the evaluation board)
-//! will be configured in 115,200 baud, 8-n-1 mode.  All characters received on
-//! the UART are transmitted back to the UART.
-//
-//*****************************************************************************
 
 
-//*****************************************************************************
-//
-// The error routine that is called if the driver library encounters an error.
-//
-//*****************************************************************************
 #ifdef DEBUG
 void
 __error__(char *pcFilename, unsigned long ulLine)
@@ -43,8 +27,7 @@ __error__(char *pcFilename, unsigned long ulLine)
 // The UART interrupt handler.
 //
 //*****************************************************************************
-void
-UARTIntHandler(void)
+void UARTIntHandler(void)
 {
     unsigned long ulStatus;
 
@@ -133,7 +116,6 @@ int main(void)
     // Enable processor interrupts.
     //
     ROM_IntMasterEnable();
-
 
     //
     // Set GPIO A0 and A1 as UART pins.

@@ -14,7 +14,7 @@ if(NOT COMPILER_PREFIX)
     set(CMAKE_C_COMPILER arm-none-eabi-gcc)
     set(CMAKE_AR arm-none-eabi-ar)
 else ()
-    set(CMAKE_C_${COMPILER_PREFIX}/COMPILER arm-none-eabi-gcc)
+    set(CMAKE_C_COMPILER ${COMPILER_PREFIX}/arm-none-eabi-gcc)
     set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
 endif ()
 
@@ -56,7 +56,7 @@ include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
 ##### Project Setup #####
 
 # Configure project and languages
-project(fulltest C CXX ASM)
+project(main C CXX ASM)
 
 # Set device
 if (NOT DEVICE)
@@ -65,7 +65,10 @@ endif ()
 
 set(CPU_TYPE "m4")
 
-
+# Set build
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE DEBUG)
+endif ()
 
 
 ##### Modules #####
@@ -79,7 +82,7 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
 
-set(LINKER_SCRIPT "../fulltest.ld") 
+set(LINKER_SCRIPT "../main.ld") 
 
 # This is normally set in lm4f120-base.cmake, but libraries may modify it so set
 # it after libraries/subdirectories have been added
@@ -92,8 +95,8 @@ include_directories(${BASE_LOCATION})
 
 #aux_source_directory(./ SOURCE_FILES)
 set(SOURCE_FILES  startup_gcc.c
-                  retargetserial.c
-                  fulltest.c)
+                    ../drivers/retargetserial.c
+                  main.c)
 
 
 

@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the blinky example.
+# Makefile - Rules for building the main example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -32,18 +32,20 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
+
+PROJ=main
+
 #
 # The base directory for StellarisWare.
 #
 ROOT=../../..
 
+VPATH += ../drivers
+
 #
 # Include the common make definitions.
 #
 include ${ROOT}/makedefs
-
-
-PROJ = main
 
 #
 # Where to find header files that do not live in the source directory.
@@ -51,7 +53,7 @@ PROJ = main
 IPATH=../../..
 
 #
-# The default rule, which causes the blinky example to be built.
+# The default rule, which causes the main example to be built.
 #
 all: ${COMPILER}
 all: ${COMPILER}/${PROJ}.axf
@@ -71,7 +73,7 @@ ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
 #
-# Rules for building the blinky example.
+# Rules for building the main example.
 #
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o

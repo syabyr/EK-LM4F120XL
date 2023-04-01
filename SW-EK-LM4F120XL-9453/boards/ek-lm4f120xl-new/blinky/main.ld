@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * blinky.ld - Linker configuration file for blinky.
+ * main.ld - Linker configuration file for main.
  *
  * Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
  * Software License Agreement

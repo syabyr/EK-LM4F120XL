@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the uart_echo example.
+# Makefile - Rules for building the main example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -32,10 +32,15 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
+
+PROJ=main
+
 #
 # The base directory for StellarisWare.
 #
 ROOT=../../..
+
+VPATH += ../drivers
 
 #
 # Include the common make definitions.
@@ -48,10 +53,10 @@ include ${ROOT}/makedefs
 IPATH=../../..
 
 #
-# The default rule, which causes the fulltest example to be built.
+# The default rule, which causes the main example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/fulltest.axf
+all: ${COMPILER}/${PROJ}.axf
 
 #
 # The rule to clean out all the build products.
@@ -59,6 +64,8 @@ all: ${COMPILER}/fulltest.axf
 clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
+flash:
+	@lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
@@ -66,17 +73,21 @@ ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
 #
-# Rules for building the fulltest example.
+# Rules for building the main example.
 #
-${COMPILER}/fulltest.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/fulltest.axf: ${COMPILER}/fulltest.o
-${COMPILER}/fulltest.axf: ${COMPILER}/retargetserial.o
-${COMPILER}/fulltest.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-${COMPILER}/fulltest.axf: fulltest.ld
-SCATTERgcc_fulltest=fulltest.ld
-ENTRY_fulltest=ResetISR
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${PROJ}.ld
+${COMPILER}/${PROJ}.axf: ${COMPILER}/retargetserial.o
+${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+SCATTERgcc_${PROJ}=${PROJ}.ld
+ENTRY_${PROJ}=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
+CFLAGSgcc+=-Dgcc
 
+ifeq (${DEBUG},1)
+ CFLAGSgcc+= -g
+endif
 #
 # Include the automatically generated dependency files.
 #
