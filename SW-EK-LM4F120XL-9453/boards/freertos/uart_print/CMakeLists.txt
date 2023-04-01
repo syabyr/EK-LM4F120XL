@@ -18,6 +18,7 @@ else ()
     set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
 endif ()
 
+set(FREERTOS_CONFIG_FILE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../inc)
 
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -72,8 +73,9 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 
 add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
+add_subdirectory(${BASE_LOCATION}/third_party/FreeRTOS-Kernel FreeRTOS-Kernel)
 
-set(LINKER_SCRIPT "../blinky.ld") 
+set(LINKER_SCRIPT "../main.ld") 
 
 # This is normally set in lm4f120-base.cmake, but libraries may modify it so set
 # it after libraries/subdirectories have been added
@@ -81,12 +83,17 @@ set(CMAKE_EXE_LINKER_FLAGS "${COMMON_DEFINITIONS} -Xlinker -T${LINKER_SCRIPT} -W
 
 ##### Header & Source Files #####
 
-include_directories(${BASE_LOCATION})
+include_directories(${BASE_LOCATION}
+                    ./inc
+                    ${BASE_LOCATION}/third_party/FreeRTOS-Kernel/include
+                    ${BASE_LOCATION}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
+                    )
 
 
 #aux_source_directory(./ SOURCE_FILES)
-set(SOURCE_FILES  startup_gcc.c
-                  blinky.c)
+set(SOURCE_FILES  src/startup_gcc.c
+                  src/freertos_hook.c
+                  src/main.c)
 
 
 
@@ -106,7 +113,7 @@ target_link_libraries(${PROJECT_NAME} ${LIBS} c nosys)
 #    target_link_libraries(${PROJECT_NAME} hardware)
 #endif ()
 
-target_link_libraries(${PROJECT_NAME} driver-cm4f)
+target_link_libraries(${PROJECT_NAME} driver-cm4f freertos_kernel)
 
 ##### Post build #####
 

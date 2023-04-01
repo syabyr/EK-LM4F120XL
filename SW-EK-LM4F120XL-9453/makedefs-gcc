@@ -116,8 +116,10 @@ CFLAGS= -flto             \
 		-mthumb             \
 		-mabi=aapcs		 \
        ${CPU}              \
-       ${FPU}              \
-       -MD -c
+       ${FPU}			\
+       -MD                 \
+       -DPART_${PART}      \
+       -c
 
 #
 # The command for calling the library archiver.

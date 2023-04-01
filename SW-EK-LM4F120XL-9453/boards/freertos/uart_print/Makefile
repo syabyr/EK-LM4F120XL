@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the blinky example.
+# Makefile - Rules for building the main example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -32,27 +32,28 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
-PWD := $(shell pwd)/
+
+PROJ=main
+
 #
 # The base directory for StellarisWare.
 #
-ROOT := ${PWD}/../../../
+ROOT=../../..
+
+VPATH += ../../../third_party
 
 #
 # Include the common make definitions.
 #
-include ./makedefs
-
-
-PROJ=uart_print
+include ${ROOT}/makedefs-gcc
 
 #
 # Where to find header files that do not live in the source directory.
 #
-IPATH=${ROOT}
+IPATH=../../..
 
 #
-# The default rule, which causes the blinky example to be built.
+# The default rule, which causes the main example to be built.
 #
 all: ${COMPILER}
 all: ${COMPILER}/${PROJ}.axf
@@ -64,36 +65,35 @@ clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
 flash:
-	lm4flash ${COMPILER}/${PROJ}.bin
+	@lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
 ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/freertos_hook.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_${COMPILER}.o
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/list.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/queue.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/tasks.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/timers.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/croutine.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/event_groups.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/stream_buffer.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
+
+${COMPILER}/${PROJ}.axf: ${PROJ}.ld
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-
-ENTRY_${PROJ}=ResetISR
-
 SCATTERgcc_${PROJ}=${PROJ}.ld
-
+ENTRY_${PROJ}=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
 
-CFLAGSgcc+=-uvectors -Wno-error=strict-prototypes -Wno-error=cast-qual
+CFLAGSgcc+=-ug_pfnVectors -Wno-error=strict-prototypes -Wno-error=cast-qual
 CFLAGSgcc+=-fdata-sections -ffunction-sections -fsingle-precision-constant
 CFLAGSgcc+=-fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors
 CFLAGSgcc+=-Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow
@@ -105,7 +105,7 @@ CFLAGSgcc+=-Wnull-dereference -Wuninitialized -Wunused
 CFLAGSgcc+=-Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual
 
 
-CFLAGSgcc += -I./
+CFLAGSgcc += -I./inc
 CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/include
 CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 
