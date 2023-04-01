@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the uart_echo example.
+# Makefile - Rules for building the main example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -32,29 +32,28 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
-PWD := $(shell pwd)/
+
+PROJ=main
+
 #
 # The base directory for StellarisWare.
 #
-ROOT := ${PWD}/../../../
+ROOT=../../..
 
 TINYUSB=${ROOT}/third_party/tinyusb
 
 #
 # Include the common make definitions.
 #
-include ../../..//makedefs-gcc
-
-
-PROJ=main
+include ${ROOT}/makedefs-gcc
 
 #
 # Where to find header files that do not live in the source directory.
 #
-IPATH=${ROOT}
+IPATH=../../..
 
 #
-# The default rule, which causes the lcdtest example to be built.
+# The default rule, which causes the main example to be built.
 #
 all: ${COMPILER}
 all: ${COMPILER}/${PROJ}.axf
@@ -66,7 +65,7 @@ clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
 flash:
-	lm4flash ${COMPILER}/${PROJ}.bin
+	@lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
@@ -76,25 +75,26 @@ ${COMPILER}:
 #
 # Rules for building the lcdtest example.
 #
+VPATH += ../../../third_party
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/tusb.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/common/tusb_fifo.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/device/usbd.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/device/usbd_control.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/audio/audio_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/cdc/cdc_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/dfu/dfu_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/dfu/dfu_rt_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/hid/hid_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/midi/midi_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/msc/msc_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/net/ecm_rndis_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/net/ncm_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/usbtmc/usbtmc_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/video/video_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/class/vendor/vendor_device.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/dcd_musb.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${TINYUSB}/src/portable/mentor/musb/hcd_musb.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/tusb.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/common/tusb_fifo.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/device/usbd.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/device/usbd_control.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/audio/audio_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/cdc/cdc_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/dfu/dfu_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/dfu/dfu_rt_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/hid/hid_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/midi/midi_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/msc/msc_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/net/ecm_rndis_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/net/ncm_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/usbtmc/usbtmc_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/video/video_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/class/vendor/vendor_device.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/portable/mentor/musb/dcd_musb.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/tinyusb/src/portable/mentor/musb/hcd_musb.o
 
 
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/family.o
@@ -102,14 +102,14 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/main.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/list.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/queue.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/tasks.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/timers.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/croutine.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/event_groups.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/stream_buffer.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
