@@ -47,7 +47,7 @@ include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
 ##### Project Setup #####
 
 # Configure project and languages
-project(printf C CXX ASM)
+project(main C CXX ASM)
 
 # Set device
 if (NOT DEVICE)
@@ -73,7 +73,7 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
 
-set(LINKER_SCRIPT "../blinky.ld") 
+set(LINKER_SCRIPT "../main.ld") 
 
 # This is normally set in lm4f120-base.cmake, but libraries may modify it so set
 # it after libraries/subdirectories have been added
@@ -86,7 +86,7 @@ include_directories(${BASE_LOCATION})
 
 #aux_source_directory(./ SOURCE_FILES)
 set(SOURCE_FILES  startup_gcc.c
-                  blinky.c)
+                  main.c)
 
 
 
