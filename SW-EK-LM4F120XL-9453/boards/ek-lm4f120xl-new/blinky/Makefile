@@ -42,6 +42,9 @@ ROOT=../../..
 #
 include ${ROOT}/makedefs
 
+
+PROJ = main
+
 #
 # Where to find header files that do not live in the source directory.
 #
@@ -51,7 +54,7 @@ IPATH=../../..
 # The default rule, which causes the blinky example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/blinky.axf
+all: ${COMPILER}/${PROJ}.axf
 
 #
 # The rule to clean out all the build products.
@@ -59,6 +62,8 @@ all: ${COMPILER}/blinky.axf
 clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
+flash:
+	@lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #
@@ -68,12 +73,12 @@ ${COMPILER}:
 #
 # Rules for building the blinky example.
 #
-${COMPILER}/blinky.axf: ${COMPILER}/blinky.o
-${COMPILER}/blinky.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/blinky.axf: blinky.ld
-${COMPILER}/blinky.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-SCATTERgcc_blinky=blinky.ld
-ENTRY_blinky=ResetISR
+${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${PROJ}.ld
+${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+SCATTERgcc_${PROJ}=${PROJ}.ld
+ENTRY_${PROJ}=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
 

@@ -1,6 +1,6 @@
-#include "inc/lm4f120h5qr.h"
 #include <stdio.h>
 
+#include "inc/lm4f120h5qr.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
 #include "driverlib/gpio.h"

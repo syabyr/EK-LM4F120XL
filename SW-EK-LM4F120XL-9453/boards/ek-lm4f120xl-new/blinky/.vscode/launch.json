@@ -10,7 +10,7 @@
             "request": "launch",
             "type": "cortex-debug",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceFolder}/gcc/blinky.axf",
+            "executable": "${workspaceFolder}/gcc/main.axf",
             "preLaunchTask": "Build",
 
 
