@@ -14,10 +14,11 @@ if(NOT COMPILER_PREFIX)
     set(CMAKE_C_COMPILER arm-none-eabi-gcc)
     set(CMAKE_AR arm-none-eabi-ar)
 else ()
-    set(CMAKE_C_${COMPILER_PREFIX}/COMPILER arm-none-eabi-gcc)
+    set(CMAKE_C_COMPILER ${COMPILER_PREFIX}/arm-none-eabi-gcc)
     set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
 endif ()
 
+set(FREERTOS_CONFIG_FILE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../inc)
 
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -60,7 +61,7 @@ include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
 ##### Project Setup #####
 
 # Configure project and languages
-project(fulltest C CXX ASM)
+project(main C CXX ASM)
 
 # Set device
 if (NOT DEVICE)
@@ -80,21 +81,22 @@ set(CPU_TYPE "m4")
 # Add base libs (emlib, CMSIS, device files)
 include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 
-#add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
+add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
+add_subdirectory(${BASE_LOCATION}/third_party/FreeRTOS-Kernel FreeRTOS-Kernel)
 
-set(LINKER_SCRIPT "../bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld")
+set(LINKER_SCRIPT "main.ld")
 
 # This is normally set in lm4f120-base.cmake, but libraries may modify it so set
 # it after libraries/subdirectories have been added
-set(CMAKE_EXE_LINKER_FLAGS "-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld -specs=nosys.specs -specs=nano.specs")
+set(CMAKE_EXE_LINKER_FLAGS "-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,../main.ld -specs=nosys.specs -specs=nano.specs")
 ##### Header & Source Files #####
 
 include_directories(${BASE_LOCATION})
 
 include_directories(${TINYUSB_LOCATION}/src)
 include_directories(${TINYUSB_LOCATION}/hw)
-include_directories(./src)
+include_directories(./inc)
 include_directories(./src/FreeRTOSConfig)
 include_directories(${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/include)
 include_directories(${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F)
@@ -106,12 +108,11 @@ add_definitions("-DTM4C123GH6PM")
 
 set(SOURCE_FILES  src/main.c
                   src/msc_disk.c
+                  src/family.c
+                  src/startup_gcc.c
                   src/usb_descriptors.c
                   src/freertos_hook.c
-                  ${TINYUSB_LOCATION}/hw/bsp/tm4c123/family.c
                   ${TINYUSB_LOCATION}/hw/bsp/board.c
-                  ${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c
-                  ${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c
                   ${TINYUSB_LOCATION}/src/tusb.c
                   ${TINYUSB_LOCATION}/src/common/tusb_fifo.c
                   ${TINYUSB_LOCATION}/src/device/usbd.c
@@ -129,13 +130,7 @@ set(SOURCE_FILES  src/main.c
                   ${TINYUSB_LOCATION}/src/class/video/video_device.c
                   ${TINYUSB_LOCATION}/src/class/vendor/vendor_device.c
                   ${TINYUSB_LOCATION}/src/portable/mentor/musb/dcd_musb.c
-                  ${TINYUSB_LOCATION}/src/portable/mentor/musb/hcd_musb.c
-                  ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c
-                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/list.c
-                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/queue.c
-                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/tasks.c
-                    ${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/timers.c
-                  )
+                  ${TINYUSB_LOCATION}/src/portable/mentor/musb/hcd_musb.c)
 
 
 
@@ -155,7 +150,7 @@ target_link_libraries(${PROJECT_NAME} ${LIBS} c nosys)
 #    target_link_libraries(${PROJECT_NAME} hardware)
 #endif ()
 
-#target_link_libraries(${PROJECT_NAME} driver-cm4f)
+target_link_libraries(${PROJECT_NAME} driver-cm4f freertos_kernel)
 
 ##### Post build #####
 

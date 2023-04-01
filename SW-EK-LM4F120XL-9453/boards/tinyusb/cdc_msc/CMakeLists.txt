@@ -144,7 +144,7 @@ target_link_libraries(${PROJECT_NAME} ${LIBS} c nosys)
 #    target_link_libraries(${PROJECT_NAME} hardware)
 #endif ()
 
-#target_link_libraries(${PROJECT_NAME} driver-cm4f)
+target_link_libraries(${PROJECT_NAME} driver-cm4f)
 
 ##### Post build #####
 

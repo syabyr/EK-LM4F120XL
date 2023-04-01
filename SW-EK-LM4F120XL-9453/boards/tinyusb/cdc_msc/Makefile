@@ -46,7 +46,7 @@ TINYUSB=${ROOT}/third_party/tinyusb
 include ./makedefs
 
 
-PROJ=cdc_msc
+PROJ=main
 
 #
 # Where to find header files that do not live in the source directory.

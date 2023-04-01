@@ -46,7 +46,7 @@ TINYUSB=${ROOT}/third_party/tinyusb
 include ./makedefs
 
 
-PROJ=cdc_msc_freertos
+PROJ=main
 
 #
 # Where to find header files that do not live in the source directory.
@@ -114,7 +114,7 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/${ROOT}/third_party/FreeRTOS-Kernel/stream_
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
-SCATTERgcc_${PROJ}=./blinky.ld
+SCATTERgcc_${PROJ}=./main.ld
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_gcc.o
 
 

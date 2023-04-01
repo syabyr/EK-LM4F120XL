@@ -23,6 +23,15 @@ set(FREERTOS_CONFIG_FILE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../inc)
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
+#set(CMAKE_BUILD_TYPE DEBUG)
+
+
+# Set build
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif ()
+message ( STATUS "BUILD_TYPE = ${CMAKE_BUILD_TYPE}.")
+
 set(BASE_LOCATION ../../..)
 message ( STATUS "BASE_LOCATION = ${BASE_LOCATION}.")
 
@@ -48,7 +57,7 @@ include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
 ##### Project Setup #####
 
 # Configure project and languages
-project(printf C CXX ASM)
+project(main C CXX ASM)
 
 # Set device
 if (NOT DEVICE)
@@ -57,10 +66,7 @@ endif ()
 
 set(CPU_TYPE "m4")
 
-# Set build
-if (NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE DEBUG)
-endif ()
+
 
 
 ##### Modules #####
