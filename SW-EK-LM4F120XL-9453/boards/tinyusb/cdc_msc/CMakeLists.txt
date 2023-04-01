@@ -83,18 +83,18 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 #add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
 
-set(LINKER_SCRIPT "../bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld")
+set(LINKER_SCRIPT "main.ld")
 
 # This is normally set in lm4f120-base.cmake, but libraries may modify it so set
 # it after libraries/subdirectories have been added
-set(CMAKE_EXE_LINKER_FLAGS "-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,../../../tinyusb-lm4s/hw/bsp/tm4c123/boards/ek-tm4c123gxl/tm4c123.ld -specs=nosys.specs -specs=nano.specs")
+set(CMAKE_EXE_LINKER_FLAGS "-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,../main.ld -specs=nosys.specs -specs=nano.specs")
 ##### Header & Source Files #####
 
 include_directories(${BASE_LOCATION})
 
 include_directories(${TINYUSB_LOCATION}/src)
 include_directories(${TINYUSB_LOCATION}/hw)
-include_directories(./src)
+include_directories(./inc)
 include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Include/TM4C123/)
 include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include/)
 include_directories(${TINYUSB_LOCATION}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/)
@@ -103,11 +103,10 @@ add_definitions("-DTM4C123GH6PM")
 
 set(SOURCE_FILES  src/main.c
                   src/msc_disk.c
+                  src/family.c
+                  src/startup_gcc.c
                   src/usb_descriptors.c
-                  ${TINYUSB_LOCATION}/hw/bsp/tm4c123/family.c
                   ${TINYUSB_LOCATION}/hw/bsp/board.c
-                  ${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Source/system_TM4C123.c
-                  ${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Source/GCC/tm4c123_startup.c
                   ${TINYUSB_LOCATION}/src/tusb.c
                   ${TINYUSB_LOCATION}/src/common/tusb_fifo.c
                   ${TINYUSB_LOCATION}/src/device/usbd.c

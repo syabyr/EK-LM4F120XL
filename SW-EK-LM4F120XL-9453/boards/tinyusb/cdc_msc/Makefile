@@ -104,7 +104,7 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
-SCATTERgcc_${PROJ}=./blinky.ld
+SCATTERgcc_${PROJ}=./main.ld
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_gcc.o
 
 
