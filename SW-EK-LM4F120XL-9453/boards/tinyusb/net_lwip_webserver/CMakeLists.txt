@@ -1,83 +1,151 @@
-cmake_minimum_required(VERSION 3.5)
+# Base EK-LM4F120XL CMake file
+#
+#
+# This file is covered under the MIT license available at: https://opensource.org/licenses/MIT
 
-set(TOP "../../..")
-get_filename_component(TOP "${TOP}" REALPATH)
+###### Project Environment #####
 
-if (EXISTS ${TOP}/lib/lwip/src)
-    include(${TOP}/hw/bsp/family_support.cmake)
+# Set minimum CMake version
+cmake_minimum_required(VERSION 2.8.4)
 
-    # gets PROJECT name for the example (e.g. <BOARD>-<DIR_NAME>)
-    family_get_project_name(PROJECT ${CMAKE_CURRENT_LIST_DIR})
+#set(COMPILER_PREFIX /Users/mybays/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
 
-    project(${PROJECT})
+if(NOT COMPILER_PREFIX)
+    set(CMAKE_C_COMPILER arm-none-eabi-gcc)
+    set(CMAKE_AR arm-none-eabi-ar)
+else ()
+    set(CMAKE_C_${COMPILER_PREFIX}/COMPILER arm-none-eabi-gcc)
+    set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
+endif ()
 
-    # Checks this example is valid for the family and initializes the project
-    family_initialize_project(${PROJECT} ${CMAKE_CURRENT_LIST_DIR})
 
-    add_executable(${PROJECT})
+# Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
+set(CMAKE_VERBOSE_MAKEFILE ON)
 
-    # Example source
-    target_sources(${PROJECT} PUBLIC
-            ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c
-            ${CMAKE_CURRENT_SOURCE_DIR}/src/usb_descriptors.c
-            )
+#set(CMAKE_BUILD_TYPE DEBUG)
 
-    # Example include
-    target_include_directories(${PROJECT} PUBLIC
-            ${CMAKE_CURRENT_SOURCE_DIR}/src
-            ${TOP}/lib/lwip/src/include
-            ${TOP}/lib/lwip/src/include/ipv4
-            ${TOP}/lib/lwip/src/include/lwip/apps
-            ${TOP}/lib/networking
-            )
 
-    target_sources(${PROJECT} PUBLIC
-            ${TOP}/lib/lwip/src/core/altcp.c
-            ${TOP}/lib/lwip/src/core/altcp_alloc.c
-            ${TOP}/lib/lwip/src/core/altcp_tcp.c
-            ${TOP}/lib/lwip/src/core/def.c
-            ${TOP}/lib/lwip/src/core/dns.c
-            ${TOP}/lib/lwip/src/core/inet_chksum.c
-            ${TOP}/lib/lwip/src/core/init.c
-            ${TOP}/lib/lwip/src/core/ip.c
-            ${TOP}/lib/lwip/src/core/mem.c
-            ${TOP}/lib/lwip/src/core/memp.c
-            ${TOP}/lib/lwip/src/core/netif.c
-            ${TOP}/lib/lwip/src/core/pbuf.c
-            ${TOP}/lib/lwip/src/core/raw.c
-            ${TOP}/lib/lwip/src/core/stats.c
-            ${TOP}/lib/lwip/src/core/sys.c
-            ${TOP}/lib/lwip/src/core/tcp.c
-            ${TOP}/lib/lwip/src/core/tcp_in.c
-            ${TOP}/lib/lwip/src/core/tcp_out.c
-            ${TOP}/lib/lwip/src/core/timeouts.c
-            ${TOP}/lib/lwip/src/core/udp.c
-            ${TOP}/lib/lwip/src/core/ipv4/autoip.c
-            ${TOP}/lib/lwip/src/core/ipv4/dhcp.c
-            ${TOP}/lib/lwip/src/core/ipv4/etharp.c
-            ${TOP}/lib/lwip/src/core/ipv4/icmp.c
-            ${TOP}/lib/lwip/src/core/ipv4/igmp.c
-            ${TOP}/lib/lwip/src/core/ipv4/ip4.c
-            ${TOP}/lib/lwip/src/core/ipv4/ip4_addr.c
-            ${TOP}/lib/lwip/src/core/ipv4/ip4_frag.c
-            ${TOP}/lib/lwip/src/netif/ethernet.c
-            ${TOP}/lib/lwip/src/netif/slipif.c
-            ${TOP}/lib/lwip/src/apps/http/httpd.c
-            ${TOP}/lib/lwip/src/apps/http/fs.c
-            ${TOP}/lib/networking/dhserver.c
-            ${TOP}/lib/networking/dnserver.c
-            ${TOP}/lib/networking/rndis_reports.c
-            )
+# Set build
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif ()
+message ( STATUS "BUILD_TYPE = ${CMAKE_BUILD_TYPE}.")
 
-    # due to warnings from other net source, we need to prevent error from some of the warnings options
-    target_compile_options(${PROJECT} PUBLIC
-        -Wno-error=null-dereference
-        -Wno-error=conversion
-        -Wno-error=sign-conversion
-        -Wno-error=sign-compare
-        )
+set(BASE_LOCATION ../../..)
+message ( STATUS "BASE_LOCATION = ${BASE_LOCATION}.")
 
-    # Configure compilation flags and libraries for the example... see the corresponding function
-    # in hw/bsp/FAMILY/family.cmake for details.
-    family_configure_device_example(${PROJECT})
+
+set(TINYUSB_LOCATION ../../../third_party/tinyusb)
+
+
+set(BOARD EK-LM4F120X)
+
+# Set device
+if (BOARD STREQUAL "EK-LM4F120X" )
+    set(DEVICE "LM4F120H5QR")
+    set(JLINK_TYPE "LM4F120H5QR")
+elseif (BOARD STREQUAL "EK-MSP432P401R")
+    set(DEVICE "MSP432P401R")
+    set(JLINK_TYPE "MSP432P401R")
+else ()
+    message("Unknown Board type:${BOARD}")
+    exit()
+endif ()
+
+message("jlinkdevice: ${JLINK_TYPE}")
+
+# Set the compiler (must be prior to project setup)
+include(${BASE_LOCATION}/toolchain/arm-gcc.cmake)
+
+##### Project Setup #####
+
+# Configure project and languages
+project(fulltest C CXX ASM)
+
+# Set device
+if (NOT DEVICE)
+    set(DEVICE LM4F120H5QR)
+endif ()
+
+set(CPU_TYPE "m4")
+
+set(WORKING_BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+
+
+##### Modules #####
+
+# Libraries can be added to the LIBS variable
+# or manually included here.
+
+add_definitions("-DPART_LM4F120H5QR")
+add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
+
+# Add base libs (emlib, CMSIS, device files)
+include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
+
+add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
+
+add_subdirectory(${BASE_LOCATION}/third_party/tinyusb/ tinyusb)
+
+add_subdirectory(${BASE_LOCATION}/third_party/tinyusb/lib/lwip lwip)
+
+set(LINKER_SCRIPT "main.ld")
+
+# This is normally set in lm4f120-base.cmake, but libraries may modify it so set
+# it after libraries/subdirectories have been added
+set(CMAKE_EXE_LINKER_FLAGS "-DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -uvectors -DTM4C123GH6PM -Wno-error=strict-prototypes -Wno-error=cast-qual  -ggdb -fdata-sections -ffunction-sections -fsingle-precision-constant -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls -Os -MD -Wl,-Map=.map -Wl,-cref -Wl,-gc-sections -Wl,-T,../main.ld -specs=nosys.specs -specs=nano.specs")
+##### Header & Source Files #####
+
+include_directories(${BASE_LOCATION})
+
+include_directories(${TINYUSB_LOCATION}/src)
+include_directories(${TINYUSB_LOCATION}/hw)
+include_directories(./inc)
+include_directories(${TINYUSB_LOCATION}/lib/lwip/src/include)
+include_directories(${TINYUSB_LOCATION}/lib/lwip/src/include/ipv4)
+include_directories(${TINYUSB_LOCATION}/lib/lwip/src/include/lwip/apps)
+include_directories(${TINYUSB_LOCATION}/lib/networking)
+
+add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
+add_definitions("-DTM4C123GH6PM")
+
+set(SOURCE_FILES  src/main.c
+                  src/family.c
+                  src/startup_gcc.c
+                  src/usb_descriptors.c
+                  ${TINYUSB_LOCATION}/lib/networking/dhserver.c
+                  ${TINYUSB_LOCATION}/lib/networking/dnserver.c
+                  ${TINYUSB_LOCATION}/lib/networking/rndis_reports.c)
+
+
+
+#printf float support
+#link_libraries("-u _printf_float")
+
+# Generate executable and link
+add_executable(${PROJECT_NAME}
+	${SOURCE_FILES})
+
+stm32_configure_linker_addresses(${PROJECT_NAME})
+
+target_link_libraries(${PROJECT_NAME} ${LIBS} c nosys)
+
+# Link optional libraries if available
+#if (${HAS_HARDWARE})
+#    target_link_libraries(${PROJECT_NAME} hardware)
+#endif ()
+
+target_link_libraries(${PROJECT_NAME} driver-cm4f tinyusb lwip)
+
+##### Post build #####
+
+# Add post build commands
+include(${BASE_LOCATION}/toolchain/post-build.cmake)
+
+# Add lm4flash commands
+include(${BASE_LOCATION}/toolchain/lm4flash.cmake)
+
+##### CMake debug prints #####
+if (CMAKE_VERBOSE_MAKEFILE)
+    print_debug_info()
 endif()

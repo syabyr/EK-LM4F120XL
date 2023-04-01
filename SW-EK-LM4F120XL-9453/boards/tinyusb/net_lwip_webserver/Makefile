@@ -43,10 +43,10 @@ TINYUSB=${ROOT}/third_party/tinyusb
 #
 # Include the common make definitions.
 #
-include ./makedefs
+include ${ROOT}/makedefs-gcc
 
 
-PROJ=cdc_msc
+PROJ=main
 
 #
 # Where to find header files that do not live in the source directory.
@@ -155,7 +155,7 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 
-SCATTERgcc_${PROJ}=./blinky.ld
+SCATTERgcc_${PROJ}=./main.ld
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_gcc.o
 
 

@@ -69,7 +69,7 @@ endif ()
 
 set(CPU_TYPE "m4")
 
-
+set(WORKING_BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
 
 ##### Modules #####
@@ -77,11 +77,15 @@ set(CPU_TYPE "m4")
 # Libraries can be added to the LIBS variable
 # or manually included here.
 
+add_definitions("-DPART_LM4F120H5QR")
+add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
+
 # Add base libs (emlib, CMSIS, device files)
 include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 
-#add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
+add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
+add_subdirectory(${BASE_LOCATION}/third_party/tinyusb/ tinyusb)
 
 set(LINKER_SCRIPT "main.ld")
 
@@ -95,9 +99,6 @@ include_directories(${BASE_LOCATION})
 include_directories(${TINYUSB_LOCATION}/src)
 include_directories(${TINYUSB_LOCATION}/hw)
 include_directories(./inc)
-include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Include/TM4C123/)
-include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include/)
-include_directories(${TINYUSB_LOCATION}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/)
 add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
 add_definitions("-DTM4C123GH6PM")
 
@@ -105,26 +106,7 @@ set(SOURCE_FILES  src/main.c
                   src/msc_disk.c
                   src/family.c
                   src/startup_gcc.c
-                  src/usb_descriptors.c
-                  ${TINYUSB_LOCATION}/hw/bsp/board.c
-                  ${TINYUSB_LOCATION}/src/tusb.c
-                  ${TINYUSB_LOCATION}/src/common/tusb_fifo.c
-                  ${TINYUSB_LOCATION}/src/device/usbd.c
-                  ${TINYUSB_LOCATION}/src/device/usbd_control.c
-                  ${TINYUSB_LOCATION}/src/class/audio/audio_device.c
-                  ${TINYUSB_LOCATION}/src/class/cdc/cdc_device.c
-                  ${TINYUSB_LOCATION}/src/class/dfu/dfu_device.c
-                  ${TINYUSB_LOCATION}/src/class/dfu/dfu_rt_device.c
-                  ${TINYUSB_LOCATION}/src/class/hid/hid_device.c
-                  ${TINYUSB_LOCATION}/src/class/midi/midi_device.c
-                  ${TINYUSB_LOCATION}/src/class/msc/msc_device.c
-                  ${TINYUSB_LOCATION}/src/class/net/ecm_rndis_device.c
-                  ${TINYUSB_LOCATION}/src/class/net/ncm_device.c
-                  ${TINYUSB_LOCATION}/src/class/usbtmc/usbtmc_device.c
-                  ${TINYUSB_LOCATION}/src/class/video/video_device.c
-                  ${TINYUSB_LOCATION}/src/class/vendor/vendor_device.c
-                  ${TINYUSB_LOCATION}/src/portable/mentor/musb/dcd_musb.c
-                  ${TINYUSB_LOCATION}/src/portable/mentor/musb/hcd_musb.c)
+                  src/usb_descriptors.c)
 
 
 
@@ -144,7 +126,7 @@ target_link_libraries(${PROJECT_NAME} ${LIBS} c nosys)
 #    target_link_libraries(${PROJECT_NAME} hardware)
 #endif ()
 
-target_link_libraries(${PROJECT_NAME} driver-cm4f)
+target_link_libraries(${PROJECT_NAME} driver-cm4f tinyusb)
 
 ##### Post build #####
 
