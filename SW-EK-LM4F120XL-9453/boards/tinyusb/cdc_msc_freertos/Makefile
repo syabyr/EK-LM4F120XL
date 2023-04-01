@@ -43,7 +43,7 @@ TINYUSB=${ROOT}/third_party/tinyusb
 #
 # Include the common make definitions.
 #
-include ./makedefs
+include ../../..//makedefs-gcc
 
 
 PROJ=main

@@ -112,13 +112,19 @@ AFLAGS=-mthumb \
 #
 # The flags passed to the compiler.
 #
-CFLAGS= -flto             \
-		-mthumb             \
-		-mabi=aapcs		 \
+CFLAGS= -flto              \
+       -mthumb             \
+       -mabi=aapcs         \
        ${CPU}              \
-       ${FPU}			\
+       ${FPU}              \
+       -Os                 \
+       -ffunction-sections \
+       -fdata-sections     \
        -MD                 \
+       -std=c99            \
+       -Wall               \
        -DPART_${PART}      \
+       -Dprintf=iprintf    \
        -c
 
 #
