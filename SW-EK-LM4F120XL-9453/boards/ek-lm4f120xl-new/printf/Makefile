@@ -77,8 +77,9 @@ ${COMPILER}:
 #
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/${PROJ}.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/${PROJ}.axf: ${PROJ}.ld
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/retargetserial.o
+${COMPILER}/${PROJ}.axf: ${PROJ}.ld
+
 ${COMPILER}/${PROJ}.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 SCATTERgcc_${PROJ}=${PROJ}.ld
 ENTRY_${PROJ}=ResetISR
