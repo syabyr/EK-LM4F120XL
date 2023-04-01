@@ -103,6 +103,7 @@ add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
 add_definitions("-DTM4C123GH6PM")
 
 set(SOURCE_FILES  src/main.c
+                  src/usbtmc_app.c
                   src/family.c
                   src/startup_gcc.c
                   src/usb_descriptors.c)
