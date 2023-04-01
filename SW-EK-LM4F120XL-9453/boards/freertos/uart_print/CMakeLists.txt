@@ -18,7 +18,6 @@ else ()
     set(CMAKE_AR ${COMPILER_PREFIX}/arm-none-eabi-ar)
 endif ()
 
-set(FREERTOS_CONFIG_FILE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../inc)
 
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -66,7 +65,7 @@ endif ()
 
 set(CPU_TYPE "m4")
 
-
+set(WORKING_BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
 
 ##### Modules #####

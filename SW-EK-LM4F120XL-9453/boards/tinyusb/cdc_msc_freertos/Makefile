@@ -1,6 +1,6 @@
 #******************************************************************************
 #
-# Makefile - Rules for building the uart_echo example.
+# Makefile - Rules for building the main example.
 #
 # Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
 # Software License Agreement
@@ -32,29 +32,28 @@ PART=LM4F120H5QR
 #
 VARIANT=cm4f
 
-PWD := $(shell pwd)/
+
+PROJ=main
+
 #
 # The base directory for StellarisWare.
 #
-ROOT := ${PWD}/../../../
+ROOT=../../..
 
 TINYUSB=${ROOT}/third_party/tinyusb
 
 #
 # Include the common make definitions.
 #
-include ../../..//makedefs-gcc
-
-
-PROJ=main
+include ${ROOT}/makedefs-gcc
 
 #
 # Where to find header files that do not live in the source directory.
 #
-IPATH=${ROOT}
+IPATH=../../..
 
 #
-# The default rule, which causes the lcdtest example to be built.
+# The default rule, which causes the main example to be built.
 #
 all: ${COMPILER}
 all: ${COMPILER}/${PROJ}.axf
@@ -66,7 +65,7 @@ clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
 flash:
-	lm4flash ${COMPILER}/${PROJ}.bin
+	@lm4flash ${COMPILER}/${PROJ}.bin
 #
 # The rule to create the target directory.
 #

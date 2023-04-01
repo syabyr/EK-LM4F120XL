@@ -15,8 +15,8 @@ add_library(${PROJECT_NAME}
 target_include_directories(${PROJECT_NAME} PUBLIC ../../
                                 ./include
                                 ./portable/GCC/ARM_CM4F
-                                ${FREERTOS_CONFIG_FILE_DIRECTORY}
-                                ${FREERTOS_CONFIG_FILE_DIRECTORY}/../
+                                ${WORKING_BASE_DIRECTORY}
+                                ${WORKING_BASE_DIRECTORY}/inc/
                                 )
 
 #target_link_libraries(${PROJECT_NAME} device)

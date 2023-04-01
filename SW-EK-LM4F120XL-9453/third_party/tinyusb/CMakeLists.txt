@@ -26,6 +26,8 @@ add_library(${PROJECT_NAME}
 target_include_directories(${PROJECT_NAME} PUBLIC ../../
                                 ./lib/networking
                                 ./src
+                                ../FreeRTOS-Kernel/include
+                                ../FreeRTOS-Kernel/portable/GCC/ARM_CM4F
                                 ${WORKING_BASE_DIRECTORY}
                                 ${WORKING_BASE_DIRECTORY}/inc/
                                 )
