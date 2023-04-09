@@ -168,6 +168,8 @@ OBJCOPY=${PREFIX}-objcopy
 
 OBJSIZE=${PREFIX}-size
 
+OBJDUMP=${PREFIX}-objdump
+
 #
 # Tell the compiler to include debugging information if the DEBUG environment
 # variable is set.
@@ -259,6 +261,7 @@ ${COMPILER}${SUFFIX}/%.axf:
 	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
 	      '${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}'
 	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+	@${OBJDUMP} -D -h -S ${@} > ${@:.axf=.lst}
 	@${OBJSIZE} ${@}
 endif
 
