@@ -32,7 +32,7 @@ void loop() {
     SysCtlDelay(3000000);
 }
 
-void main() {
+int main() {
     SysCtlClockSet(
             SYSCTL_SYSDIV_4|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
 
