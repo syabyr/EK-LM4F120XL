@@ -19,21 +19,51 @@
 #define SECOND 1000
 
 // static timer & task
-StaticTimer_t blinky_tmdef;
-TimerHandle_t blinky_tm;
+StaticTimer_t blinky_tmdef1,blinky_tmdef2,blinky_tmdef3;
+TimerHandle_t blinky_tm1,blinky_tm2,blinky_tm3;
 
 
-void led_blinky_cb(TimerHandle_t xTimer)
+void led1_blinky_cb(TimerHandle_t xTimer)
 {
   (void) xTimer;
   static int led_state = 0;
 
     if(led_state)
     {
-        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3);
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 , GPIO_PIN_1);
     }else
     {
-        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, 0x0);
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0x0);
+    }
+  led_state = 1 - led_state; // toggle
+}
+
+void led2_blinky_cb(TimerHandle_t xTimer)
+{
+  (void) xTimer;
+  static int led_state = 0;
+
+    if(led_state)
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2 , GPIO_PIN_2);
+    }else
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2 , 0x0);
+    }
+  led_state = 1 - led_state; // toggle
+}
+
+void led3_blinky_cb(TimerHandle_t xTimer)
+{
+  (void) xTimer;
+  static int led_state = 0;
+
+    if(led_state)
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3,GPIO_PIN_3);
+    }else
+    {
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0x0);
     }
   led_state = 1 - led_state; // toggle
 }
@@ -47,8 +77,12 @@ int main(void)
 
     SystemCoreClock = ROM_SysCtlClockGet();
 
-    blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(SECOND), true, NULL, led_blinky_cb, &blinky_tmdef);
-    xTimerStart(blinky_tm, 0);
+    blinky_tm1 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(1*SECOND), true, NULL, led1_blinky_cb, &blinky_tmdef1);
+    xTimerStart(blinky_tm1, 0);
+    blinky_tm2 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(2*SECOND), true, NULL, led2_blinky_cb, &blinky_tmdef2);
+    xTimerStart(blinky_tm2, 0);
+    blinky_tm3 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(3*SECOND), true, NULL, led3_blinky_cb, &blinky_tmdef3);
+    xTimerStart(blinky_tm3, 0);
     vTaskStartScheduler();
 
     return 0;
