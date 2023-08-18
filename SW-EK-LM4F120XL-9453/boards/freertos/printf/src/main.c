@@ -178,11 +178,11 @@ void vTask(void *pvParameters)
     (void) pvParameters;
     while(1)
     {
-        UARTSend((const unsigned char *)"tick tock. \r\n", 14);
+        //UARTSend((const unsigned char *)"tick tock. \r\n", 14);
+        printf("tick tock. \r\n");
         vTaskDelay(1000/portTICK_RATE_MS);
     }
 }
-
 
 
 //*****************************************************************************

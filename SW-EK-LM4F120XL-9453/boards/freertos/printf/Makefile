@@ -73,8 +73,10 @@ ${COMPILER}:
 	@mkdir -p ${COMPILER}
 
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/${PROJ}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/retargetserial.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_${COMPILER}.o
 
+#${COMPILER}/${PROJ}.axf: ${COMPILER}/src/heap_1.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
@@ -83,7 +85,7 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
-${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
+#${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
 ${COMPILER}/${PROJ}.axf: ${PROJ}.ld
 
