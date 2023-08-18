@@ -59,10 +59,17 @@
 #define SECOND 1000
 
 // static timer & task
+#if configSUPPORT_STATIC_ALLOCATION
+
 StaticTimer_t blinky_tmdef;
+
+
+StackType_t  new_stack[128];
+StaticTask_t new_taskdef;
+
+#endif
+
 TimerHandle_t blinky_tm;
-
-
 
 unsigned long SystemCoreClock;
 //*****************************************************************************
@@ -152,7 +159,7 @@ void led_blinky_cb(TimerHandle_t xTimer)
 {
   (void) xTimer;
   static int led_state = 0;
-    UARTSend((unsigned char *)"tick tock. \r\n", 14);
+    //UARTSend((unsigned char *)"tick tock. \r\n", 14);
     //printf("helloworld.\r\n");
     if(led_state)
     {
@@ -162,6 +169,18 @@ void led_blinky_cb(TimerHandle_t xTimer)
         ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1 |GPIO_PIN_2 |GPIO_PIN_3, 0x0);
     }
   led_state = 1 - led_state; // toggle
+}
+
+
+
+void vTask(void *pvParameters)
+{
+    (void) pvParameters;
+    while(1)
+    {
+        UARTSend((const unsigned char *)"tick tock. \r\n", 14);
+        vTaskDelay(1000/portTICK_RATE_MS);
+    }
 }
 
 
@@ -276,38 +295,22 @@ int main(void)
     //
     // Prompt for text to be entered.
     //
-    UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
+    UARTSend((const unsigned char *)"\033[2JEnter text: \r\n", 18);
 
 
     SystemCoreClock = ROM_SysCtlClockGet();
 
+#if configSUPPORT_STATIC_ALLOCATION
 
+    xTaskCreateStatic(vTask, "vTask", 128, NULL, 1, new_stack, &new_taskdef);
     blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(SECOND), true, NULL, led_blinky_cb, &blinky_tmdef);
+#else
+    xTaskCreate(vTask, "vTask", 128, NULL, 1, NULL);
+    blinky_tm = xTimerCreate(NULL, pdMS_TO_TICKS(SECOND), true, NULL, led_blinky_cb);
+#endif
+
     xTimerStart(blinky_tm, 0);
     vTaskStartScheduler();
 
     return 0;
-
-
-    printf("helloworld.\r\n");
-    unsigned long freq=ROM_SysCtlClockGet();
-    //printf("freq:%ldHz\r\n",freq);
-    //printf("freq:%sHz\r\n","hello");
-
-    //
-    // Loop forever echoing data through the UART.
-    //
-    while(1)
-    {
-
-        printf("helloworld.\r\n");
-        //SysCtlDelay(2000000);
-        //printf("\r\n");
-        //printf("freq:%ldHz\r\n\r\n",freq);
-        printf("freq:%ldHz\r\n",freq);
-        //printf("\r\n");
-        //printf("helloworld.\r\n");
-        //printf("freq:%dHz\r\n\r\n",100);
-        SysCtlDelay(2000000);
-    }
 }
