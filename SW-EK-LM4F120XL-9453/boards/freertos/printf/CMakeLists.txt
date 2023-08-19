@@ -66,6 +66,15 @@ endif ()
 set(CPU_TYPE "m4")
 
 set(WORKING_BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+set(FREERTOS_CONFIG_FILE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+set(FREERTOS_PORT GCC_ARM_CM4F)
+
+
+add_library(freertos_config INTERFACE)
+    target_include_directories(freertos_config SYSTEM
+      INTERFACE
+      ${BASE_LOCATION}
+        inc) 
 
 
 ##### Modules #####

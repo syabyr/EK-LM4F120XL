@@ -19,7 +19,6 @@
 #define SECOND 1000
 
 // static timer & task
-StaticTimer_t blinky_tmdef1,blinky_tmdef2,blinky_tmdef3;
 TimerHandle_t blinky_tm1,blinky_tm2,blinky_tm3;
 
 
@@ -77,11 +76,11 @@ int main(void)
 
     SystemCoreClock = ROM_SysCtlClockGet();
 
-    blinky_tm1 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(1*SECOND), true, NULL, led1_blinky_cb, &blinky_tmdef1);
+    blinky_tm1 = xTimerCreate(NULL, pdMS_TO_TICKS(1*SECOND), true, NULL, led1_blinky_cb);
     xTimerStart(blinky_tm1, 0);
-    blinky_tm2 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(2*SECOND), true, NULL, led2_blinky_cb, &blinky_tmdef2);
+    blinky_tm2 = xTimerCreate(NULL, pdMS_TO_TICKS(2*SECOND), true, NULL, led2_blinky_cb);
     xTimerStart(blinky_tm2, 0);
-    blinky_tm3 = xTimerCreateStatic(NULL, pdMS_TO_TICKS(3*SECOND), true, NULL, led3_blinky_cb, &blinky_tmdef3);
+    blinky_tm3 = xTimerCreate(NULL, pdMS_TO_TICKS(3*SECOND), true, NULL, led3_blinky_cb);
     xTimerStart(blinky_tm3, 0);
     vTaskStartScheduler();
 

@@ -11,7 +11,8 @@
         "hash_set": "c",
         "bitset": "c",
         "algorithm": "c",
-        "pin_map.h": "c"
+        "pin_map.h": "c",
+        "freertos.h": "c"
     },
     "git.ignoreLimitWarning": true,
 }

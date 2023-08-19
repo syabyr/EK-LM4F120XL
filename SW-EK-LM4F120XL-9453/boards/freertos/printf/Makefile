@@ -79,13 +79,14 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_${COMPILER}.o
 #${COMPILER}/${PROJ}.axf: ${COMPILER}/src/heap_1.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/MemMang/heap_4.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/timers.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/croutine.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/event_groups.o
-#${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/stream_buffer.o
 
 ${COMPILER}/${PROJ}.axf: ${PROJ}.ld
 
@@ -102,7 +103,7 @@ CFLAGSgcc+=-Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow
 CFLAGSgcc+=-Werror-implicit-function-declaration -Wfloat-equal
 CFLAGSgcc+=-Wundef -Wshadow -Wwrite-strings -Wsign-compare
 CFLAGSgcc+=-Wmissing-format-attribute -Wunreachable-code
-CFLAGSgcc+=-Wcast-align -Wcast-function-type -Wcast-qual
+CFLAGSgcc+=-Wcast-function-type -Wcast-qual
 CFLAGSgcc+=-Wnull-dereference -Wuninitialized -Wunused
 CFLAGSgcc+=-Wredundant-decls -Os -Wno-error=redundant-decls -Wno-error=cast-qual
 
