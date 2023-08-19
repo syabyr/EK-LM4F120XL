@@ -1,5 +1,5 @@
 #include "TM4C123.h"
-#include "bsp/board.h"
+#include "bsp/board_api.h"
 #include "board.h"
 
 //--------------------------------------------------------------------+
@@ -137,11 +137,6 @@ void board_led_write (bool state)
   WriteGPIOPin(LED_PORT, (1 << LED_PIN_BLUE), state);
 }
 
-void board_led2_write (bool state)
-{
-  WriteGPIOPin(LED_PORT, (1 << LED_PIN_GREEN), state);
-}
-
 uint32_t board_button_read (void)
 {
   uint32_t gpio_value = ReadGPIOPin(BOARD_BTN_PORT, BOARD_BTN_Msk);
@@ -180,4 +175,3 @@ uint32_t board_millis (void)
   return system_ticks;
 }
 #endif
-

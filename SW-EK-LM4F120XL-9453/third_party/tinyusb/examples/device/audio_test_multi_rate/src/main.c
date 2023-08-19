@@ -1,4 +1,4 @@
-/* 
+/*
  * The MIT License (MIT)
  *
  * Copyright (c) 2020 Reinhard Panhuber
@@ -36,7 +36,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "bsp/board.h"
+#include "bsp/board_api.h"
 #include "tusb.h"
 #include "usb_descriptors.h"
 
@@ -99,6 +99,10 @@ int main(void)
   // init device stack on configured roothub port
   tud_init(BOARD_TUD_RHPORT);
 
+  if (board_init_after_tusb) {
+    board_init_after_tusb();
+  }
+
   // Init values
   sampFreq = sampleRatesList[0];
   clkValid = 1;
@@ -142,7 +146,7 @@ void tud_suspend_cb(bool remote_wakeup_en)
 // Invoked when usb bus is resumed
 void tud_resume_cb(void)
 {
-  blink_interval_ms = BLINK_MOUNTED;
+  blink_interval_ms = tud_mounted() ? BLINK_MOUNTED : BLINK_NOT_MOUNTED;
 }
 
 //--------------------------------------------------------------------+
@@ -165,7 +169,7 @@ bool tud_audio_set_itf_cb(uint8_t rhport, tusb_control_request_t const * p_reque
   (void)rhport;
   //uint8_t const itf = tu_u16_low(tu_le16toh(p_request->wIndex));
   uint8_t const alt = tu_u16_low(tu_le16toh(p_request->wValue));
-  
+
   // Clear buffer when streaming format is changed
   if(alt != 0)
   {
@@ -257,7 +261,7 @@ bool tud_audio_set_req_entity_cb(uint8_t rhport, tusb_control_request_t const * 
       return false;
     }
   }
-  
+
   // Clock Source unit
   if ( entityID == UAC2_ENTITY_CLOCK )
   {
@@ -268,7 +272,7 @@ bool tud_audio_set_req_entity_cb(uint8_t rhport, tusb_control_request_t const * 
 
         sampFreq = (uint32_t)((audio_control_cur_4_t *)pBuff)->bCur;
 
-        TU_LOG2("Clock set current freq: %d\r\n", sampFreq);
+        TU_LOG2("Clock set current freq: %lu\r\n", sampFreq);
 
         return true;
       break;
@@ -279,7 +283,7 @@ bool tud_audio_set_req_entity_cb(uint8_t rhport, tusb_control_request_t const * 
         return false;
     }
   }
-  
+
   return false;    // Yet not implemented
 }
 
@@ -491,7 +495,7 @@ bool tud_audio_tx_done_post_load_cb(uint8_t rhport, uint16_t n_bytes_copied, uin
       pData_32[cnt] = (uint32_t)startVal++ << 16U;
     }
   }
-  
+
   return true;
 }
 
