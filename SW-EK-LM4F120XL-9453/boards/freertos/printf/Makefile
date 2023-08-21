@@ -76,7 +76,6 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/${PROJ}.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/retargetserial.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_${COMPILER}.o
 
-#${COMPILER}/${PROJ}.axf: ${COMPILER}/src/heap_1.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/MemMang/heap_4.o
