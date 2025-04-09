@@ -1,0 +1,51 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/test/test/include",
+                "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/test/test/src",
+                "/Users/mybays/.platformio/packages/framework-libopencm3",
+                "/Users/mybays/.platformio/packages/framework-libopencm3/include",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/test/test/include",
+                    "/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/platformio_proj/test/test/src",
+                    "/Users/mybays/.platformio/packages/framework-libopencm3",
+                    "/Users/mybays/.platformio/packages/framework-libopencm3/include",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=80000000L",
+                "PLATFORMIO=60106",
+                "ENERGIA_ARCH_TIVAC",
+                "ENERGIA_EK_TM4C123GXL",
+                "LM4F",
+                "F_CPU=80000000L",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/Users/mybays/.platformio/packages/toolchain-gccarmnoneeabi@1.40804.0/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                "-mfloat-abi=hard",
+                "-mfpu=fpv4-sp-d16",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
