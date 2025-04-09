@@ -1,0 +1,10 @@
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/CMakeFiles/usb_dev_bulk.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/CMakeFiles/flash.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/CMakeFiles/edit_cache.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/CMakeFiles/rebuild_cache.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/usblib/CMakeFiles/usb-cm4f.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/usblib/CMakeFiles/edit_cache.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/usblib/CMakeFiles/rebuild_cache.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/driverlib/CMakeFiles/driver-cm4f.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/driverlib/CMakeFiles/edit_cache.dir
+/Volumes/4T/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/ek-lm4f120xl-new/usb_dev_bulk.new/build/driverlib/CMakeFiles/rebuild_cache.dir

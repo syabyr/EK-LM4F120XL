@@ -1,0 +1,1921 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o) (__call_exitprocs)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o) (atexit)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o) (__retarget_lock_acquire_recursive)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o) (__register_exitproc)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+                              /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o) (_exit)
+driverlib/libdriver-cm4f.a(gpio.c.obj)
+                              CMakeFiles/main.dir/src/main.c.obj (GPIOPinWrite)
+driverlib/libdriver-cm4f.a(interrupt.c.obj)
+                              driverlib/libdriver-cm4f.a(gpio.c.obj) (IntRegister)
+driverlib/libdriver-cm4f.a(sysctl.c.obj)
+                              CMakeFiles/main.dir/src/main.c.obj (SysCtlDelay)
+driverlib/libdriver-cm4f.a(cpu.c.obj)
+                              driverlib/libdriver-cm4f.a(interrupt.c.obj) (CPUcpsid)
+FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                              CMakeFiles/main.dir/src/main.c.obj (xTaskCreate)
+FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+                              FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj) (xTimerCreateTimerTask)
+FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+                              FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj) (pvPortMalloc)
+FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+                              FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj) (vListInitialise)
+FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                              FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj) (xQueueGenericCreate)
+FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                              FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj) (pxPortInitialiseStack)
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a(lib_a-memcpy.o)
+                              FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj) (memcpy)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .text          0x0000000000000000       0x40 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .data          0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x0000000000000000       0x7c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .text.vApplicationMallocFailedHook
+                0x0000000000000000       0x26 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .text.vApplicationGetIdleTaskMemory
+                0x0000000000000000       0x34 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .text.vApplicationGetTimerTaskMemory
+                0x0000000000000000       0x34 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .bss.xIdleTaskTCB.3
+                0x0000000000000000       0x5c CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .bss.uxIdleTaskStack.2
+                0x0000000000000000      0x200 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .bss.xTimerTaskTCB.1
+                0x0000000000000000       0x5c CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .bss.uxTimerTaskStack.0
+                0x0000000000000000      0x200 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000000000      0xa8a CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/main.dir/src/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/main.dir/src/main.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/main.dir/src/main.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000      0xa8a CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000     0x8fd8 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0xca CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x16 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000      0x179 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0xcf CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x1f CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0x12 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000      0x4c4 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000       0xc3 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000000000      0x12c CMakeFiles/main.dir/src/main.c.obj
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000      0x428 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x0000000000000000       0x48 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .text.startup.register_fini
+                0x0000000000000000       0x14 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .init_array.00000
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x0000000000000000       0xcc /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .data.__atexit_recursive_mutex
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000000       0x68 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .text.atexit   0x0000000000000000        0xc /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .text.__libc_fini_array
+                0x0000000000000000       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire_recursive
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text.__retarget_lock_release_recursive
+                0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___at_quick_exit_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___atexit_recursive_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___dd_hash_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___env_recursive_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___malloc_recursive_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___sfp_recursive_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___sinit_recursive_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .bss.__lock___tz_mutex
+                0x0000000000000000        0x1 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .debug_frame   0x0000000000000000       0xb0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x0000000000000000       0x8c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a(_exit.o)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .data          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .bss           0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOGetIntNumber
+                0x0000000000000000      0x270 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIODirModeSet
+                0x0000000000000000       0xa8 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIODirModeGet
+                0x0000000000000000       0x80 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOIntTypeSet
+                0x0000000000000000       0xe4 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOIntTypeGet
+                0x0000000000000000       0x9c driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPadConfigSet
+                0x0000000000000000      0x224 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPadConfigGet
+                0x0000000000000000      0x13c driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinIntEnable
+                0x0000000000000000       0x44 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinIntDisable
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinIntStatus
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinIntClear
+                0x0000000000000000       0x3c driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPortIntRegister
+                0x0000000000000000       0x44 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPortIntUnregister
+                0x0000000000000000       0x40 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinRead
+                0x0000000000000000       0x3c driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeADC
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeCAN
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeComparator
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeEPI
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeEthernetLED
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeEthernetMII
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeFan
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeGPIOInput
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeGPIOOutput
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeGPIOOutputOD
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeI2C
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeI2CSCL
+                0x0000000000000000       0xc0 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeI2S
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeLPC
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypePECIRx
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypePECITx
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypePWM
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeQEI
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeSSI
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeTimer
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeUART
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeUSBAnalog
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinTypeUSBDigital
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIODMATriggerEnable
+                0x0000000000000000       0x44 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIODMATriggerDisable
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOADCTriggerEnable
+                0x0000000000000000       0x44 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOADCTriggerDisable
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000      0x371 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000      0x278 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000       0xca driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000       0xb2 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000      0x38a driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .data          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .bss           0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata.g_pulPriority
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata.g_pulRegs
+                0x0000000000000000       0x9c driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata.g_pulEnRegs
+                0x0000000000000000       0x14 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata.g_pulDisRegs
+                0x0000000000000000       0x14 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata.g_pulPendRegs
+                0x0000000000000000       0x14 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata.g_pulUnpendRegs
+                0x0000000000000000       0x14 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntDefaultHandler
+                0x0000000000000000        0x6 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ vtable         0x0000000000000000      0x26c driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntMasterEnable
+                0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntMasterDisable
+                0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .rodata        0x0000000000000000       0x63 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntRegister
+                0x0000000000000000       0x74 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntUnregister
+                0x0000000000000000       0x38 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPriorityGroupingSet
+                0x0000000000000000       0x40 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPriorityGroupingGet
+                0x0000000000000000       0x4c driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPrioritySet
+                0x0000000000000000       0x80 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPriorityGet
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntEnable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntDisable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntIsEnabled
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPendSet
+                0x0000000000000000       0x8c driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPendClear
+                0x0000000000000000       0x78 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPriorityMaskSet
+                0x0000000000000000       0x16 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .text.IntPriorityMaskGet
+                0x0000000000000000        0xe driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_info    0x0000000000000000      0x432 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_abbrev  0x0000000000000000      0x14b driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_loc     0x0000000000000000      0x47c driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_aranges
+                0x0000000000000000       0x98 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_ranges  0x0000000000000000       0x88 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000      0x371 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000     0x1b37 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000       0xca driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_macro   0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_line    0x0000000000000000      0x54b driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_str     0x0000000000000000     0xb02b driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .comment       0x0000000000000000       0x4a driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .debug_frame   0x0000000000000000      0x230 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .ARM.attributes
+                0x0000000000000000       0x34 driverlib/libdriver-cm4f.a(interrupt.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .data          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .bss           0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata.g_pulDCRegs
+                0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata.g_pulSRCRRegs
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata.g_pulRCGCRegs
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata.g_pulSCGCRegs
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata.g_pulDCGCRegs
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralValid
+                0x0000000000000000      0x40c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata.g_ppulPeripheralMap
+                0x0000000000000000      0x120 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralMapToNew
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlSRAMSizeGet
+                0x0000000000000000       0x24 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlFlashSizeGet
+                0x0000000000000000       0x24 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata        0x0000000000000000       0x60 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPinPresent
+                0x0000000000000000      0x11c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralPresent
+                0x0000000000000000       0xc4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralReady
+                0x0000000000000000       0x6c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralPowerOn
+                0x0000000000000000       0x70 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralPowerOff
+                0x0000000000000000       0x70 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralReset
+                0x0000000000000000      0x12c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralEnable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralDisable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralSleepEnable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralSleepDisable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralDeepSleepEnable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralDeepSleepDisable
+                0x0000000000000000       0xa4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPeripheralClockGating
+                0x0000000000000000       0x3c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIntRegister
+                0x0000000000000000       0x1e driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIntUnregister
+                0x0000000000000000       0x14 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIntEnable
+                0x0000000000000000       0x24 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIntDisable
+                0x0000000000000000       0x28 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIntClear
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIntStatus
+                0x0000000000000000       0x30 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlLDOSet
+                0x0000000000000000       0x6c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlLDOGet
+                0x0000000000000000       0x18 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlLDOConfigSet
+                0x0000000000000000       0x34 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlReset
+                0x0000000000000000       0x14 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlSleep
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlDeepSleep
+                0x0000000000000000       0x28 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlResetCauseGet
+                0x0000000000000000       0x18 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlResetCauseClear
+                0x0000000000000000       0x28 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlBrownOutConfigSet
+                0x0000000000000000       0x4c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlMOSCConfigSet
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPIOSCCalibrate
+                0x0000000000000000       0x74 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .bss.ulSysDiv  0x0000000000000000        0x4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .bss.ulOsc     0x0000000000000000        0x4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .bss.ulOscSelect
+                0x0000000000000000        0x4 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .bss.bNewPLL   0x0000000000000000        0x1 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlClockSet
+                0x0000000000000000      0x244 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlDeepSleepClockSet
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPWMClockSet
+                0x0000000000000000       0x84 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPWMClockGet
+                0x0000000000000000       0x44 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlADCSpeedSet
+                0x0000000000000000       0x64 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlADCSpeedGet
+                0x0000000000000000       0x1c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlIOSCVerificationSet
+                0x0000000000000000       0x3c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlMOSCVerificationSet
+                0x0000000000000000       0x3c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlPLLVerificationSet
+                0x0000000000000000       0x3c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlClkVerificationClear
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlGPIOAHBEnable
+                0x0000000000000000       0x9c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlGPIOAHBDisable
+                0x0000000000000000       0xa0 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlUSBPLLEnable
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlUSBPLLDisable
+                0x0000000000000000       0x20 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .text.SysCtlI2SMClkSet
+                0x0000000000000000      0x178 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000      0x371 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000     0x1b37 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000     0x32ca driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000       0xca driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000       0x10 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000000000      0xb82 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .group         0x0000000000000000        0xc driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .data          0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .bss           0x0000000000000000        0x0 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text.CPUcpsid
+                0x0000000000000000        0xe driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text.CPUprimask
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text.CPUcpsie
+                0x0000000000000000        0xe driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text.CPUwfi   0x0000000000000000        0x6 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text.CPUbasepriSet
+                0x0000000000000000        0x8 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .text.CPUbasepriGet
+                0x0000000000000000        0xc driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_info    0x0000000000000000      0x129 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_abbrev  0x0000000000000000       0xe5 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_aranges
+                0x0000000000000000       0x48 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_ranges  0x0000000000000000       0x38 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_macro   0x0000000000000000       0x1b driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_line    0x0000000000000000      0x18d driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_str     0x0000000000000000     0x2de6 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .comment       0x0000000000000000       0x4a driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .debug_frame   0x0000000000000000       0x70 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .ARM.attributes
+                0x0000000000000000       0x34 driverlib/libdriver-cm4f.a(cpu.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .data          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss           0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskDelayUntil
+                0x0000000000000000      0x130 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.eTaskGetState
+                0x0000000000000000      0x108 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskSuspend
+                0x0000000000000000      0x118 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvTaskIsTaskSuspended
+                0x0000000000000000       0x78 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskResume
+                0x0000000000000000      0x120 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskResumeFromISR
+                0x0000000000000000      0x154 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskEndScheduler
+                0x0000000000000000       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetTickCountFromISR
+                0x0000000000000000       0x24 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.pcTaskGetName
+                0x0000000000000000       0x5c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.uxTaskGetSystemState
+                0x0000000000000000       0xf4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskCatchUpTicks
+                0x0000000000000000       0x6c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskPlaceOnUnorderedEventList
+                0x0000000000000000       0xd0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskRemoveFromUnorderedEventList
+                0x0000000000000000      0x1a8 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskSetTimeOutState
+                0x0000000000000000       0x60 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.uxTaskGetTaskNumber
+                0x0000000000000000       0x2c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskSetTaskNumber
+                0x0000000000000000       0x26 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskGetInfo
+                0x0000000000000000       0xe8 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvListTasksWithinSingleList
+                0x0000000000000000       0xa0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvTaskCheckFreeStackSpace
+                0x0000000000000000       0x38 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetCurrentTaskHandle
+                0x0000000000000000       0x20 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskPriorityInherit
+                0x0000000000000000      0x120 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskPriorityDisinheritAfterTimeout
+                0x0000000000000000      0x178 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.uxTaskResetEventItemValue
+                0x0000000000000000       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.pvTaskIncrementMutexHeldCount
+                0x0000000000000000       0x28 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.ulTaskGenericNotifyTake
+                0x0000000000000000       0xec FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotifyWait
+                0x0000000000000000      0x11c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotify
+                0x0000000000000000      0x29c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotifyFromISR
+                0x0000000000000000      0x310 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskGenericNotifyGiveFromISR
+                0x0000000000000000      0x244 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGenericNotifyStateClear
+                0x0000000000000000       0x88 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.ulTaskGenericNotifyValueClear
+                0x0000000000000000       0x90 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x1e FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x5e FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x94 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x43 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x57 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x58 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x182 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x35d FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x103 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x6a FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x1df FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000     0x8fd8 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x18d FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x179 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0xcf FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x1f FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0x12 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x4c4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000       0xc3 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000000000      0x12c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .data          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss           0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.xTimerGetTimerDaemonTaskHandle
+                0x0000000000000000       0x4c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.xTimerGetPeriod
+                0x0000000000000000       0x4c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.vTimerSetReloadMode
+                0x0000000000000000       0x7c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.xTimerGetReloadMode
+                0x0000000000000000       0x68 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.uxTimerGetReloadMode
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.xTimerGetExpiryTime
+                0x0000000000000000       0x50 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.pcTimerGetName
+                0x0000000000000000       0x4c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.xTimerIsTimerActive
+                0x0000000000000000       0x68 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.pvTimerGetTimerID
+                0x0000000000000000       0x54 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.vTimerSetTimerID
+                0x0000000000000000       0x54 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.uxTimerGetTimerNumber
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.vTimerSetTimerNumber
+                0x0000000000000000       0x1c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x1e FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x5e FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x94 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x10e FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x86 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x43 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x57 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x58 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x182 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x35d FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x29 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x103 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x6a FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x1df FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000     0x8fd8 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x18d FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x179 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0xcf FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x1f FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x12 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x4c4 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0xc3 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000      0x12c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x80 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000000000       0x97 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .data          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss           0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .rodata.xHeapStructSize
+                0x0000000000000000        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.xPortGetFreeHeapSize
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.xPortGetMinimumEverFreeHeapSize
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.vPortInitialiseBlocks
+                0x0000000000000000        0xe FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.pvPortCalloc
+                0x0000000000000000       0x60 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.vPortGetHeapStats
+                0x0000000000000000       0xbc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x1e FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x5e FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x94 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x10e FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x86 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x43 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x57 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x58 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x182 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x35d FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x29 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x103 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x6a FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x1df FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000     0x8fd8 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x18d FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x179 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0xcf FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x1f FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0x12 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x4c4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000       0xc3 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000000000      0x12c FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .text          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .data          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .bss           0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .text.vListInsertEnd
+                0x0000000000000000       0x48 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x1e FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x5e FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x94 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x10e FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x86 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x43 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x57 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x58 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x182 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x35d FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x29 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x103 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x6a FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x1df FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000     0x8fd8 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x18d FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x179 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0xcf FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x1f FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0x12 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000      0x4c4 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x0000000000000000       0xc3 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .data          0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .bss           0x0000000000000000        0x0 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.prvInitialiseMutex
+                0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueCreateMutex
+                0x0000000000000000       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueGiveMutexRecursive
+                0x0000000000000000       0x7c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueTakeMutexRecursive
+                0x0000000000000000       0x80 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueCreateCountingSemaphore
+                0x0000000000000000       0x70 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueGiveFromISR
+                0x0000000000000000      0x184 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueSemaphoreTake
+                0x0000000000000000      0x224 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueuePeek
+                0x0000000000000000      0x1e4 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueReceiveFromISR
+                0x0000000000000000      0x158 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueuePeekFromISR
+                0x0000000000000000       0xfc FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.uxQueueMessagesWaiting
+                0x0000000000000000       0x50 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.uxQueueSpacesAvailable
+                0x0000000000000000       0x5c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.uxQueueMessagesWaitingFromISR
+                0x0000000000000000       0x50 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.vQueueDelete
+                0x0000000000000000       0x50 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.uxQueueGetQueueNumber
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.vQueueSetQueueNumber
+                0x0000000000000000       0x1c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.ucQueueGetQueueType
+                0x0000000000000000       0x1a FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.uxQueueGetQueueItemSize
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.uxQueueGetQueueLength
+                0x0000000000000000       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.prvGetDisinheritPriorityAfterTimeout
+                0x0000000000000000       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueIsQueueEmptyFromISR
+                0x0000000000000000       0x5c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.xQueueIsQueueFullFromISR
+                0x0000000000000000       0x60 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.pcQueueGetName
+                0x0000000000000000       0x7c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.vQueueUnregisterQueue
+                0x0000000000000000       0x84 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x1e FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x5e FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x94 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x10e FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x86 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x43 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x57 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x58 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x182 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x35d FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x29 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x35 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x103 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x6a FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x1df FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000     0x8fd8 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x18d FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x179 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0xcf FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x1f FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x12 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x4c4 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0xc3 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000      0x12c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x0000000000000000       0x80 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .group         0x0000000000000000        0xc FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .text          0x0000000000000000        0x0 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .data          0x0000000000000000        0x0 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .bss           0x0000000000000000        0x0 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .rodata.pcInterruptPriorityRegisters
+                0x0000000000000000        0x4 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .text.vPortEndScheduler
+                0x0000000000000000       0x4c FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0xa8a FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x16d FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x8e FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x51 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x103 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x6a FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x1df FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x16 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000     0x8fd8 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x18d FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x10 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x179 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0xcf FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x22 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x1f FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0x12 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x4c4 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000       0xc3 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .debug_macro   0x0000000000000000      0x12c FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a(lib_a-memcpy.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x0000000000000000       0x24 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x32 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+SRAM             0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+
+.text           0x0000000000000000     0x3bf9
+                0x0000000000000000                _text = .
+ *(.isr_vector)
+ .isr_vector    0x0000000000000000      0x26c CMakeFiles/main.dir/src/startup_gcc.c.obj
+                0x0000000000000000                g_pfnVectors
+ *(.init)
+ .init          0x000000000000026c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000000026c                _init
+ .init          0x0000000000000270        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.fini)
+ .fini          0x0000000000000278        0x4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000000000278                _fini
+ .fini          0x000000000000027c        0x8 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.text*)
+ .text.ResetISR
+                0x0000000000000284       0x6c CMakeFiles/main.dir/src/startup_gcc.c.obj
+                0x0000000000000284                ResetISR
+ .text.NmiSR    0x00000000000002f0        0x6 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .text.FaultISR
+                0x00000000000002f6        0x6 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .text.IntDefaultHandler
+                0x00000000000002fc        0x6 CMakeFiles/main.dir/src/startup_gcc.c.obj
+                0x00000000000002fc                DebugMon_Handler
+ .text.vApplicationStackOverflowHook
+                0x0000000000000302       0x2a CMakeFiles/main.dir/src/freertos_hook.c.obj
+                0x0000000000000302                vApplicationStackOverflowHook
+ .text.__error__
+                0x000000000000032c       0x16 CMakeFiles/main.dir/src/main.c.obj
+                0x000000000000032c                __error__
+ *fill*         0x0000000000000342        0x2 
+ .text.UARTIntHandler
+                0x0000000000000344       0x9c CMakeFiles/main.dir/src/main.c.obj
+                0x0000000000000344                UARTIntHandler
+ .text.UARTSend
+                0x00000000000003e0       0x40 CMakeFiles/main.dir/src/main.c.obj
+                0x00000000000003e0                UARTSend
+ .text.led_blinky_cb
+                0x0000000000000420       0x50 CMakeFiles/main.dir/src/main.c.obj
+                0x0000000000000420                led_blinky_cb
+ .text.vTask    0x0000000000000470       0x20 CMakeFiles/main.dir/src/main.c.obj
+                0x0000000000000470                vTask
+ .text.main     0x0000000000000490      0x164 CMakeFiles/main.dir/src/main.c.obj
+                0x0000000000000490                main
+ .text.memset   0x00000000000005f4       0xa4 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+                0x00000000000005f4                memset
+ .text.GPIOBaseValid
+                0x0000000000000698      0x138 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .text.GPIOPinWrite
+                0x00000000000007d0       0x44 driverlib/libdriver-cm4f.a(gpio.c.obj)
+                0x00000000000007d0                GPIOPinWrite
+ .text.GPIOPinConfigure
+                0x0000000000000814       0xb0 driverlib/libdriver-cm4f.a(gpio.c.obj)
+                0x0000000000000814                GPIOPinConfigure
+ .text.SysCtlDelay
+                0x00000000000008c4        0xa driverlib/libdriver-cm4f.a(sysctl.c.obj)
+                0x00000000000008c4                SysCtlDelay
+ *fill*         0x00000000000008ce        0x2 
+ .text.SysCtlClockGet
+                0x00000000000008d0      0x310 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+                0x00000000000008d0                SysCtlClockGet
+ .text.xTaskCreate
+                0x0000000000000be0       0x8c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000be0                xTaskCreate
+ .text.prvInitialiseNewTask
+                0x0000000000000c6c      0x140 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvAddNewTaskToReadyList
+                0x0000000000000dac      0x130 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.vTaskDelay
+                0x0000000000000edc       0x7c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000edc                vTaskDelay
+ .text.vTaskStartScheduler
+                0x0000000000000f58       0xb8 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000000f58                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x0000000000001010       0x1c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001010                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x000000000000102c      0x20c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x000000000000102c                xTaskResumeAll
+ .text.xTaskGetTickCount
+                0x0000000000001238       0x20 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001238                xTaskGetTickCount
+ .text.uxTaskGetNumberOfTasks
+                0x0000000000001258       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001258                uxTaskGetNumberOfTasks
+ .text.xTaskIncrementTick
+                0x0000000000001270      0x228 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001270                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x0000000000001498      0x118 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001498                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x00000000000015b0       0x5c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x00000000000015b0                vTaskPlaceOnEventList
+ .text.vTaskPlaceOnEventListRestricted
+                0x000000000000160c       0xa0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x000000000000160c                vTaskPlaceOnEventListRestricted
+ .text.xTaskRemoveFromEventList
+                0x00000000000016ac      0x1c4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x00000000000016ac                xTaskRemoveFromEventList
+ .text.vTaskInternalSetTimeOutState
+                0x0000000000001870       0x2c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001870                vTaskInternalSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x000000000000189c       0xf0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x000000000000189c                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x000000000000198c       0x18 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x000000000000198c                vTaskMissedYield
+ .text.prvIdleTask
+                0x00000000000019a4       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvInitialiseTaskLists
+                0x00000000000019d4       0x74 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.prvCheckTasksWaitingTermination
+                0x0000000000001a48        0xe FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ *fill*         0x0000000000001a56        0x2 
+ .text.prvResetNextTaskUnblockTime
+                0x0000000000001a58       0x38 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTaskGetSchedulerState
+                0x0000000000001a90       0x3c FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001a90                xTaskGetSchedulerState
+ .text.xTaskPriorityDisinherit
+                0x0000000000001acc      0x150 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000000001acc                xTaskPriorityDisinherit
+ .text.prvAddCurrentTaskToDelayedList
+                0x0000000000001c1c       0xdc FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .text.xTimerCreateTimerTask
+                0x0000000000001cf8       0x78 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+                0x0000000000001cf8                xTimerCreateTimerTask
+ .text.xTimerCreate
+                0x0000000000001d70       0x42 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+                0x0000000000001d70                xTimerCreate
+ *fill*         0x0000000000001db2        0x2 
+ .text.prvInitialiseNewTimer
+                0x0000000000001db4       0x84 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.xTimerGenericCommand
+                0x0000000000001e38       0xb0 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+                0x0000000000001e38                xTimerGenericCommand
+ .text.prvReloadTimer
+                0x0000000000001ee8       0x42 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ *fill*         0x0000000000001f2a        0x2 
+ .text.prvProcessExpiredTimer
+                0x0000000000001f2c       0x60 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvTimerTask
+                0x0000000000001f8c       0x24 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvProcessTimerOrBlockTask
+                0x0000000000001fb0       0x9c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvGetNextExpireTime
+                0x000000000000204c       0x48 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvSampleTimeNow
+                0x0000000000002094       0x40 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvInsertTimerInActiveList
+                0x00000000000020d4       0x84 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvProcessReceivedCommands
+                0x0000000000002158      0x190 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvSwitchTimerLists
+                0x00000000000022e8       0x4c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.prvCheckForValidListAndQueue
+                0x0000000000002334       0x6c FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .text.pvPortMalloc
+                0x00000000000023a0      0x1b8 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+                0x00000000000023a0                pvPortMalloc
+ .text.vPortFree
+                0x0000000000002558       0xdc FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+                0x0000000000002558                vPortFree
+ .text.prvHeapInit
+                0x0000000000002634       0xb8 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.prvInsertBlockIntoFreeList
+                0x00000000000026ec       0xb4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .text.vListInitialise
+                0x00000000000027a0       0x40 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+                0x00000000000027a0                vListInitialise
+ .text.vListInitialiseItem
+                0x00000000000027e0       0x1a FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+                0x00000000000027e0                vListInitialiseItem
+ .text.vListInsert
+                0x00000000000027fa       0x72 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+                0x00000000000027fa                vListInsert
+ .text.uxListRemove
+                0x000000000000286c       0x54 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+                0x000000000000286c                uxListRemove
+ .text.xQueueGenericReset
+                0x00000000000028c0      0x144 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x00000000000028c0                xQueueGenericReset
+ .text.xQueueGenericCreate
+                0x0000000000002a04       0xb0 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x0000000000002a04                xQueueGenericCreate
+ .text.prvInitialiseNewQueue
+                0x0000000000002ab4       0x46 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ *fill*         0x0000000000002afa        0x2 
+ .text.xQueueGenericSend
+                0x0000000000002afc      0x224 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x0000000000002afc                xQueueGenericSend
+ .text.xQueueGenericSendFromISR
+                0x0000000000002d20      0x194 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x0000000000002d20                xQueueGenericSendFromISR
+ .text.xQueueReceive
+                0x0000000000002eb4      0x1e0 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x0000000000002eb4                xQueueReceive
+ .text.prvCopyDataToQueue
+                0x0000000000003094       0xd4 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.prvCopyDataFromQueue
+                0x0000000000003168       0x4c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.prvUnlockQueue
+                0x00000000000031b4       0xa4 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.prvIsQueueEmpty
+                0x0000000000003258       0x2c FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.prvIsQueueFull
+                0x0000000000003284       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .text.vQueueAddToRegistry
+                0x00000000000032b4       0xb0 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x00000000000032b4                vQueueAddToRegistry
+ .text.vQueueWaitForMessageRestricted
+                0x0000000000003364       0x68 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x0000000000003364                vQueueWaitForMessageRestricted
+ .text.pxPortInitialiseStack
+                0x00000000000033cc       0x68 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x00000000000033cc                pxPortInitialiseStack
+ .text.prvTaskExitError
+                0x0000000000003434       0x6c FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .text.SVC_Handler
+                0x00000000000034a0       0x28 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x00000000000034a0                SVC_Handler
+ .text.prvPortStartFirstTask
+                0x00000000000034c8       0x2c FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .text.xPortStartScheduler
+                0x00000000000034f4      0x1b8 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x00000000000034f4                xPortStartScheduler
+ .text.vPortEnterCritical
+                0x00000000000036ac       0x74 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x00000000000036ac                vPortEnterCritical
+ .text.vPortExitCritical
+                0x0000000000003720       0x68 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x0000000000003720                vPortExitCritical
+ *fill*         0x0000000000003788        0x8 
+ .text.PendSV_Handler
+                0x0000000000003790       0x68 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x0000000000003790                PendSV_Handler
+ .text.SysTick_Handler
+                0x00000000000037f8       0x44 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x00000000000037f8                SysTick_Handler
+ .text.vPortSetupTimerInterrupt
+                0x000000000000383c       0x48 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x000000000000383c                vPortSetupTimerInterrupt
+ .text.vPortEnableVFP
+                0x0000000000003884       0x18 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .text.vPortValidateInterruptPriority
+                0x000000000000389c       0xa4 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x000000000000389c                vPortValidateInterruptPriority
+ .text          0x0000000000003940      0x134 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a(lib_a-memcpy.o)
+                0x0000000000003940                memcpy
+ *(.rodata*)
+ .rodata        0x0000000000003a74       0x2a CMakeFiles/main.dir/src/main.c.obj
+ *fill*         0x0000000000003a9e        0x2 
+ .rodata.g_pulGPIOBaseAddrs
+                0x0000000000003aa0       0x78 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .rodata        0x0000000000003b18       0x5e driverlib/libdriver-cm4f.a(gpio.c.obj)
+ *fill*         0x0000000000003b76        0x2 
+ .rodata.g_pulXtals
+                0x0000000000003b78       0x6c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .rodata        0x0000000000003be4        0x5 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ *fill*         0x0000000000003be9        0x3 
+ .rodata        0x0000000000003bec        0xd FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+                0x0000000000003bf9                _etext = .
+
+.glue_7         0x0000000000003bfc        0x0
+ .glue_7        0x0000000000003bfc        0x0 linker stubs
+
+.glue_7t        0x0000000000003bfc        0x0
+ .glue_7t       0x0000000000003bfc        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000003bfc        0x0
+ .vfp11_veneer  0x0000000000003bfc        0x0 linker stubs
+
+.v4_bx          0x0000000000003bfc        0x0
+ .v4_bx         0x0000000000003bfc        0x0 linker stubs
+
+.iplt           0x0000000000003bfc        0x0
+ .iplt          0x0000000000003bfc        0x0 CMakeFiles/main.dir/src/startup_gcc.c.obj
+
+.rel.dyn        0x0000000000003bfc        0x0
+ .rel.iplt      0x0000000000003bfc        0x0 CMakeFiles/main.dir/src/startup_gcc.c.obj
+
+.data           0x0000000020000000        0x8 load address 0x0000000000003bf9
+                0x0000000020000000                _data = .
+ *(vtable)
+ *(.data*)
+ .data.uxTopUsedPriority
+                0x0000000020000000        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000020000000                uxTopUsedPriority
+ .data.uxCriticalNesting
+                0x0000000020000004        0x4 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                0x0000000020000008                _edata = .
+
+.igot.plt       0x0000000020000008        0x0 load address 0x0000000000003c04
+ .igot.plt      0x0000000020000008        0x0 CMakeFiles/main.dir/src/startup_gcc.c.obj
+
+.bss            0x0000000020000008     0x1168 load address 0x0000000000003c04
+                0x0000000020000008                _bss = .
+ *(.bss*)
+ .bss.blinky_tm
+                0x0000000020000008        0x4 CMakeFiles/main.dir/src/main.c.obj
+                0x0000000020000008                blinky_tm
+ .bss.SystemCoreClock
+                0x000000002000000c        0x4 CMakeFiles/main.dir/src/main.c.obj
+                0x000000002000000c                SystemCoreClock
+ .bss.led_state.0
+                0x0000000020000010        0x4 CMakeFiles/main.dir/src/main.c.obj
+ .bss.pxCurrentTCB
+                0x0000000020000014        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                0x0000000020000014                pxCurrentTCB
+ .bss.pxReadyTasksLists
+                0x0000000020000018       0x64 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xDelayedTaskList1
+                0x000000002000007c       0x14 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xDelayedTaskList2
+                0x0000000020000090       0x14 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.pxDelayedTaskList
+                0x00000000200000a4        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.pxOverflowDelayedTaskList
+                0x00000000200000a8        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xPendingReadyList
+                0x00000000200000ac       0x14 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xSuspendedTaskList
+                0x00000000200000c0       0x14 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxCurrentNumberOfTasks
+                0x00000000200000d4        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xTickCount
+                0x00000000200000d8        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxTopReadyPriority
+                0x00000000200000dc        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xSchedulerRunning
+                0x00000000200000e0        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xPendedTicks
+                0x00000000200000e4        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xYieldPending
+                0x00000000200000e8        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xNumOfOverflows
+                0x00000000200000ec        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxTaskNumber
+                0x00000000200000f0        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xNextTaskUnblockTime
+                0x00000000200000f4        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xIdleTaskHandle
+                0x00000000200000f8        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.uxSchedulerSuspended
+                0x00000000200000fc        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .bss.xActiveTimerList1
+                0x0000000020000100       0x14 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.xActiveTimerList2
+                0x0000000020000114       0x14 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.pxCurrentTimerList
+                0x0000000020000128        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.pxOverflowTimerList
+                0x000000002000012c        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.xTimerQueue
+                0x0000000020000130        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.xTimerTaskHandle
+                0x0000000020000134        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.xLastTime.0
+                0x0000000020000138        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .bss.ucHeap    0x000000002000013c     0x1000 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xStart    0x000000002000113c        0x8 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.pxEnd     0x0000000020001144        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xFreeBytesRemaining
+                0x0000000020001148        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xMinimumEverFreeBytesRemaining
+                0x000000002000114c        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xNumberOfSuccessfulAllocations
+                0x0000000020001150        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xNumberOfSuccessfulFrees
+                0x0000000020001154        0x4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .bss.xQueueRegistry
+                0x0000000020001158       0x10 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                0x0000000020001158                xQueueRegistry
+ .bss.ucMaxSysCallPriority
+                0x0000000020001168        0x1 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ *fill*         0x0000000020001169        0x3 
+ .bss.ulMaxPRIGROUPValue
+                0x000000002000116c        0x4 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ *(COMMON)
+                0x0000000020001170                _ebss = .
+                0x0000000020001170                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000000020001170                __exidx_end = .
+LOAD CMakeFiles/main.dir/src/startup_gcc.c.obj
+LOAD CMakeFiles/main.dir/src/freertos_hook.c.obj
+LOAD CMakeFiles/main.dir/src/main.c.obj
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+LOAD driverlib/libdriver-cm4f.a
+LOAD FreeRTOS-Kernel/libfreertos_kernel.a
+LOAD FreeRTOS-Kernel/portable/libfreertos_kernel_port.a
+START GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+END GROUP
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(main elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x34 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .ARM.attributes
+                0x0000000000000052       0x34 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .ARM.attributes
+                0x0000000000000086       0x34 CMakeFiles/main.dir/src/main.c.obj
+ .ARM.attributes
+                0x00000000000000ba       0x34 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000000000ee       0x34 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .ARM.attributes
+                0x0000000000000122       0x34 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .ARM.attributes
+                0x0000000000000156       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .ARM.attributes
+                0x000000000000018a       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .ARM.attributes
+                0x00000000000001be       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .ARM.attributes
+                0x00000000000001f2       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .ARM.attributes
+                0x0000000000000226       0x34 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .ARM.attributes
+                0x000000000000025a       0x34 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+ .ARM.attributes
+                0x000000000000028e       0x1c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000000000002aa       0x1e /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 CMakeFiles/main.dir/src/startup_gcc.c.obj
+                                         0x4a (size before relaxing)
+ .comment       0x0000000000000049       0x4a CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .comment       0x0000000000000049       0x4a CMakeFiles/main.dir/src/main.c.obj
+ .comment       0x0000000000000049       0x4a driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .comment       0x0000000000000049       0x4a driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .comment       0x0000000000000049       0x4a FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .comment       0x0000000000000049       0x4a FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .comment       0x0000000000000049       0x4a FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .comment       0x0000000000000049       0x4a FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .comment       0x0000000000000049       0x4a FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .comment       0x0000000000000049       0x4a FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_info     0x0000000000000000     0x8105
+ .debug_info    0x0000000000000000      0x127 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_info    0x0000000000000127      0x3de CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_info    0x0000000000000505      0x22c CMakeFiles/main.dir/src/main.c.obj
+ .debug_info    0x0000000000000731      0xbe9 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_info    0x000000000000131a      0xa82 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_info    0x0000000000001d9c     0x286d FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_info    0x0000000000004609      0xe8f FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_info    0x0000000000005498      0x5b1 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_info    0x0000000000005a49      0x2fd FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_info    0x0000000000005d46     0x1d54 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_info    0x0000000000007a9a      0x66b FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_abbrev   0x0000000000000000     0x12a9
+ .debug_abbrev  0x0000000000000000       0xb8 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_abbrev  0x00000000000000b8      0x112 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_abbrev  0x00000000000001ca      0x101 CMakeFiles/main.dir/src/main.c.obj
+ .debug_abbrev  0x00000000000002cb      0x110 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_abbrev  0x00000000000003db      0x1ec driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_abbrev  0x00000000000005c7      0x2e8 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_abbrev  0x00000000000008af      0x238 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_abbrev  0x0000000000000ae7      0x1fd FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_abbrev  0x0000000000000ce4       0xf4 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_abbrev  0x0000000000000dd8      0x27a FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_abbrev  0x0000000000001052      0x257 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_loc      0x0000000000000000     0x4e9a
+ .debug_loc     0x0000000000000000       0xd4 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_loc     0x00000000000000d4      0x170 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_loc     0x0000000000000244      0x1d4 CMakeFiles/main.dir/src/main.c.obj
+ .debug_loc     0x0000000000000418      0xdd8 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_loc     0x00000000000011f0      0xf40 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_loc     0x0000000000002130     0x1166 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_loc     0x0000000000003296      0x838 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_loc     0x0000000000003ace      0x2c4 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_loc     0x0000000000003d92      0x1cc FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_loc     0x0000000000003f5e      0xc30 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_loc     0x0000000000004b8e      0x30c FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_aranges  0x0000000000000000      0x8f8
+ .debug_aranges
+                0x0000000000000000       0x38 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_aranges
+                0x0000000000000038       0x38 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_aranges
+                0x0000000000000070       0x48 CMakeFiles/main.dir/src/main.c.obj
+ .debug_aranges
+                0x00000000000000b8      0x178 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_aranges
+                0x0000000000000230      0x1b0 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_aranges
+                0x00000000000003e0      0x1d0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_aranges
+                0x00000000000005b0       0xe8 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_aranges
+                0x0000000000000698       0x60 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_aranges
+                0x00000000000006f8       0x40 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_aranges
+                0x0000000000000738      0x140 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_aranges
+                0x0000000000000878       0x80 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_ranges   0x0000000000000000      0x848
+ .debug_ranges  0x0000000000000000       0x28 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_ranges  0x0000000000000028       0x28 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_ranges  0x0000000000000050       0x38 CMakeFiles/main.dir/src/main.c.obj
+ .debug_ranges  0x0000000000000088      0x168 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_ranges  0x00000000000001f0      0x1a0 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_ranges  0x0000000000000390      0x1c0 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_ranges  0x0000000000000550       0xd8 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_ranges  0x0000000000000628       0x50 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_ranges  0x0000000000000678       0x30 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_ranges  0x00000000000006a8      0x130 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_ranges  0x00000000000007d8       0x70 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_macro    0x0000000000000000    0x14abf
+ .debug_macro   0x0000000000000000       0x23 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_macro   0x0000000000000023      0xa8a CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_macro   0x0000000000000aad     0x1b37 CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_macro   0x00000000000025e4       0xca CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_macro   0x00000000000026ae       0xee CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000279c      0x16d CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000002909       0x22 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000292b       0x8e CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x00000000000029b9       0x51 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000002a0a      0x103 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000002b0d       0x6a CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000002b77      0x1df CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000002d56       0x16 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x0000000000002d6c     0x8fd8 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000bd44      0x18d CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000bed1       0x10 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000bee1      0x179 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c05a       0xcf CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c129       0x22 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c14b       0x1f CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c16a       0x12 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c17c      0x4c4 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c640       0xc3 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c703      0x12c CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_macro   0x000000000000c82f      0x30d CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cb3c       0x5e CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cb9a       0x1e CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cbb8       0x94 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cc4c       0x35 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cc81       0x34 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000ccb5       0x16 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cccb       0x57 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cd22       0x97 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000cdb9      0x35d CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d116       0xf6 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d20c       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d21c       0x16 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d232       0x43 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d275       0x34 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d2a9       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d2b9       0x58 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d311      0x182 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d493       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d4a3       0x1c CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d4bf       0x52 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d511       0x22 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d533       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d543       0x52 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d595       0xd5 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d66a       0x1c CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d686       0x3d CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d6c3       0x16 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d6d9      0x16f CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d848       0x16 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d85e       0x35 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d893       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d8a3       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d8b3       0x35 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000d8e8      0x12c CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000da14      0x371 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000dd85      0x278 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000dffd       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000e00d       0x46 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000e053       0xb2 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000e105      0x38a CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000e48f       0x10 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000e49f     0x1136 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x000000000000f5d5      0xb82 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000010157      0x188 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x00000000000102df      0x193 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000010472       0x80 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x00000000000104f2       0x77 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000010569       0x97 CMakeFiles/main.dir/src/main.c.obj
+ .debug_macro   0x0000000000010600       0x63 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000010663      0x221 driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000010884     0x32ca driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_macro   0x0000000000013b4e       0x97 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_macro   0x0000000000013be5      0x289 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000013e6e       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000013e84      0x10e FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000013f92       0x86 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000014018       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x000000000001402e       0x29 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000014057       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x000000000001406d       0x91 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x00000000000140fe       0x16 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_macro   0x0000000000014114      0x1f1 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_macro   0x0000000000014305      0x21e FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_macro   0x0000000000014523      0x1a2 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_macro   0x00000000000146c5      0x234 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_macro   0x00000000000148f9      0x1c6 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_line     0x0000000000000000     0x7f7b
+ .debug_line    0x0000000000000000      0x18e CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_line    0x000000000000018e      0x560 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_line    0x00000000000006ee      0x811 CMakeFiles/main.dir/src/main.c.obj
+ .debug_line    0x0000000000000eff      0xe2f driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_line    0x0000000000001d2e      0xfa2 driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_line    0x0000000000002cd0     0x1b87 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_line    0x0000000000004857      0xb7d FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_line    0x00000000000053d4      0x8cb FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_line    0x0000000000005c9f      0x634 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_line    0x00000000000062d3     0x150b FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_line    0x00000000000077de      0x79d FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+
+.debug_str      0x0000000000000000    0x5fcd7
+ .debug_str     0x0000000000000000     0xa670 CMakeFiles/main.dir/src/startup_gcc.c.obj
+                                       0xa69d (size before relaxing)
+ .debug_str     0x000000000000a670    0x3078f CMakeFiles/main.dir/src/freertos_hook.c.obj
+                                      0x38ac1 (size before relaxing)
+ .debug_str     0x000000000003adff    0x1994b CMakeFiles/main.dir/src/main.c.obj
+                                      0x52c9d (size before relaxing)
+ .debug_str     0x000000000005474a     0x7589 driverlib/libdriver-cm4f.a(gpio.c.obj)
+                                      0x1456a (size before relaxing)
+ .debug_str     0x000000000005bcd3      0x6ee driverlib/libdriver-cm4f.a(sysctl.c.obj)
+                                      0x1c42a (size before relaxing)
+ .debug_str     0x000000000005c3c1     0x182a FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+                                      0x3d16f (size before relaxing)
+ .debug_str     0x000000000005dbeb      0x5ac FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+                                      0x3c819 (size before relaxing)
+ .debug_str     0x000000000005e197      0x634 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+                                      0x3b895 (size before relaxing)
+ .debug_str     0x000000000005e7cb       0xf2 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+                                      0x3a0b7 (size before relaxing)
+ .debug_str     0x000000000005e8bd      0xabf FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+                                      0x3c630 (size before relaxing)
+ .debug_str     0x000000000005f37c      0x95b FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)
+                                      0x391d0 (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x24c8
+ .debug_frame   0x0000000000000000       0x7c CMakeFiles/main.dir/src/startup_gcc.c.obj
+ .debug_frame   0x000000000000007c       0xb0 CMakeFiles/main.dir/src/freertos_hook.c.obj
+ .debug_frame   0x000000000000012c       0xf4 CMakeFiles/main.dir/src/main.c.obj
+ .debug_frame   0x0000000000000220       0x2c /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
+ .debug_frame   0x000000000000024c      0x64c driverlib/libdriver-cm4f.a(gpio.c.obj)
+ .debug_frame   0x0000000000000898      0x71c driverlib/libdriver-cm4f.a(sysctl.c.obj)
+ .debug_frame   0x0000000000000fb4      0x7f4 FreeRTOS-Kernel/libfreertos_kernel.a(tasks.c.obj)
+ .debug_frame   0x00000000000017a8      0x3c8 FreeRTOS-Kernel/libfreertos_kernel.a(timers.c.obj)
+ .debug_frame   0x0000000000001b70      0x150 FreeRTOS-Kernel/libfreertos_kernel.a(heap_4.c.obj)
+ .debug_frame   0x0000000000001cc0       0xd8 FreeRTOS-Kernel/libfreertos_kernel.a(list.c.obj)
+ .debug_frame   0x0000000000001d98      0x588 FreeRTOS-Kernel/libfreertos_kernel.a(queue.c.obj)
+ .debug_frame   0x0000000000002320      0x1a8 FreeRTOS-Kernel/portable/libfreertos_kernel_port.a(port.c.obj)

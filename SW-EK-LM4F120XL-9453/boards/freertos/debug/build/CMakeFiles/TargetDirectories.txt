@@ -1,0 +1,15 @@
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/CMakeFiles/main.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/CMakeFiles/flash.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/CMakeFiles/edit_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/CMakeFiles/rebuild_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/driverlib/CMakeFiles/driver-cm4f.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/driverlib/CMakeFiles/edit_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/driverlib/CMakeFiles/rebuild_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/CMakeFiles/freertos_kernel.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/CMakeFiles/edit_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/CMakeFiles/rebuild_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/include/CMakeFiles/edit_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/include/CMakeFiles/rebuild_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/portable/CMakeFiles/freertos_kernel_port.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/portable/CMakeFiles/edit_cache.dir
+/Users/mybays/develop/mcu-arch/lm4f120/EK-LM4F120XL/SW-EK-LM4F120XL-9453.dev/boards/freertos/debug/build/FreeRTOS-Kernel/portable/CMakeFiles/rebuild_cache.dir

@@ -22,7 +22,7 @@ endif ()
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-#set(CMAKE_BUILD_TYPE DEBUG)
+set(CMAKE_BUILD_TYPE Debug)
 
 
 # Set build
