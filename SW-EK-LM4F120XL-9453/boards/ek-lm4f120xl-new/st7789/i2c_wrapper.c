@@ -1,7 +1,7 @@
 #include "i2c_wrapper.h"
 
 
-uint8_t i2cReadByte(uint16_t device_address, uint16_t device_register)
+uint8_t i2cReadByte(uint8_t device_address, uint8_t device_register)
 {
 	//specify that we want to communicate to device address with an intended write to bus
 	ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
@@ -52,7 +52,68 @@ void i2cWriteByte(uint8_t device_address, uint8_t device_register, uint8_t devic
     while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
 }
 
-void i2cReadBytes(uint16_t device_address,uint16_t device_register, uint8_t *pData, size_t size)
+void i2cWriteTwoBytes(uint8_t device_address, uint8_t device_register, uint8_t data1,uint8_t data2)
+{
+    //specify that we want to communicate to device address with an intended write to bus
+    ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
+
+    //register to be read
+    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, device_register);
+
+    //send control byte and register address byte to slave device
+    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_START);
+
+    //wait for MCU to complete send transaction
+    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
+
+    //specify data to be written to the above mentioned device_register
+    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, data1);
+
+    //send data that was specified above
+    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);
+    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
+
+    //specify data to be written to the above mentioned device_register
+    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, data2);
+
+    //send data that was specified above
+    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
+
+    //wait for MCU & device to complete transaction
+    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
+}
+
+void i2cWriteBytes(uint8_t device_address,uint8_t device_register, uint8_t *pData, size_t size)
+{
+    //specify that we want to communicate to device address with an intended write to bus
+    ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
+
+    //register to be read
+    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, device_register);
+
+    //send control byte and register address byte to slave device
+    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_START);
+
+    //wait for MCU to complete send transaction
+    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
+
+    for(size_t i = 0; i < size; i++)
+    {
+        //specify data to be written to the above mentioned device_register
+        ROM_I2CMasterDataPut(I2C0_MASTER_BASE, *pData++);
+
+        //send data that was specified above
+        if(i == (size - 1))
+            ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
+        else
+            ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);
+
+        //wait for MCU & device to complete transaction
+        while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
+    }
+}
+
+void i2cReadBytes(uint8_t device_address,uint8_t device_register, uint8_t *pData, size_t size)
  {
         ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
         ROM_I2CMasterDataPut(I2C0_MASTER_BASE, device_register);
@@ -73,25 +134,7 @@ void i2cReadBytes(uint16_t device_address,uint16_t device_register, uint8_t *pDa
         *pData = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
  }
 
-void i2cWriteBytes(uint16_t device_address, uint16_t device_register, uint8_t *pData, size_t size)
-{
-    ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
-    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, device_register);
-    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_START);
-    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, *pData++);
-    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);
-    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-    for(size_t i = 1; i < size; i++)
-    {
-        ROM_I2CMasterDataPut(I2C0_MASTER_BASE, *pData++);
-        ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);
-        while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-    }
-    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, *pData);
-    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
-    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-}
+
 
 void i2cDetect()
 {

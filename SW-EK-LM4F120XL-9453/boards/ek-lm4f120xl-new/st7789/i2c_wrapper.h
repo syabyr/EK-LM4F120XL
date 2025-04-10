@@ -18,11 +18,11 @@
 #include "driverlib/i2c.h"
 #include <stdint.h>
 
-uint8_t i2cReadByte(uint16_t device_address, uint16_t device_register);
+uint8_t i2cReadByte(uint8_t device_address, uint8_t device_register);
 void i2cWriteByte(uint8_t device_address, uint8_t device_register, uint8_t device_data);
 
-void i2cReadBytes(uint16_t device_address,uint16_t device_register, uint8_t *pData, size_t size);
-void i2cWriteBytes(uint16_t device_address,uint16_t device_register, uint8_t *pData, size_t size);
+void i2cReadBytes(uint8_t device_address,uint8_t device_register, uint8_t *pData, size_t size);
+void i2cWriteBytes(uint8_t device_address,uint8_t device_register, uint8_t *pData, size_t size);
 
 void i2cDetect();
 

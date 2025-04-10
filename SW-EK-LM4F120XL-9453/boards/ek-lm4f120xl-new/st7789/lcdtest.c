@@ -103,26 +103,23 @@ int main(void)
 
     st7789_Clear(0xf800);
 
+    tp_init();
+
+
     //i2cdetect();
     //
     // Loop forever echoing data through the UART.
     //
+    check_info();
     while(1)
     {
-        i2cWriteByte(0x46,0x20,0x00);
-        uint8_t recv[10]={0xff};
-        i2cReadBytes(0x46,0xA0,recv,10);
-        int i=0;
-        for(i=0;i<10;i++)
-        {
-            printf("%02x ",recv[i]);
-        }
-        printf("\r\n");        
+        //read_cap_sensor_info();
+        
         //DelayMs(1000);
         //i2cTest();
-        st7789_Clear(ST7789_BLACK);
-        DelayMs(500);
-        st7789_Clear(ST7789_RED);
+        //st7789_Clear(ST7789_BLACK);
+        //DelayMs(50);
+        //st7789_Clear(ST7789_RED);
     }
     while(1)
     {
