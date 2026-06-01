@@ -54,23 +54,46 @@ void i2cWriteByte(uint8_t device_address, uint8_t device_register, uint8_t devic
 
 void i2cReadBytes(uint16_t device_address,uint16_t device_register, uint8_t *pData, size_t size)
  {
-        ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
-        ROM_I2CMasterDataPut(I2C0_MASTER_BASE, device_register);
-        ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_SINGLE_SEND);
+    // IT7269必须用burst连续读模式
+    ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, false);
+    ROM_I2CMasterDataPut(I2C0_MASTER_BASE, device_register);
+    ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_SINGLE_SEND);
+    while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
+
+    // 检查发送错误
+    if(ROM_I2CMasterErr(I2C0_MASTER_BASE) != I2C_MASTER_ERR_NONE) {
+        ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_ERROR_STOP);
+        return;
+    }
+
+    ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, true);
+
+    if(size == 1) {
+        // 单字节读
+        ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_SINGLE_RECEIVE);
         while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-        ROM_I2CMasterSlaveAddrSet(I2C0_MASTER_BASE, device_address, true);
+        pData[0] = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
+    } else if(size > 1) {
+        // burst连续读
         ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_RECEIVE_START);
         while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-        *pData++ = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
-        for(size_t i = 1; i < size; i++)
-        {
+        pData[0] = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
+
+        for(size_t i = 1; i < size - 1; i++) {
             ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_RECEIVE_CONT);
             while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-            *pData++ = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
+            pData[i] = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
         }
+
         ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_RECEIVE_FINISH);
         while(ROM_I2CMasterBusy(I2C0_MASTER_BASE));
-        *pData = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
+        pData[size-1] = ROM_I2CMasterDataGet(I2C0_MASTER_BASE);
+    }
+
+    // 检查接收错误
+    if(ROM_I2CMasterErr(I2C0_MASTER_BASE) != I2C_MASTER_ERR_NONE) {
+        ROM_I2CMasterControl(I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_ERROR_STOP);
+    }
  }
 
 void i2cWriteBytes(uint16_t device_address, uint16_t device_register, uint8_t *pData, size_t size)

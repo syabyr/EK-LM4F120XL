@@ -22,6 +22,7 @@
 #include "spi_wrapper.h"
 #include "st7789_wrapper.h"
 #include "uart_wrapper.h"
+#include "it7259_wrapper.h"
 //*****************************************************************************
 //
 //! \addtogroup example_list
@@ -95,34 +96,78 @@ int main(void)
 
     printf("helloworld.\r\n");
     unsigned long freq=ROM_SysCtlClockGet();
-    
+    printf("System Clock: %ld Hz\r\n", freq);
 
     st7789_init();
+    i2c_init();
+    tp_init();
+
+    printf("IT7269 Touch Driver initialized\r\n");
+    printf("I2C Address: 0x%02X\r\n", IT7269_ADDR);
 
     i2cDetect();
 
-    st7789_Clear(0xf800);
+    st7789_Clear(ST7789_BLACK);
 
-    //i2cdetect();
-    //
-    // Loop forever echoing data through the UART.
-    //
+    uint16_t x, y;
+    uint8_t pressed;
+    // uint8_t last_pressed = 0; // 不再使用
+    IT7269_Gesture_t gesture;
+
+    printf("\r\n=== IT7269 触摸&手势测试 ===\r\n");
+    printf("支持功能：单击、双击、上下左右滑动\r\n");
+    printf("================================================================\r\n");
+
+    // 主循环
     while(1)
     {
-        i2cWriteByte(0x46,0x20,0x00);
-        uint8_t recv[10]={0xff};
-        i2cReadBytes(0x46,0xA0,recv,10);
-        int i=0;
-        for(i=0;i<10;i++)
+        // 读取触摸坐标
+        IT7269_ReadTouch(&x, &y, &pressed);
+        if(pressed)
         {
-            printf("%02x ",recv[i]);
+            ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2); // 点亮蓝色LED
+            printf("[触摸] X=%4d, Y=%4d\r\n", x, y);
         }
-        printf("\r\n");        
-        //DelayMs(1000);
-        //i2cTest();
-        st7789_Clear(ST7789_BLACK);
-        DelayMs(500);
-        st7789_Clear(ST7789_RED);
+        else
+        {
+            ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0); // 熄灭LED
+        }
+
+        // 2. 读取手势
+        gesture = IT7269_ReadGesture();
+        if(gesture.type != 0)
+        {
+            printf("[手势] ");
+            switch(gesture.type)
+            {
+                case GESTURE_TAP:
+                    printf("单击\r\n");
+                    break;
+                case GESTURE_DOUBLE_TAP:
+                    printf("双击\r\n");
+                    break;
+                case GESTURE_FLICK:
+                    printf("滑动，方向：");
+                    switch(gesture.direction)
+                    {
+                        case DIR_UP: printf("上\r\n"); break;
+                        case DIR_DOWN: printf("下\r\n"); break;
+                        case DIR_LEFT: printf("左\r\n"); break;
+                        case DIR_RIGHT: printf("右\r\n"); break;
+                        case DIR_UPPER_RIGHT: printf("右上\r\n"); break;
+                        case DIR_LOWER_RIGHT: printf("右下\r\n"); break;
+                        case DIR_UPPER_LEFT: printf("左上\r\n"); break;
+                        case DIR_LOWER_LEFT: printf("左下\r\n"); break;
+                        default: printf("未知(0x%02X)\r\n", gesture.direction); break;
+                    }
+                    break;
+                default:
+                    printf("未知手势(0x%02X)\r\n", gesture.type);
+                    break;
+            }
+        }
+
+        DelayMs(50); // 50ms扫描一次
     }
     while(1)
     {
