@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * blinky.ld - Linker configuration file for blinky.
+ * main.ld - Linker configuration file for main.
  *
  * Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
  * Software License Agreement
@@ -22,10 +22,6 @@
  *
  *****************************************************************************/
 
-/* Generate a link error if heap and stack don't fit into RAM */
-_Min_Heap_Size = 0;      /* required amount of heap  */
-_Min_Stack_Size = 0x1000; /* required amount of stack */
-
 MEMORY
 {
     FLASH (rx) : ORIGIN = 0x00000000, LENGTH = 0x00040000
@@ -38,9 +34,9 @@ SECTIONS
     {
         _text = .;
         KEEP(*(.isr_vector))
+        KEEP(*(.init))
+        KEEP(*(.fini))
         *(.text*)
-        *(.init)
-        *(.fini)
         *(.rodata*)
         _etext = .;
     } > FLASH
@@ -61,14 +57,14 @@ SECTIONS
         _ebss = .;
     } > SRAM
 
-    /* User_heap_stack section, used to check that there is enough RAM left */
-  ._user_heap_stack :
-  {
-    . = ALIGN(8);
-    PROVIDE ( end = . );
-    PROVIDE ( _end = . );
-    . = . + _Min_Heap_Size;
-    . = . + _Min_Stack_Size;
-    . = ALIGN(8);
-  } >SRAM
+    __exidx_start = .;
+
+    .ARM.exidx :
+    {
+        *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+    } > SRAM
+
+ __exidx_end = .;
+
+
 }

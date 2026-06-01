@@ -6,7 +6,7 @@
 ###### Project Environment #####
 
 # Set minimum CMake version
-cmake_minimum_required(VERSION 2.8.4)
+cmake_minimum_required(VERSION 3.5.0)
 
 #set(COMPILER_PREFIX /Users/mybays/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
 
@@ -22,7 +22,7 @@ endif ()
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-#set(CMAKE_BUILD_TYPE DEBUG)
+set(CMAKE_BUILD_TYPE DEBUG)
 
 
 # Set build
@@ -70,6 +70,15 @@ endif ()
 set(CPU_TYPE "m4")
 
 set(WORKING_BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+set(FREERTOS_CONFIG_FILE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+set(FREERTOS_PORT GCC_ARM_CM4F)
+
+
+add_library(freertos_config INTERFACE)
+    target_include_directories(freertos_config SYSTEM
+      INTERFACE
+      ${BASE_LOCATION}
+        inc) 
 
 
 ##### Modules #####
@@ -79,6 +88,8 @@ set(WORKING_BASE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_definitions("-DPART_LM4F120H5QR")
 add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
+add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
+add_definitions("-DTM4C123GH6PM")
 
 # Add base libs (emlib, CMSIS, device files)
 include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
@@ -86,7 +97,7 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
 add_subdirectory(${BASE_LOCATION}/third_party/FreeRTOS-Kernel FreeRTOS-Kernel)
-add_subdirectory(${BASE_LOCATION}/third_party/tinyusb/ tinyusb)
+add_subdirectory(${BASE_LOCATION}/third_party/tinyusb/src/ tinyusb)
 
 set(LINKER_SCRIPT "main.ld")
 
@@ -105,8 +116,8 @@ include_directories(${TINYUSB_LOCATION}/lib/FreeRTOS-Kernel/portable/GCC/ARM_CM4
 include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/Include/TM4C123/)
 include_directories(${TINYUSB_LOCATION}/hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include/)
 include_directories(${TINYUSB_LOCATION}/hw/bsp/tm4c123/boards/ek-tm4c123gxl/)
-add_definitions("-DCFG_TUSB_MCU=OPT_MCU_TM4C123")
-add_definitions("-DTM4C123GH6PM")
+
+
 
 set(SOURCE_FILES  src/main.c
                   src/msc_disk.c

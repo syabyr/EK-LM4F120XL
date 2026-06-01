@@ -135,17 +135,29 @@ UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
 
 
 #ifdef __GNUC__
+
 int _write(int fd, char *ptr, int len)
 {
-  UARTSend((unsigned char *)ptr, len);
+  //UARTSend((unsigned char *)ptr, len);
+  //UARTSend((unsigned char *)"hello\r\n", 7);
+  //UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
+  
   return len;
 }
+
 #endif
+
+int fputc(int c, FILE *f)
+{
+    UARTSend((unsigned char *)&c, 1);
+    return 0;
+}
 
 caddr_t _sbrk(int incr) 
 {
     return (caddr_t) 0;
 }
+///*
 int _close(int file) 
 { 
     return -1; 
@@ -166,7 +178,7 @@ int _read(int file, char *ptr, int len)
 { 
     return 0;
 }
-
+//*/
 //*****************************************************************************
 //
 // This example demonstrates how to send a string of data to the UART.
@@ -246,7 +258,7 @@ main(void)
     //
     while(1)
     {
-
+        UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
         printf("helloworld.\r\n");
         //SysCtlDelay(2000000);
         //printf("\r\n");

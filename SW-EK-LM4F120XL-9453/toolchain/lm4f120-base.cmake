@@ -45,6 +45,7 @@ add_definitions("-DPART_${DEVICE}=1")
 add_definitions("-DTARGET_IS_BLIZZARD_RA1")
 add_definitions("-Dgcc")
 set(COMMON_DEFINITIONS " -Wall -Wno-unused-parameter -mcpu=cortex-${CPU_TYPE} -mthumb  -ffunction-sections -fdata-sections  -mfpu=fpv4-sp-d16 -mfloat-abi=hard -pedantic ${OPTIONAL_DEBUG_SYMBOLS}")
+#set(COMMON_DEFINITIONS " -Wall -Wno-unused-parameter -mcpu=cortex-${CPU_TYPE} -mthumb  -ffunction-sections -fdata-sections  -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -pedantic ${OPTIONAL_DEBUG_SYMBOLS}")
 set(DEPFLAGS "-MMD -MP")
 
 # Enable FLTO optimization if required
@@ -65,6 +66,7 @@ set(CMAKE_ASM_FLAGS "${COMMON_DEFINITIONS} -x assembler-with-cpp -DLOOP_ADDR=0x8
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
     # Debug Flags
     set(COMMON_DEBUG_FLAGS "-O0 -D DEBUG -g3 -gdwarf-2")
+#    set(COMMON_DEBUG_FLAGS "-Os")
     set(CMAKE_C_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")
     set(CMAKE_CXX_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")
     set(CMAKE_ASM_FLAGS_DEBUG "${COMMON_DEBUG_FLAGS}")

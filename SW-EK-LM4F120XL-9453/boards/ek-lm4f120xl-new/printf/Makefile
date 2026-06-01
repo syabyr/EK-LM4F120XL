@@ -85,6 +85,8 @@ SCATTERgcc_${PROJ}=${PROJ}.ld
 ENTRY_${PROJ}=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
 CFLAGSgcc+=-Dgcc
+CFLAGSgcc+=-mfloat-abi=hard
+CFLAGSgcc+=-mfpu=fpv4-sp-d16
 
 ifeq (${DEBUG},1)
  CFLAGSgcc+= -g

@@ -74,8 +74,8 @@ ${COMPILER}/uart_print.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
 ${COMPILER}/uart_print.axf: uart_print.ld
 SCATTERgcc_uart_print=uart_print.ld
 ENTRY_uart_print=ResetISR
-CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1
-
+CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 --specs=rdimon.specs
+LDFLAGSgcc=
 #
 # Include the automatically generated dependency files.
 #

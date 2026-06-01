@@ -6,7 +6,7 @@
 ###### Project Environment #####
 
 # Set minimum CMake version
-cmake_minimum_required(VERSION 2.8.4)
+cmake_minimum_required(VERSION 3.5.0)
 
 #set(COMPILER_PREFIX /Users/mybays/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
 
@@ -22,7 +22,7 @@ endif ()
 # Optional verbose mode, uncomment or pass in -DCMAKE_VERBOSE_MAKEFILE=ON
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-set(CMAKE_BUILD_TYPE Debug)
+#set(CMAKE_BUILD_TYPE Debug)
 
 
 # Set build
@@ -108,6 +108,8 @@ include_directories(${BASE_LOCATION}
 set(SOURCE_FILES  src/startup_gcc.c
                   src/freertos_hook.c
                   src/retargetserial.c
+                  ../../../third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c
+                  ../../../third_party/FreeRTOS-Kernel/portable/MemMang/heap_4.c
                   src/main.c)
 
 

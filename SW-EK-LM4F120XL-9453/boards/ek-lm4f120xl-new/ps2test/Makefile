@@ -37,6 +37,8 @@ VARIANT=cm4f
 #
 ROOT=../../..
 
+VPATH += ../drivers
+
 #
 # Include the common make definitions.
 #
@@ -59,6 +61,8 @@ all: ${COMPILER}/fulltest.axf
 clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
+flash:
+	lm4flash ${COMPILER}/main.bin
 #
 # The rule to create the target directory.
 #

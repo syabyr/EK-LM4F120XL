@@ -271,7 +271,7 @@ int main(void)
     unsigned long freq=ROM_SysCtlClockGet();
     //printf("freq:%ldHz\r\n",freq);
     //printf("freq:%sHz\r\n","hello");
-    float test=124575567687655654.84454383838383838383;
+    //float test=124575567687655654.84454383838383838383;
 
     //cs init
     ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOD);
@@ -290,8 +290,8 @@ int main(void)
                        SSI_MODE_MASTER, 1000000, 8);
     SSIEnable(SSI0_BASE);
     #define NUM_SSI_DATA 8
-    unsigned long ulindex;
-    unsigned long ulDataTx[NUM_SSI_DATA];
+    //unsigned long ulindex;
+    //unsigned long ulDataTx[NUM_SSI_DATA];
     unsigned long ulDataRx[NUM_SSI_DATA];
 
     PS2_SetInit();
@@ -318,7 +318,7 @@ int main(void)
         }
         ROM_SSIDataGet(SSI0_BASE, &ulDataRx[0]);
         ulDataRx[0] &= 0x00FF;
-        printf("0x%02x \r\n",ulDataRx[0]);
+        printf("0x%02lx \r\n",ulDataRx[0]);
 
 
         ROM_SSIDataPut(SSI0_BASE, 0x42);
@@ -328,7 +328,7 @@ int main(void)
         }
         ROM_SSIDataGet(SSI0_BASE, &ulDataRx[0]);
         ulDataRx[0] &= 0x00FF;
-        printf("0x%02x \r\n",ulDataRx[0]);
+        printf("0x%02lx \r\n",ulDataRx[0]);
 
 
         //read data
@@ -338,7 +338,7 @@ int main(void)
             ROM_SSIDataPut(SSI0_BASE, 0x0);
             ROM_SSIDataGet(SSI0_BASE, &ulDataRx[0]);
             ulDataRx[0] &= 0x00FF;
-            printf("0x%02x ",ulDataRx[0]);
+            printf("0x%02lx ",ulDataRx[0]);
         }
         while(SSIBusy(SSI0_BASE))
         {

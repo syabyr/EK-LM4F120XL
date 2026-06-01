@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <sys/stat.h>
 
@@ -76,6 +75,7 @@ void UARTIntHandler(void)
 // Send a string to the UART.
 //
 //*****************************************************************************
+/*
 void
 UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
 {
@@ -91,8 +91,8 @@ UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
         ROM_UARTCharPut(UART0_BASE, *pucBuffer++);
     }
 }
-
-
+*/
+//#define printf __builtin_printf
 
 //*****************************************************************************
 //
@@ -167,15 +167,14 @@ main(void)
     unsigned long freq=ROM_SysCtlClockGet();
     printf("Changing system clock to %ldMHz\n\r",
 			       freq);
-    //float test=124575567687655654.84454383838383838383;
+    float test=124575567687655654.84454383838383838383;
    // 
     while(1)
     {
         printf("helloworld.\r\n");
-        //printf("\r\n");
-        //printf("freq:%ldHz\r\n\r\n",freq);
-        //printf("freq:%dHz\r\n",freq);
-        //printf("float:%f\r\n",test);
+        printf("\r\n");
+        printf("freq:%ldHz\r\n\r\n",freq);
+        printf("float:%f\r\n",test);
         //printf("\r\n");
         //printf("helloworld.\r\n");
         //printf("freq:%dHz\r\n\r\n",100);
