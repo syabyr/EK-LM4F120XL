@@ -54,12 +54,12 @@ void LCD_IO_WriteData(uint8_t *data, uint8_t length) {
 
 uint8_t LCD_IO_ReadData(void) {
     // SPI读功能暂时不用
-    uint8_t data;
+    unsigned long ulData;
     while(ROM_SSIBusy(SSI0_BASE))
     {
     }
-    ROM_SSIDataGet(SSI0_BASE, &data);
-    return data;
+    ROM_SSIDataGet(SSI0_BASE, &ulData);
+    return (uint8_t)ulData;
 }
 
 void LCD_IO_Delay(uint32_t delay) {
