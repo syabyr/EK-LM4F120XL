@@ -21,10 +21,19 @@
 #include "it7259_wrapper.h"
 #include "uart_wrapper.h"
 
-// 画点函数
+// 画点函数（优化版，减少函数调用开销）
 void LCD_DrawPoint(uint16_t x, uint16_t y, uint16_t color) {
-    if (x >= ST7789_LCD_WIDTH || y >= ST7789_LCD_HEIGHT) return; // 边界检查
-    st7789_FillArea(color, x, y, 2, 2); // 画2x2的点，更明显
+    if (x >= ST7789_LCD_WIDTH-1 || y >= ST7789_LCD_HEIGHT-1) return; // 边界检查，因为要画2x2的点
+
+    uint8_t hi = (color >> 8) & 0xFF;
+    uint8_t lo = (uint8_t)color;
+
+    // 直接设置窗口为2x2，连续写4个像素，比调用FillArea快
+    st7789_SetWindow(x, y, x+1, y+1);
+    LCD_IO_WriteData(&hi, 1); LCD_IO_WriteData(&lo, 1);
+    LCD_IO_WriteData(&hi, 1); LCD_IO_WriteData(&lo, 1);
+    LCD_IO_WriteData(&hi, 1); LCD_IO_WriteData(&lo, 1);
+    LCD_IO_WriteData(&hi, 1); LCD_IO_WriteData(&lo, 1);
 }
 
 // Bresenham画线算法
@@ -180,9 +189,8 @@ int main(void)
             {
                 printf("[手势] 双击屏幕 -> 清屏\r\n");
                 st7789_Clear(ST7789_BLACK);
-                // 等待手指松开，避免重复清屏
-                while(ROM_GPIOPinRead(GPIO_PORTD_BASE, GPIO_PIN_7) == 0);
-                DelayMs(100);
+                // 改为200ms延时防抖，避免死循环和重复触发
+                DelayMs(200);
             }
         }
 

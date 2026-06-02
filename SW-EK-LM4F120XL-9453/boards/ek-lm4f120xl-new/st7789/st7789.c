@@ -16,8 +16,9 @@ void LCD_IO_Init(void) {
     ROM_GPIOPinConfigure(GPIO_PA4_SSI0RX);
     ROM_GPIOPinConfigure(GPIO_PA5_SSI0TX);
     ROM_GPIOPinTypeSSI(GPIO_PORTA_BASE, GPIO_PIN_5 | GPIO_PIN_4 | GPIO_PIN_3 | GPIO_PIN_2);
+    // 把SPI时钟从8MHz提高到40MHz，ST7789支持最高60MHz，速度提高5倍
     ROM_SSIConfigSetExpClk(SSI0_BASE, ROM_SysCtlClockGet(), SSI_FRF_MOTO_MODE_3,
-                       SSI_MODE_MASTER, 8000000, 8);
+                       SSI_MODE_MASTER, 40000000, 8);
     ROM_SSIEnable(SSI0_BASE);
 
     // 初始化LCD控制引脚：DC=PE2, BL=PE3
