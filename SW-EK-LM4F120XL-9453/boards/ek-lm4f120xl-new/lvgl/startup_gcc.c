@@ -35,10 +35,10 @@ extern int main(void);
 
 //*****************************************************************************
 //
-// Reserve space for the system stack — 512 words = 2KB for LVGL usage.
+// Reserve space for the system stack — 1024 words = 4KB for LVGL usage.
 //
 //*****************************************************************************
-static unsigned long pulStack[512];
+static unsigned long pulStack[1024];
 
 //*****************************************************************************
 //

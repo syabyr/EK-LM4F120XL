@@ -3,8 +3,7 @@
  * @brief Linker script for LM4F120H5QR with LVGL
  *
  * 256KB Flash, 32KB SRAM
- * Stack increased to 1KB for LVGL usage
- * Heap limit set to allow LVGL's builtin allocator room
+ * Symbol names match the original StellarisWare startup_gcc.c conventions.
  */
 
 MEMORY
@@ -27,19 +26,16 @@ SECTIONS
         _etext = .;
     } > FLASH
 
-    /* Provide symbol for .data initialization source in Flash */
-    _sidata = LOADADDR(.data);
-
     .data :
     {
-        _sdata = .;
+        _data = .;
         *(.data*)
         _edata = .;
     } > SRAM AT > FLASH
 
     .bss :
     {
-        _sbss = .;
+        _bss = .;
         *(.bss*)
         *(COMMON)
         _ebss = .;
@@ -50,7 +46,9 @@ SECTIONS
         *(.ARM.exidx*)
     } > SRAM
 
-    /* Heap and stack symbols for _sbrk */
+    /* Heap and stack symbols for _sbrk.
+     * Stack is 4KB (1024 words), so heap must end 5KB from SRAM top
+     * to leave margin. */
     _heap_start = .;
-    _heap_end = 0x20007000;  /* Leave 4KB for stack at top of SRAM */
+    _heap_end = 0x20006800;  /* 4KB stack + 1KB margin at top of 32KB SRAM */
 }
