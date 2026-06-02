@@ -136,8 +136,8 @@ int main(void)
     // 主循环
     while(1)
     {
-        // 直接读取14字节触摸数据
-        i2cReadBytes(IT7269_ADDR, POINT_BUFFER_INDEX, pointdata, 14);
+        // 只读取前5字节就够了，坐标只需要pointdata[0]-pointdata[4]，减少I2C读取时间
+        i2cReadBytes(IT7269_ADDR, POINT_BUFFER_INDEX, pointdata, 5);
 
         // 判断是否有触摸（POINT标志位0x08）
         pressed = (pointdata[0] & POINT_FLAG) ? 1 : 0;
@@ -171,7 +171,8 @@ int main(void)
                 LCD_DrawPoint(x, y, ST7789_WHITE);
             }
 
-            printf("[触摸] 原始坐标 X=%4d Y=%4d | 屏幕坐标 X=%3d Y=%3d\r\n", rawX, rawY, x, y);
+            // 注释掉串口打印，速度会快很多！需要调试时再打开
+            // printf("[触摸] 原始坐标 X=%4d Y=%4d | 屏幕坐标 X=%3d Y=%3d\r\n", rawX, rawY, x, y);
             lastX = x;
             lastY = y;
             lastPressed = 1;
