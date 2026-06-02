@@ -47,6 +47,12 @@ SECTIONS
         _edata = .;
     } > SRAM
 
+    /DISCARD/ :
+    {
+        *(.ARM.exidx*)
+        *(.ARM.extab*)
+    }
+
     .bss :
     {
         _bss = .;
