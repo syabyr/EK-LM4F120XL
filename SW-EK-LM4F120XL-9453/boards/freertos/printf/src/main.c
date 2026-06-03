@@ -64,7 +64,7 @@
 StaticTimer_t blinky_tmdef;
 
 
-StackType_t  new_stack[128];
+StackType_t  new_stack[256];
 StaticTask_t new_taskdef;
 
 #endif
@@ -259,10 +259,10 @@ int main(void)
 
 #if configSUPPORT_STATIC_ALLOCATION
 
-    xTaskCreateStatic(vTask, "vTask", 128, NULL, 1, new_stack, &new_taskdef);
+    xTaskCreateStatic(vTask, "vTask", 256, NULL, 1, new_stack, &new_taskdef);
     blinky_tm = xTimerCreateStatic(NULL, pdMS_TO_TICKS(SECOND), true, NULL, led_blinky_cb, &blinky_tmdef);
 #else
-    xTaskCreate(vTask, "vTask", 128, NULL, 1, NULL);
+    xTaskCreate(vTask, "vTask", 256, NULL, 1, NULL);
     blinky_tm = xTimerCreate(NULL, pdMS_TO_TICKS(SECOND), true, NULL, led_blinky_cb);
 #endif
 

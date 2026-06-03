@@ -74,6 +74,7 @@ ${COMPILER}:
 
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/${PROJ}.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/startup_${COMPILER}.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/src/syscalls.o
 
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
@@ -125,7 +126,7 @@ LDFLAGSgcc+=-Wfloat-equal -Wundef -Wshadow -Wwrite-strings -Wsign-compare
 LDFLAGSgcc+=-Wmissing-format-attribute -Wunreachable-code -Wcast-align
 LDFLAGSgcc+=-Wcast-function-type -Wcast-qual -Wnull-dereference -Wuninitialized
 LDFLAGSgcc+=-Wunused -Wredundant-decls -Os -MD -Wl,-Map=./gcc/build.map
-LDFLAGSgcc+=-Wl,-cref -Wl,-gc-sections  -specs=nosys.specs
+LDFLAGSgcc+=-Wl,-cref -Wl,-gc-sections
 #LDFLAGSgcc+=-Wl,-cref -Wl,-gc-sections  -specs=nosys.specs -specs=nano.specs
 #
 # Include the automatically generated dependency files.

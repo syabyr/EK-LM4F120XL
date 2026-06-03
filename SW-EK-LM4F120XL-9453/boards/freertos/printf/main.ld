@@ -64,7 +64,9 @@ SECTIONS
         *(.ARM.exidx* .gnu.linkonce.armexidx.*)
     } > SRAM
 
- __exidx_end = .;
+    __exidx_end = .;
 
-
+    /* Heap grows upward from end of BSS */
+    __heap_start = .;
+    __heap_end = ORIGIN(SRAM) + LENGTH(SRAM);
 }

@@ -44,6 +44,16 @@ TINYUSB=../../tinyusb-lm4s
 #
 include ./makedefs
 
+
+VPATH=../drivers
+VPATH+=../../../utils
+
+#
+# FreeRTOS-Kernel source directory (not in current tree, VPATH
+# cannot find sources when the prerequisite path contains slashes).
+#
+FREERTOS_SRC=../../../third_party/FreeRTOS-Kernel
+
 #
 # Where to find header files that do not live in the source directory.
 #
@@ -101,12 +111,48 @@ CFLAGSgcc += -I./hw/bsp/tm4c123/boards/ek-tm4c123gxl
 CFLAGSgcc += -I./hw/mcu/ti/tm4c123xx/Include/TM4C123/
 CFLAGSgcc += -I./hw/mcu/ti/tm4c123xx/CMSIS/5.7.0/CMSIS/Include
 CFLAGSgcc += -I./src -I./src/FreeRTOSConfig
-CFLAGSgcc += -I./FreeRTOS-Kernel/include
-CFLAGSgcc += -I./FreeRTOS-Kernel/portable/GCC/ARM_CM4F
+CFLAGSgcc += -I../../../third_party/FreeRTOS-Kernel/include
+CFLAGSgcc += -I../../../third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 
 
 
 LDFLAGSgcc =
+
+#
+# Explicit rules for FreeRTOS-Kernel objects (VPATH cannot resolve
+# source paths that contain directory separators).
+#
+${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o: ${FREERTOS_SRC}/portable/GCC/ARM_CM4F/port.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/list.o: ${FREERTOS_SRC}/list.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/queue.o: ${FREERTOS_SRC}/queue.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/tasks.o: ${FREERTOS_SRC}/tasks.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/timers.o: ${FREERTOS_SRC}/timers.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/croutine.o: ${FREERTOS_SRC}/croutine.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/event_groups.o: ${FREERTOS_SRC}/event_groups.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+${COMPILER}/FreeRTOS-Kernel/stream_buffer.o: ${FREERTOS_SRC}/stream_buffer.c
+	@mkdir -p $(@D)
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
 
 #
 # Include the automatically generated dependency files.

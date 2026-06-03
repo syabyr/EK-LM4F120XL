@@ -24,11 +24,19 @@ SECTIONS
         *(.fini)
         *(.rodata)
         *(.rodata.*)
-        . = ALIGN(4) ; 
-        __end_text = . ; 
+        . = ALIGN(4) ;
+        __end_text = . ;
     } >FLASH
-    
-    .data : AT(ADDR(.text) + SIZEOF(.text))
+
+    .ARM.exidx :
+    {
+        __exidx_start = .;
+        *(.ARM.exidx*)
+        *(.ARM.extab*)
+        __exidx_end = .;
+    } >FLASH
+
+    .data : AT(__exidx_end)
     {
         . = ALIGN(4);
         __start_data = . ; 
