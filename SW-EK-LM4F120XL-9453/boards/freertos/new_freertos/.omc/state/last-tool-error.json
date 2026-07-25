@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"ls /Users/mybays/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/freertos/new_freertos/FreeRTOS-Kernel 2>&1\",\"description\":\"Check if FreeRTOS-Kernel dir exists locally\"}",
+  "error": "Exit code 1\nls: /Users/mybays/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/freertos/new_freertos/FreeRTOS-Kernel: No such file or directory",
+  "timestamp": "2026-06-02T09:36:27.028Z",
+  "retry_count": 1
+}

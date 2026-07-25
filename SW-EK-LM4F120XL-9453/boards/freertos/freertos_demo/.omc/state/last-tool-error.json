@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"make 2>&1\",\"timeout\":30000,\"description\":\"Run make to see compilation errors\"}",
+  "error": "Exit code 2\n  LD    gcc/freertos_demo.axf \narm-none-eabi-ld: section .ARM.exidx LMA [00002334,0000233b] overlaps section .data LMA [00002334,00002343]\nmake: *** [gcc/freertos_demo.axf] Error 1",
+  "timestamp": "2026-06-02T09:21:11.877Z",
+  "retry_count": 1
+}

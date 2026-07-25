@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"make clean && make 2>&1\",\"timeout\":60000,\"description\":\"Build with newlib lock hooks\"}",
+  "error": "Exit code 2\n  CC    src/main.c\n  CC    src/retargetserial.c\n  CC    src/startup_gcc.c\n  CC    src/freertos_hook.c\n  CC    ../../../third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c\n  CC    ../../../third_party/FreeRTOS-Kernel/portable/MemMang/heap_4.c\n  CC    ../../../third_party/FreeRTOS-Kernel/list.c\n  CC    ../../../third_party/FreeRTOS-Kernel/queue.c\n  CC    ../../../third_party/FreeRTOS-Kernel/tasks.c\n  CC    ../../../third_party/FreeRTOS-Kernel/timers.c\n  CC    ../../../third_party/...",
+  "timestamp": "2026-06-03T10:18:23.050Z",
+  "retry_count": 2
+}
