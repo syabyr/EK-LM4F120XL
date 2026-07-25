@@ -6,7 +6,7 @@
 ###### Project Environment #####
 
 # Set minimum CMake version
-cmake_minimum_required(VERSION 2.8.4)
+cmake_minimum_required(VERSION 3.5.0)
 
 #set(COMPILER_PREFIX /Users/mybays/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
 
@@ -79,7 +79,7 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
 
-set(LINKER_SCRIPT "../fulltest.ld") 
+set(LINKER_SCRIPT "../main.ld") 
 
 # This is normally set in lm4f120-base.cmake, but libraries may modify it so set
 # it after libraries/subdirectories have been added
@@ -92,8 +92,10 @@ include_directories(${BASE_LOCATION})
 
 #aux_source_directory(./ SOURCE_FILES)
 set(SOURCE_FILES  startup_gcc.c
-                  retargetserial.c
-                  fulltest.c)
+                  ../drivers/retargetserial.c
+                  st7789v.c
+                  st7789.c
+                  lcdtest.c)
 
 
 

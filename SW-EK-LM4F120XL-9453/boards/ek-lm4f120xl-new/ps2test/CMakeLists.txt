@@ -6,7 +6,7 @@
 ###### Project Environment #####
 
 # Set minimum CMake version
-cmake_minimum_required(VERSION 2.8.4)
+cmake_minimum_required(VERSION 3.5.0)
 
 #set(COMPILER_PREFIX /Users/mybays/develop/efr32/toolchains/gnu_arm/7.2_2017q4/bin/)
 
@@ -78,6 +78,9 @@ include(${BASE_LOCATION}/toolchain/lm4f120-base.cmake)
 
 add_subdirectory(${BASE_LOCATION}/driverlib driverlib)
 
+add_subdirectory(../drivers drivers)
+
+
 
 set(LINKER_SCRIPT "../fulltest.ld") 
 
@@ -92,7 +95,7 @@ include_directories(${BASE_LOCATION})
 
 #aux_source_directory(./ SOURCE_FILES)
 set(SOURCE_FILES  startup_gcc.c
-                  retargetserial.c
+                  ../drivers/retargetserial.c
                   fulltest.c)
 
 
@@ -113,7 +116,7 @@ target_link_libraries(${PROJECT_NAME} ${LIBS} c nosys)
 #    target_link_libraries(${PROJECT_NAME} hardware)
 #endif ()
 
-target_link_libraries(${PROJECT_NAME} driver-cm4f)
+target_link_libraries(${PROJECT_NAME} driver-cm4f drivers)
 
 ##### Post build #####
 

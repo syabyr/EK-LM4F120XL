@@ -1,30 +1,5 @@
-//*****************************************************************************
-//
-// uart_echo.c - Example for reading data from and writing data to the UART in
-//               an interrupt driven fashion.
-//
-// Copyright (c) 2012 Texas Instruments Incorporated.  All rights reserved.
-// Software License Agreement
-// 
-// Texas Instruments (TI) is supplying this software for use solely and
-// exclusively on TI's microcontroller products. The software is owned by
-// TI and/or its suppliers, and is protected under applicable copyright
-// laws. You may not combine this software with "viral" open-source
-// software in order to form a larger program.
-// 
-// THIS SOFTWARE IS PROVIDED "AS IS" AND WITH ALL FAULTS.
-// NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT
-// NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE. TI SHALL NOT, UNDER ANY
-// CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
-// DAMAGES, FOR ANY REASON WHATSOEVER.
-// 
-// This is part of revision 9453 of the EK-LM4F120XL Firmware Package.
-//
-//*****************************************************************************
 
 #include <stdio.h>
-#include <sys/stat.h>
 
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
@@ -97,95 +72,32 @@ UARTIntHandler(void)
         //
         // Blink the LED to show a character transfer is occuring.
         //
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
         
         //
         // Delay for 1 millisecond.  Each SysCtlDelay is about 3 clocks.
         //
-        SysCtlDelay(SysCtlClockGet() / (1000 * 3));
+        ROM_SysCtlDelay(SysCtlClockGet() / (1000 * 3));
         
         //
         // Turn off the LED
         //
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
+        ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0);
         
     }
 }
 
-//*****************************************************************************
-//
-// Send a string to the UART.
-//
-//*****************************************************************************
-void
-UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
+
+
+void DelayMs(unsigned long ulCount)
 {
-    //
-    // Loop while there are more characters to send.
-    //
-    while(ulCount--)
-    {
-        //
-        // Write the next character to the UART.
-        //
-        //ROM_UARTCharPutNonBlocking(UART0_BASE, *pucBuffer++);
-        ROM_UARTCharPut(UART0_BASE, *pucBuffer++);
-    }
+    unsigned long freq=ROM_SysCtlClockGet();
+    unsigned long mscount=freq/3000;
+    ROM_SysCtlDelay(mscount*ulCount);
 }
 
 
-#ifdef __GNUC__
-
-int _write(int fd, char *ptr, int len)
-{
-  //UARTSend((unsigned char *)ptr, len);
-  //UARTSend((unsigned char *)"hello\r\n", 7);
-  //UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
-  
-  return len;
-}
-
-#endif
-
-int fputc(int c, FILE *f)
-{
-    UARTSend((unsigned char *)&c, 1);
-    return 0;
-}
-
-caddr_t _sbrk(int incr) 
-{
-    return (caddr_t) 0;
-}
-///*
-int _close(int file) 
-{ 
-    return -1; 
-}
-int _fstat(int file, struct stat *st) 
-{ 
-    return 0;
-}
-int _isatty(int file) 
-{ 
-    return 1; 
-}
-int _lseek(int file, int ptr, int dir) 
-{ 
-    return 0; 
-}
-int _read(int file, char *ptr, int len) 
-{ 
-    return 0;
-}
-//*/
-//*****************************************************************************
-//
-// This example demonstrates how to send a string of data to the UART.
-//
-//*****************************************************************************
-int
-main(void)
+int main(void)
 {
     //
     // Enable lazy stacking for interrupt handlers.  This allows floating-point
@@ -198,7 +110,7 @@ main(void)
     //
     // Set the clocking to run directly from the crystal.
     //
-    ROM_SysCtlClockSet(SYSCTL_SYSDIV_1 | SYSCTL_USE_OSC | SYSCTL_OSC_MAIN |
+    ROM_SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |
                        SYSCTL_XTAL_16MHZ);
 
     //
@@ -222,11 +134,12 @@ main(void)
     //
     ROM_IntMasterEnable();
 
+
     //
     // Set GPIO A0 and A1 as UART pins.
     //
-    GPIOPinConfigure(GPIO_PA0_U0RX);
-    GPIOPinConfigure(GPIO_PA1_U0TX);
+    ROM_GPIOPinConfigure(GPIO_PA0_U0RX);
+    ROM_GPIOPinConfigure(GPIO_PA1_U0TX);
     ROM_GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
 
     //
@@ -242,31 +155,28 @@ main(void)
     ROM_IntEnable(INT_UART0);
     ROM_UARTIntEnable(UART0_BASE, UART_INT_RX | UART_INT_RT);
 
-    //
-    // Prompt for text to be entered.
-    //
-    UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
-
 
     printf("helloworld.\r\n");
     unsigned long freq=ROM_SysCtlClockGet();
     //printf("freq:%ldHz\r\n",freq);
     //printf("freq:%sHz\r\n","hello");
-
+    float test=124575567687655654.84454383838383838383;
     //
     // Loop forever echoing data through the UART.
     //
     while(1)
     {
-        UARTSend((unsigned char *)"\033[2JEnter text: \r\n", 18);
+
         printf("helloworld.\r\n");
         //SysCtlDelay(2000000);
         //printf("\r\n");
         //printf("freq:%ldHz\r\n\r\n",freq);
         printf("freq:%ldHz\r\n",freq);
+        //printf("float:%f\r\n",test);
         //printf("\r\n");
         //printf("helloworld.\r\n");
         //printf("freq:%dHz\r\n\r\n",100);
-        SysCtlDelay(2000000);
+        //ROM_SysCtlDelay(80000000);
+        DelayMs(1000);
     }
 }

@@ -1,22 +1,30 @@
-#include <stdio.h>
-#include <sys/stat.h>
-#include <sys/types.h>
+#include "retargetserial.h"
 
-#include "driverlib/rom.h"
-#include "inc/hw_types.h"
-#include "inc/hw_ints.h"
-#include "inc/hw_memmap.h"
-#include "driverlib/uart.h"
+//*****************************************************************************
+//
+// Send a string to the UART.
+//
+//*****************************************************************************
+void
+UARTSend(const unsigned char *pucBuffer, unsigned long ulCount)
+{
+    //
+    // Loop while there are more characters to send.
+    //
+    while(ulCount--)
+    {
+        //
+        // Write the next character to the UART.
+        //
+        //ROM_UARTCharPutNonBlocking(UART0_BASE, *pucBuffer++);
+        ROM_UARTCharPut(UART0_BASE, *pucBuffer++);
+    }
+}
 
 #ifdef __GNUC__
 int _write(int fd, char *ptr, int len)
 {
-    int ulCount = len;
-    char *pucBuffer = ptr;
-    while(ulCount--)
-    {
-        ROM_UARTCharPut(UART0_BASE, *pucBuffer++);
-    }
+    UARTSend((unsigned char *)ptr, len);
     return len;
 }
 #endif

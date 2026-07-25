@@ -1,0 +1,42 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/mybayswang/temp/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/ek-lm4f120xl-new/uart_print1'
+mkdir -p gcc
+if [ 'x' = x ];                            \
+	 then                                                 \
+	     echo "  CC    startup_gcc.c";                             \
+	 else                                                 \
+	     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Os -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_LM4F120H5QR -Dprintf=iprintf -c -DTARGET_IS_BLIZZARD_RA1 -I../../.. -Dgcc -o gcc/startup_gcc.o startup_gcc.c; \
+	 fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Os -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_LM4F120H5QR -Dprintf=iprintf -c -DTARGET_IS_BLIZZARD_RA1 -I../../.. -Dgcc -o gcc/startup_gcc.o startup_gcc.c
+if [ 'x' = x ];                            \
+	 then                                                 \
+	     echo "  CC    uart_print.c";                             \
+	 else                                                 \
+	     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Os -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_LM4F120H5QR -Dprintf=iprintf -c -DTARGET_IS_BLIZZARD_RA1 -I../../.. -Dgcc -o gcc/uart_print.o uart_print.c; \
+	 fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Os -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_LM4F120H5QR -Dprintf=iprintf -c -DTARGET_IS_BLIZZARD_RA1 -I../../.. -Dgcc -o gcc/uart_print.o uart_print.c
+ 
+if [ 'xuart_print.ld' = x ];                    \
+	 then                                                                 \
+	     ldname="../../../gcc/standalone.ld";                              \
+	 else                                                                 \
+	     ldname="uart_print.ld";                     \
+	 fi;                                                                  \
+	 if [ 'x' = x ];                                            \
+	 then                                                                 \
+	     echo "  LD    gcc/uart_print.axf ";                                  \
+	 else                                                                 \
+	     echo arm-none-eabi-ld -T ${ldname}                                         \
+	          --entry ResetISR                       \
+	                                    \
+	          --gc-sections -u _printf_float -o gcc/uart_print.axf gcc/startup_gcc.o gcc/uart_print.o ../../../driverlib/gcc-cm4f/libdriver-cm4f.a                  \
+	          '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libm.a' '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libc.a' '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+fp/softfp/libgcc.a' '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libnosys.a';              \
+	 fi;                                                                  \
+	arm-none-eabi-ld -T ${ldname}                                                   \
+	      --entry ResetISR                           \
+	                                    \
+	      --gc-sections -u _printf_float -o gcc/uart_print.axf gcc/startup_gcc.o gcc/uart_print.o ../../../driverlib/gcc-cm4f/libdriver-cm4f.a                      \
+	      '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libm.a' '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libc.a' '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+fp/softfp/libgcc.a' '/Applications/ARM/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libnosys.a'
+arm-none-eabi-objcopy -O binary gcc/uart_print.axf gcc/uart_print.bin
+make: Leaving directory `/Users/mybayswang/temp/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/ek-lm4f120xl-new/uart_print1'
+ 

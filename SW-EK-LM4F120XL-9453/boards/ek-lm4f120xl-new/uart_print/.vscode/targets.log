@@ -1,0 +1,824 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Jun 16 16:51:55 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from `../../../makedefs', line 69)
+PREFIX = ${shell type arm-stellaris-eabi-gcc > /dev/null 2>&1 && echo arm-stellaris-eabi || echo arm-none-eabi}
+# automatic
+?F = $(notdir $?)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+PLATFORMIO_IDE = 2.4.3
+# makefile (from `../../../makedefs', line 82)
+ARMGCC_ROOT := /usr/local/bin/..
+# makefile (from `Makefile', line 77)
+CFLAGSgcc = -DTARGET_IS_BLIZZARD_RA1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/mybayswang/temp/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/ek-lm4f120xl-new/uart_print1
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_translationsConfigFile":"/Users/mybayswang/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/tcf.json","_cacheRoot":"/Users/mybayswang/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/mybayswang/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/Users/mybayswang/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `../../../makedefs', line 186)
+CFLAGS = -mthumb ${CPU} ${FPU} -Os -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_${PART} -Dprintf=iprintf -c ${CFLAGSgcc} ${patsubst %,-I%,${subst :, ,${IPATH}}}
+# makefile (from `gcc/uart_print.d', line 1)
+MAKEFILE_LIST :=  Makefile ../../../makedefs gcc/startup_gcc.d gcc/uart_print.d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from `../../../makedefs', line 162)
+LIBNOSYS = ${shell ${CC} ${CFLAGS} -print-file-name=libnosys.a}
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/9p/zchvw0jn6g34lbnv_bsjkqfw0000gn/T/vscode-ipc-89663814-0f45-4419-90b7-f59bd70d4d12.sock
+# environment
+VSCODE_CWD = /
+# environment
+NO_PROXY = 127.0.0.1
+# makefile (from `../../../makedefs', line 137)
+LD = ${PREFIX}-ld
+# makefile (from `Makefile', line 76)
+ENTRY_uart_print = ResetISR
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 48)
+IPATH = ../../..
+# makefile (from `Makefile', line 38)
+ROOT = ../../..
+# makefile (from `../../../makedefs', line 132)
+AR = ${PREFIX}-ar
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `../../../makedefs', line 142)
+LDFLAGS = --gc-sections -u _printf_float
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `../../../makedefs', line 157)
+LIBM = ${shell ${CC} ${CFLAGS} -print-file-name=libm.a}
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Hzw0VWfV3F/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/mybayswang/temp/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/ek-lm4f120xl-new/uart_print1
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/mybayswang
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/mybayswang/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LOGNAME = mybayswang
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/mybayswang/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 75)
+SCATTERgcc_uart_print = uart_print.ld
+# environment
+PLATFORMIO_PATH = /Users/mybayswang/.platformio/python3/bin:/Users/mybayswang/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = /Users/mybayswang/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
+# environment
+SHLVL = 1
+# environment
+XPC_FLAGS = 0x0
+# makefile (from `../../../makedefs', line 75)
+CC = ${PREFIX}-gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = mybayswang
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `../../../makedefs', line 96)
+CPU = -mcpu=cortex-m4
+# makefile (from `../../../makedefs', line 97)
+FPU = -mfpu=fpv4-sp-d16 -mfloat-abi=softfp
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# makefile (from `../../../makedefs', line 147)
+LIBGCC = ${shell ${CC} ${CFLAGS} -print-libgcc-file-name}
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/9p/zchvw0jn6g34lbnv_bsjkqfw0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/mybayswang/Library/Application Support/Code/1.68.1-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.4493787.4493793
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 28)
+PART = LM4F120H5QR
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# makefile (from `../../../makedefs', line 55)
+COMPILER = gcc
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 33)
+VARIANT = cm4f
+# makefile (from `../../../makedefs', line 152)
+LIBC = ${shell ${CC} ${CFLAGS} -print-file-name=libc.a}
+# automatic
+^F = $(notdir $^)
+# makefile (from `../../../makedefs', line 167)
+OBJCOPY = ${PREFIX}-objcopy
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# makefile (from `../../../makedefs', line 47)
+os := Darwin
+# environment
+LANG = C
+# makefile (from `../../../makedefs', line 185)
+AFLAGS = -mthumb ${CPU} ${FPU} -MD ${patsubst %,-I%,${subst :, ,${IPATH}}}
+# environment
+VSCODE_PID = 32451
+# variable set hash-table stats:
+# Load=94/1024=9%, Rehash=0, Collisions=11/171=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 22774): 14 files, no impossibilities.
+# gcc (device 16777232, inode 22788): 9 files, no impossibilities.
+
+# 23 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+gcc/%.o: %.c
+#  commands to execute (from `../../../makedefs', line 192):
+	@if [ 'x${VERBOSE}' = x ];                            \
+	then                                                 \
+	echo "  CC    ${<}";                             \
+	else                                                 \
+	echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}; \
+	fi
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+	
+
+gcc/%.o: %.S
+#  commands to execute (from `../../../makedefs', line 207):
+	@if [ 'x${VERBOSE}' = x ];                               \
+	then                                                    \
+	echo "  AS    ${<}";                                \
+	else                                                    \
+	echo ${CC} ${AFLAGS} -D${COMPILER} -o ${@} -c ${<}; \
+	fi
+	@${CC} ${AFLAGS} -D${COMPILER} -o ${@} -c ${<}
+	
+
+gcc/%.a:
+#  commands to execute (from `../../../makedefs', line 222):
+	@if [ 'x${VERBOSE}' = x ];     \
+	then                          \
+	echo "  AR    ${@}";      \
+	else                          \
+	echo ${AR} -cr ${@} ${^}; \
+	fi
+	@${AR} -cr ${@} ${^}
+	
+
+gcc/%.axf:
+#  commands to execute (from `../../../makedefs', line 234):
+	@if [ 'x${SCATTERgcc_${notdir ${@:.axf=}}}' = x ];                    \
+	then                                                                 \
+ 
+	ldname="${ROOT}/gcc/standalone.ld";                              \
+	else                                                                 \
+	ldname="${SCATTERgcc_${notdir ${@:.axf=}}}";                     \
+	fi;                                                                  \
+	if [ 'x${VERBOSE}' = x ];                                            \
+	then                                                                 \
+	echo "  LD    ${@} ${LNK_SCP}";                                  \
+	else                                                                 \
+	echo ${LD} -T $${ldname}                                         \
+	--entry ${ENTRY_${notdir ${@:.axf=}}}                       \
+	${LDFLAGSgcc_${notdir ${@:.axf=}}}                          \
+	${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                  \
+	'${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}';              \
+	fi;                                                                  \
+	${LD} -T $${ldname}                                                   \
+	--entry ${ENTRY_${notdir ${@:.axf=}}}                           \
+	${LDFLAGSgcc_${notdir ${@:.axf=}}}                              \
+	${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
+	'${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}'
+	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+	
+
+# 4 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+../../../driverlib/sysctl.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/_newlib_version.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/machine/_default_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/_timespec.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+uart_print.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: gcc gcc/uart_print.axf
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../driverlib/pin_map.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+gcc/startup_gcc.d:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-16 15:47:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/cdefs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/stdio.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+__dummy__:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/machine/_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/features.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/lib/gcc/arm-none-eabi/11.2.1/include/stdarg.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 21:17:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../driverlib/fpu.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/time.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/timespec.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/config.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../driverlib/gcc-cm4f/libdriver-cm4f.a:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 10:30:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../inc/hw_nvic.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+uart_print.ld:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../inc/hw_memmap.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gcc/startup_gcc.o: startup_gcc.c startup_gcc.c ../../../inc/hw_nvic.h ../../../inc/hw_types.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `startup_gcc'
+#  Last modified 2022-06-16 15:47:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `../../../makedefs', line 192):
+	@if [ 'x${VERBOSE}' = x ];                            \
+	then                                                 \
+	echo "  CC    ${<}";                             \
+	else                                                 \
+	echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}; \
+	fi
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+	
+
+# Not a target:
+/Applications/ARM/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 21:17:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/machine/time.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/machine/types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../makedefs:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 15:41:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/_pthreadtypes.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+gcc/uart_print.d:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-16 15:47:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../../../inc/hw_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/reent.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gcc/uart_print.axf: gcc/startup_gcc.o gcc/uart_print.o ../../../driverlib/gcc-cm4f/libdriver-cm4f.a uart_print.ld
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `uart_print'
+#  Last modified 2022-06-16 15:47:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `../../../makedefs', line 234):
+	@if [ 'x${SCATTERgcc_${notdir ${@:.axf=}}}' = x ];                    \
+	then                                                                 \
+	ldname="${ROOT}/gcc/standalone.ld";                              \
+	else                                                                 \
+	ldname="${SCATTERgcc_${notdir ${@:.axf=}}}";                     \
+	fi;                                                                  \
+	if [ 'x${VERBOSE}' = x ];                                            \
+	then                                                                 \
+	echo "  LD    ${@} ${LNK_SCP}";                                  \
+	else                                                                 \
+	echo ${LD} -T $${ldname}                                         \
+	--entry ${ENTRY_${notdir ${@:.axf=}}}                       \
+	${LDFLAGSgcc_${notdir ${@:.axf=}}}                          \
+	${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                  \
+	'${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}';              \
+	fi;                                                                  \
+	${LD} -T $${ldname}                                                   \
+	--entry ${ENTRY_${notdir ${@:.axf=}}}                           \
+	${LDFLAGSgcc_${notdir ${@:.axf=}}}                              \
+	${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
+	'${LIBM}' '${LIBC}' '${LIBGCC}' '${LIBNOSYS}'
+	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+	
+
+# Not a target:
+../../../driverlib/uart.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/newlib.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gcc:
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-16 16:23:03
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 66):
+	@mkdir -p ${COMPILER}
+	
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@rm -rf ${COMPILER} ${wildcard *~}
+	
+
+# Not a target:
+../../../driverlib/debug.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/_ansi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/_stdint.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../driverlib/gpio.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gcc/uart_print.o: uart_print.c uart_print.c /Applications/ARM/arm-none-eabi/include/stdio.h /Applications/ARM/arm-none-eabi/include/_ansi.h /Applications/ARM/arm-none-eabi/include/newlib.h /Applications/ARM/arm-none-eabi/include/_newlib_version.h /Applications/ARM/arm-none-eabi/include/sys/config.h /Applications/ARM/arm-none-eabi/include/machine/ieeefp.h /Applications/ARM/arm-none-eabi/include/sys/features.h /Applications/ARM/arm-none-eabi/include/sys/cdefs.h /Applications/ARM/arm-none-eabi/include/machine/_default_types.h /Applications/ARM/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h /Applications/ARM/lib/gcc/arm-none-eabi/11.2.1/include/stdarg.h /Applications/ARM/arm-none-eabi/include/sys/reent.h /Applications/ARM/arm-none-eabi/include/_ansi.h /Applications/ARM/arm-none-eabi/include/sys/_types.h /Applications/ARM/arm-none-eabi/include/machine/_types.h /Applications/ARM/arm-none-eabi/include/sys/lock.h /Applications/ARM/arm-none-eabi/include/sys/types.h /Applications/ARM/arm-none-eabi/include/sys/_stdint.h  
+/Applications/ARM/arm-none-eabi/include/sys/_pthreadtypes.h /Applications/ARM/arm-none-eabi/include/machine/types.h /Applications/ARM/arm-none-eabi/include/sys/stdio.h /Applications/ARM/arm-none-eabi/include/sys/stat.h /Applications/ARM/arm-none-eabi/include/time.h /Applications/ARM/arm-none-eabi/include/machine/time.h /Applications/ARM/arm-none-eabi/include/sys/timespec.h /Applications/ARM/arm-none-eabi/include/sys/_timespec.h ../../../inc/hw_ints.h ../../../inc/hw_memmap.h ../../../inc/hw_types.h ../../../driverlib/debug.h ../../../driverlib/fpu.h ../../../driverlib/gpio.h ../../../driverlib/pin_map.h ../../../driverlib/interrupt.h ../../../driverlib/pin_map.h ../../../driverlib/rom.h ../../../driverlib/sysctl.h ../../../driverlib/uart.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `uart_print'
+#  Last modified 2022-06-16 15:47:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `../../../makedefs', line 192):
+	@if [ 'x${VERBOSE}' = x ];                            \
+	then                                                 \
+	echo "  CC    ${<}";                             \
+	else                                                 \
+	echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}; \
+	fi
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+	
+
+# Not a target:
+startup_gcc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../inc/hw_ints.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/machine/ieeefp.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/lock.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../driverlib/interrupt.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/stat.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../driverlib/rom.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 12:56:31
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+/Applications/ARM/arm-none-eabi/include/sys/stdio.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 20:24:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=54/1024=5%, Rehash=0, Collisions=5/128=4%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 5
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4024 / max = 4024 / min = 4024 / avg = 4024
+
+# Finished Make data base on Thu Jun 16 16:51:55 2022
+
+ 

@@ -37,6 +37,8 @@ VARIANT=cm4f
 #
 ROOT=../../..
 
+VPATH += ../drivers
+
 #
 # Include the common make definitions.
 #
@@ -51,7 +53,7 @@ IPATH=../../..
 # The default rule, which causes the lcdtest example to be built.
 #
 all: ${COMPILER}
-all: ${COMPILER}/lcdtest.axf
+all: ${COMPILER}/main.axf
 
 #
 # The rule to clean out all the build products.
@@ -60,7 +62,7 @@ clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
 
 flash:
-	lm4flash ${COMPILER}/lcdtest.bin
+	lm4flash ${COMPILER}/main.bin
 #
 # The rule to create the target directory.
 #
@@ -70,15 +72,15 @@ ${COMPILER}:
 #
 # Rules for building the lcdtest example.
 #
-${COMPILER}/lcdtest.axf: ${COMPILER}/startup_${COMPILER}.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/lcdtest.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/st7789.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/st7789v.o
-${COMPILER}/lcdtest.axf: ${COMPILER}/retargetserial.o
-${COMPILER}/lcdtest.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
-${COMPILER}/lcdtest.axf: lcdtest.ld
-SCATTERgcc_lcdtest=lcdtest.ld
-ENTRY_lcdtest=ResetISR
+${COMPILER}/main.axf: ${COMPILER}/startup_${COMPILER}.o
+${COMPILER}/main.axf: ${COMPILER}/lcdtest.o
+${COMPILER}/main.axf: ${COMPILER}/st7789.o
+${COMPILER}/main.axf: ${COMPILER}/st7789v.o
+${COMPILER}/main.axf: ${COMPILER}/retargetserial.o
+${COMPILER}/main.axf: ${ROOT}/driverlib/${COMPILER}-cm4f/libdriver-cm4f.a
+${COMPILER}/main.axf: main.ld
+SCATTERgcc_main=main.ld
+ENTRY_main=ResetISR
 CFLAGSgcc=-DTARGET_IS_BLIZZARD_RA1 -DPART_LM4F120H5QR
 
 #
