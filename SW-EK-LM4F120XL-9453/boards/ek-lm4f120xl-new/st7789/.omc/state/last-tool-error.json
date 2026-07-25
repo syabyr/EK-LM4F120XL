@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"make 2>&1\",\"description\":\"Run make to see the error\"}",
+  "error": "Exit code 2\n  CC    st7789.c\nst7789.c: In function 'LCD_IO_ReadData':\nst7789.c:61:31: error: passing argument 2 of '(void (*)(long unsigned int,  long unsigned int *))*(long unsigned int *)((sizetype)*16777240 + 36)' from incompatible pointer type [-Wincompatible-pointer-types]\n   61 |     ROM_SSIDataGet(SSI0_BASE, &data);\n      |                               ^~~~~\n      |                               |\n      |                               uint8_t * {aka unsigned char *}\nst7789.c:61:31: note:...",
+  "timestamp": "2026-06-02T04:55:55.687Z",
+  "retry_count": 1
+}

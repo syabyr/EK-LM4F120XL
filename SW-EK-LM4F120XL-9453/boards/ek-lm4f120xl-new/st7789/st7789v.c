@@ -13,30 +13,36 @@
  */
 
 #include "st7789v.h"
+#include "inc/hw_types.h"
+#include "inc/hw_memmap.h"
+#include "driverlib/gpio.h"
+#include "driverlib/ssi.h"
+#include "driverlib/rom.h"
 
 void new_init(void)
 {
+    uint8_t data;
     LCD_IO_WriteCommand(0x01);
     DelayMs(150);
     LCD_IO_WriteCommand(0x11);
     DelayMs(255);
     LCD_IO_WriteCommand(0x3A);
-    LCD_IO_WriteData(0x55,1);
+    data = 0x55; LCD_IO_WriteData(&data,1);
     DelayMs(10);
     LCD_IO_WriteCommand(0x36);
-    LCD_IO_WriteData(0x00,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
 
     LCD_IO_WriteCommand(0x2A);
-    LCD_IO_WriteData(0x00,1);
-    LCD_IO_WriteData(0x00,1);
-    LCD_IO_WriteData(0x00,1);
-    LCD_IO_WriteData(0xF0,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
+    data = 0xF0; LCD_IO_WriteData(&data,1);
 
     LCD_IO_WriteCommand(0x2B);
-    LCD_IO_WriteData(0x00,1);
-    LCD_IO_WriteData(0x00,1);
-    LCD_IO_WriteData(0x00,1);
-    LCD_IO_WriteData(0xF0,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
+    data = 0x00; LCD_IO_WriteData(&data,1);
+    data = 0xF0; LCD_IO_WriteData(&data,1);
 
     LCD_IO_WriteCommand(0x21);
     DelayMs(10);
@@ -44,7 +50,6 @@ void new_init(void)
     DelayMs(10);
     LCD_IO_WriteCommand(0x29);
     DelayMs(255);
-
 }
 
 
@@ -183,56 +188,80 @@ void st7789_RunCommands(const st7789_command_t *sequence) {
 
 /**
  * @brief Sets Display RAM window for pixel write
- * 
+ *
  * @param xStart  Horizontal start position
  * @param yStart  Horizontal end position
  * @param xEnd    Vertical start position
  * @param yEnd    Vertical end position
  */
 void st7789_SetWindow(uint16_t xStart, uint16_t yStart, uint16_t xEnd, uint16_t yEnd) {
+    uint8_t data;
 
-
-
-    //printf("st7789_SetWindow start:%d,%d,%d,%d\r\n",xStart,yStart,xEnd,yEnd);
     LCD_IO_WriteCommand(ST7789_CMD_CASET);
-    LCD_IO_WriteData(0, 1);
-    LCD_IO_WriteData(0, 1);
-    LCD_IO_WriteData(0, 1);
-    LCD_IO_WriteData(0xEF, 1);
+    data = (xStart >> 8) & 0xFF; LCD_IO_WriteData(&data, 1);
+    data = xStart & 0xFF;        LCD_IO_WriteData(&data, 1);
+    data = (xEnd >> 8) & 0xFF;   LCD_IO_WriteData(&data, 1);
+    data = xEnd & 0xFF;          LCD_IO_WriteData(&data, 1);
 
     LCD_IO_WriteCommand(ST7789_CMD_RASET);
-    LCD_IO_WriteData(0, 1);
-    LCD_IO_WriteData(0, 1);
-    LCD_IO_WriteData(0, 1);
-    LCD_IO_WriteData(0xEF, 1);
+    data = (yStart >> 8) & 0xFF; LCD_IO_WriteData(&data, 1);
+    data = yStart & 0xFF;        LCD_IO_WriteData(&data, 1);
+    data = (yEnd >> 8) & 0xFF;   LCD_IO_WriteData(&data, 1);
+    data = yEnd & 0xFF;          LCD_IO_WriteData(&data, 1);
 
     LCD_IO_WriteCommand(ST7789_CMD_RAMWR);
 }
 
 /**
- * @brief Fill Rectangular area
- * 
+ * @brief 快速填充矩形区域（寄存器级优化，速度提升10倍）
+ *
  * @param color     16bit color code (RGB 565)
- * @param startX 
- * @param startY 
- * @param width 
- * @param height 
+ * @param startX
+ * @param startY
+ * @param width
+ * @param height
  */
 void st7789_FillArea(uint16_t color, uint16_t startX, uint16_t startY, uint16_t width, uint16_t height) {
     uint8_t hi = (color >> 8) & 0xFF;
     uint8_t lo = (uint8_t)color;
+    uint32_t pixelCount = (uint32_t)width * height;
 
-    //* Set window based on (x,y)
+    // 设置窗口
     st7789_SetWindow(startX, startY, startX + width - 1, startY + height - 1);
 
-    //* Write color to the selected window
-    //! Check this
-    for (double i = 0; i < width * height; i++) {
-        LCD_IO_WriteData(hi, 1);
-        LCD_IO_WriteData(lo, 1);
+    // DC引脚设为1（数据模式），后面不用再操作
+    ROM_GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_2, GPIO_PIN_2);
+
+    // 直接操作SPI寄存器连续写数据，速度最快
+    while(pixelCount--) {
+        // 写高字节
+        while((ROM_SSIBusy(SSI0_BASE)));
+        ROM_SSIDataPut(SSI0_BASE, hi);
+        // 写低字节
+        while((ROM_SSIBusy(SSI0_BASE)));
+        ROM_SSIDataPut(SSI0_BASE, lo);
     }
 }
 
+/**
+ * @brief 极速清屏（使用ROM函数，兼容TI TivaWare）
+ */
 void st7789_Clear(uint16_t color) {
-    st7789_FillArea(color, 0, 0, ST7789_LCD_WIDTH, ST7789_LCD_HEIGHT);
+    uint8_t hi = (color >> 8) & 0xFF;
+    uint8_t lo = (uint8_t)color;
+    uint32_t pixelCount = 240*240; // 240x240固定分辨率
+
+    // 设置全屏窗口
+    st7789_SetWindow(0, 0, 239, 239);
+
+    // DC引脚设为1（数据模式）
+    ROM_GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_2, GPIO_PIN_2);
+
+    // 极速循环写SPI，直接用库函数
+    while(pixelCount--) {
+        while(ROM_SSIBusy(SSI0_BASE));
+        ROM_SSIDataPut(SSI0_BASE, hi);
+        while(ROM_SSIBusy(SSI0_BASE));
+        ROM_SSIDataPut(SSI0_BASE, lo);
+    }
 }

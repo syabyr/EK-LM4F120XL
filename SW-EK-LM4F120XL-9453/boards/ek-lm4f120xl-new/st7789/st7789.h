@@ -18,7 +18,7 @@
 #include "inc/hw_ssi.h"
 void     LCD_IO_Init(void);                                  // SPI bus init and LCD RESX pin toggle
 void     LCD_IO_WriteCommand(uint8_t command);               // SPI write command
-void     LCD_IO_WriteData(uint8_t data, uint8_t length);    // SPI write data
+void     LCD_IO_WriteData(uint8_t *data, uint8_t length);    // SPI write data
 uint8_t LCD_IO_ReadData(void);                              // SPI read data
 void     LCD_IO_Delay(uint32_t delay);                       // Basic MCU delay
 extern void DelayMs(unsigned long ulCount);

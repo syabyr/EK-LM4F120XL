@@ -37,6 +37,7 @@ VARIANT=cm4f
 #
 ROOT=../../..
 
+VPATH += ../drivers
 #
 # Include the common make definitions.
 #

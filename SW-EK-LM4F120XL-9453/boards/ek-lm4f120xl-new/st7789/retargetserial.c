@@ -31,7 +31,7 @@ int _write(int fd, char *ptr, int len)
 
 caddr_t _sbrk(int incr)
 {
-    return (caddr_t) 0;
+    return (caddr_t) 0x20007000;
 }
 int _close(int file)
 {
