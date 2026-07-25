@@ -104,6 +104,7 @@ ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/usb_descriptors.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/src/freertos_hook.o
 
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.o
+${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/portable/MemMang/heap_4.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/list.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/queue.o
 ${COMPILER}/${PROJ}.axf: ${COMPILER}/FreeRTOS-Kernel/tasks.o
@@ -129,7 +130,7 @@ CFLAGSgcc += -fno-strict-aliasing -Wall -Wextra -Werror -Wfatal-errors
 CFLAGSgcc += -Wdouble-promotion -Wstrict-prototypes -Wstrict-overflow
 CFLAGSgcc += -Werror-implicit-function-declaration -Wfloat-equal -Wundef
 CFLAGSgcc += -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute
-CFLAGSgcc += -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual
+CFLAGSgcc += -Wunreachable-code -Wcast-function-type -Wcast-qual
 CFLAGSgcc += -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls
 CFLAGSgcc += -Os -Wno-error=redundant-decls -Wno-error=cast-qual 
 
@@ -138,6 +139,7 @@ CFLAGSgcc += -Os -Wno-error=redundant-decls -Wno-error=cast-qual
 CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/include
 CFLAGSgcc += -I${ROOT}/third_party/FreeRTOS-Kernel/portable/GCC/ARM_CM4F
 CFLAGSgcc += -I${TINYUSB}/src
+CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123/
 CFLAGSgcc += -I./src -I./inc -I./
 
 LDFLAGSgcc =  -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
@@ -147,7 +149,7 @@ LDFLAGSgcc += -ffunction-sections -fsingle-precision-constant -fno-strict-aliasi
 LDFLAGSgcc += -Wall -Wextra -Werror -Wfatal-errors -Wdouble-promotion -Wstrict-prototypes
 LDFLAGSgcc += -Wstrict-overflow -Werror-implicit-function-declaration -Wfloat-equal
 LDFLAGSgcc += -Wundef -Wshadow -Wwrite-strings -Wsign-compare -Wmissing-format-attribute
-LDFLAGSgcc += -Wunreachable-code -Wcast-align -Wcast-function-type -Wcast-qual
+LDFLAGSgcc += -Wunreachable-code -Wcast-function-type -Wcast-qual
 LDFLAGSgcc += -Wnull-dereference -Wuninitialized -Wunused -Wredundant-decls
 LDFLAGSgcc += -Os -MD -Wl,-Map=./gcc/${PROJ}.map -Wl,-cref -Wl,-gc-sections
 LDFLAGSgcc += -specs=nosys.specs -specs=nano.specs

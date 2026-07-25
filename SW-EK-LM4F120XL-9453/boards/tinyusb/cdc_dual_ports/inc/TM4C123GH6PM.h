@@ -165,7 +165,7 @@ typedef enum {
 /** @} */ /* End of group Configuration_of_CMSIS */
 
 #include "core_cm4.h"                               /*!< Cortex-M4 processor and core peripherals                              */
-//#include "system_TM4C123.h"                         /*!< TM4C123GH6PM System                                                   */
+#include "system_TM4C123.h"                         /*!< TM4C123GH6PM System                                                   */
 
 
 /* ================================================================================ */

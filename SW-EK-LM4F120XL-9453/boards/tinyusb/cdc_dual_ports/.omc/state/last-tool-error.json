@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"make clean 2>&1 && make 2>&1\",\"description\":\"Full rebuild to verify all fixes\"}",
+  "error": "Exit code 2\n  CC    /Users/mybays/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb/cdc_dual_ports//../../..//third_party/tinyusb/src/tusb.c\n  CC    /Users/mybays/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb/cdc_dual_ports//../../..//third_party/tinyusb/src/common/tusb_fifo.c\n  CC    /Users/mybays/develop/ti/EK-LM4F120XL/SW-EK-LM4F120XL-9453/boards/tinyusb/cdc_dual_ports//../../..//third_party/tinyusb/src/device/usbd.c\n  CC    /Users/mybays/develop/ti/EK-LM4F120XL/SW-EK-...",
+  "timestamp": "2026-06-02T10:42:10.981Z",
+  "retry_count": 1
+}

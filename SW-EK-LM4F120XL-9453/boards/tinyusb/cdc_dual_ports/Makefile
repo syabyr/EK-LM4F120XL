@@ -113,6 +113,7 @@ CFLAGSgcc += -DCFG_TUSB_MCU=OPT_MCU_TM4C123
 CFLAGSgcc += 
 CFLAGSgcc += -I./src -I${TINYUSB}/src
 CFLAGSgcc += -I./inc
+CFLAGSgcc += -I${TINYUSB}/hw/mcu/ti/tm4c123xx/Include/TM4C123
 
 LDFLAGSgcc =  -DTM4C123GH6PM -flto -mthumb -mabi=aapcs -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 LDFLAGSgcc += -DCFG_TUSB_MCU=OPT_MCU_TM4C123 -ug_pfnVectors -DTM4C123GH6PM

@@ -37,10 +37,11 @@
 #include "driverlib/sysctl.h"
 
 #include "tusb.h"
+#include "board.h"
 
 //------------- prototypes -------------//
 static void cdc_task(void);
-uint32_t SystemCoreClock;
+extern uint32_t SystemCoreClock;
 /*------------- MAIN -------------*/
 int main(void)
 {

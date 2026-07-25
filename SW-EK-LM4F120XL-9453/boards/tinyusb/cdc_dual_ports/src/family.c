@@ -17,7 +17,7 @@ void USB0_Handler(void)
 }
 
 
-extern uint32_t SystemCoreClock;
+uint32_t SystemCoreClock = 80000000UL;
 void board_init (void)
 {
   //SystemCoreClockUpdate();
